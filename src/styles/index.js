@@ -9,13 +9,6 @@ align-items: center;
 background: rgb(255,0,0);
 background: radial-gradient(circle, rgba(96,0,255,.25) 0%, rgba(0,0,0,.25) 100%);
 
-h1{
-    width: 480px;
-    padding: .5rem 0;
-    display: flex;
-    align-items: center;
-}
-
 h3{
     font-family: 'Lobster', cursive;
     font-weight: normal;
@@ -26,7 +19,7 @@ h3{
 
 section{
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 0rem 1rem;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -36,27 +29,25 @@ section{
 .wrapper{
     /* background: blueviolet; */
     width: 45vw;
+    max-height: 540px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-block: 2rem;
+    margin-block: 4rem;
 }
 
 h2{
     width: 100%;
-    cursor: pointer;
     font-family: 'Lobster', cursive;
     color: #fff;
     text-shadow: 0 3px 15px #8000ff;
     margin-block: 1rem;
-    transition: all ease 300ms;
-    &:hover{
-        opacity: .75;
-    }
+    
 }
 .wrapper h3{
     cursor: pointer;
-    width: 30%;
+    font-weight: bold;
+    width: 35%;
     text-shadow: 0 0 9px #8000ff;
 
         img{
@@ -72,8 +63,8 @@ h2{
 .wrapper ul{
     width: 65%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-content: space-between;
     flex-wrap: wrap;
     transition: all ease 200ms;
     scrollbar-width: none;
@@ -111,19 +102,42 @@ h2{
     
 }
 
-@media screen and (max-width: 900px){
-
-h1{
+.see-more{
+    cursor: pointer;
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    color: #fff;
     width: 100%;
+    text-align: center;
+    padding: .25rem 0;
+    margin-top: 1rem;
+    border-radius: 3px;
+    background: rgba(0,0,0,.25);
+    transition: all ease 300ms;
+    &:hover{
+        background: rgba(255,255,255,.75);
+
+        p{
+            color: #000;
+        }
+    }
+    p{
+        width: 100%;
+    }
 }
 
+@media screen and (max-width: 768px){
+
 section{
-    padding: 1rem;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
 }
 
 .wrapper{
     justify-content: center;
     width: 100vw;
+    max-height: initial;
+    margin-block: 1rem;
 }
 
 .wrapper h2{
@@ -132,6 +146,7 @@ section{
 
 .wrapper h3 {
     width: 100%;
+    margin-block: 1rem;
     
     img{
         object-fit: cover;
@@ -148,10 +163,13 @@ section{
 }
 
 .wrapper ul{
-    margin-block: .5rem;
     width: 100%;
 }
-
-
+.see-more{
+    width: 95%;
+    margin-top: 1rem;
+    padding: 0;
+    background: transparent;
+}
 }
 `

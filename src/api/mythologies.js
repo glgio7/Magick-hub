@@ -348,8 +348,28 @@ export const jung = [
         overview: '',
     },
     {
-        name: '',
-        image_path: '/assets/.jpg',
+        name: 'O Inocente',
+        image_path: '/assets/inocente.jpg',
+        overview: '',
+    },
+    {
+        name: 'O Rebelde',
+        image_path: '/assets/rebelde.jpg',
+        overview: '',
+    },
+    {
+        name: 'O Bobo',
+        image_path: '/assets/bobo.jpg',
+        overview: '',
+    },
+    {
+        name: 'O governante',
+        image_path: '/assets/governante.jpg',
+        overview: '',
+    },
+    {
+        name: 'O Explorador',
+        image_path: '/assets/explorador.jpg',
         overview: '',
     },
 ]

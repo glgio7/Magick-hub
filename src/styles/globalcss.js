@@ -28,4 +28,8 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+::selection{
+  color: #ffa900;
+}
 `
