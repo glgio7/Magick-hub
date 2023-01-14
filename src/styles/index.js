@@ -7,10 +7,10 @@ display: flex;
 flex-direction: column;
 align-items: center;
 background: rgb(255,0,0);
-background: radial-gradient(circle, rgba(96,0,255,.25) 0%, rgba(0,0,0,.25) 100%);
+background: radial-gradient(circle, rgba(96,0,255,.25) 0%, rgba(0,0,0,.25) 75%);
 
 h3{
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', sans-serif;
     font-weight: normal;
     color: #fff;
     max-width: 90%;
@@ -29,7 +29,6 @@ section{
 .wrapper{
     /* background: blueviolet; */
     width: 45vw;
-    max-height: 540px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -38,10 +37,11 @@ section{
 
 h2{
     width: 100%;
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', sans-serif;
     color: #fff;
-    text-shadow: 0 3px 15px #8000ff;
-    margin-block: 1rem;
+    text-shadow: 0 1px 9px #8000ff;
+    margin-block: .5rem;
+    font-size: 1.25rem;
     text-align: center;
 }
 
@@ -56,11 +56,12 @@ h2{
 
     span{
         margin-block: .25rem;
+        font-size: 1.5rem;
     }
 
     img{
         object-fit: cover;
-        border-radius: 6px 6px 0 0;
+        border-radius: 6px;
         aspect-ratio: 9/16;
     }
 }
@@ -69,7 +70,7 @@ h2{
     width: 65%;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-content: space-between;
     flex-wrap: wrap;
     transition: all ease 200ms;
     scrollbar-width: none;
@@ -95,7 +96,7 @@ h2{
     }
     span {
         text-shadow: 0 0 9px #8000ff;
-        font-family: 'Lobster', cursive;
+        font-family: 'Lobster', sans-serif;
         color: #fff;
         font-weight: normal;
         text-align: center;
@@ -107,13 +108,13 @@ h2{
 
 .see-more{
     cursor: pointer;
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', sans-serif;
     font-weight: normal;
     color: #fff;
-    width: 100%;
+    width: 95%;
     text-align: center;
     padding: .5rem 0;
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 6px 6px;
     background: rgba(0,0,0,.25);
     transition: all ease 300ms;
     &:hover{
@@ -144,7 +145,6 @@ section{
 .wrapper{
     justify-content: center;
     width: 100vw;
-    max-height: initial;
     margin-block: 1rem;
 }
 
@@ -173,8 +173,13 @@ section{
 .wrapper ul{
     width: 100%;
 }
+
+.wrapper li span{
+    margin-block: .5rem;
+}
+
 .see-more{
-    margin-top: .25rem;
+    width: 90%;
     background: rgba(0,0,0,.5);
     border-radius: 6px;
 

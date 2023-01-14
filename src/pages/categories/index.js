@@ -1,7 +1,7 @@
 import { Container } from '../../styles/categories';
 import { HiChevronRight, HiChevronLeft } from "react-icons/hi";
 import { useRef, useState } from 'react';
-import { celtic, egypt, greek, hindu, judaism, jung, nordic } from '../../api/mythologies';
+import { afro, celtic, egypt, greek, hindu, judaism, jung, nordic } from '../../api/mythologies';
 import { useParams } from 'react-router-dom';
 
 
@@ -13,10 +13,11 @@ function Categories() {
         title === 'greek' ? greek :
           title === 'hindu' ? hindu :
             title === 'judaism' ? judaism :
-              title === 'jung' ? jung
-                : nordic
+              title === 'jung' ? jung :
+                title === 'afro' ? afro
+                  : nordic;
+  const [card, setCard] = useState(list[0]);
   const carousel = useRef();
-  const [card, setCard] = useState(list[0])
 
   const handleList = (direction) => {
     direction === "left" ?
@@ -28,7 +29,7 @@ function Categories() {
     <>
       <Container>
         <h3>O homem sofre porque leva a sério o que os deuses fizeram para se divertir... -Alan Watts</h3>
-        <div className='wrapper' onLoad={() => window.scrollTo(0,0)}>
+        <div className='wrapper' onLoad={() => window.scrollTo(0, 0)}>
           <HiChevronLeft className='arrow left' onClick={() => { handleList("left") }} />
           <h2>{list[0].title}</h2>
           <ul ref={carousel}>

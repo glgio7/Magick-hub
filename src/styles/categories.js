@@ -21,9 +21,9 @@ h3{
 h2{
     font-family: 'Lobster', cursive;
     color: #fff;
-    text-shadow: 0 3px 15px #8000ff;
+    text-shadow: 0 1px 9px #8000ff;
     margin-block: 1rem;
-    margin-left: .5rem;
+    text-align: center;
 }
 
 .wrapper{
@@ -92,7 +92,6 @@ h2{
 
 .wrapper img {
     aspect-ratio: 16/9;
-    object-position: top;
     border-radius: 6px;
     object-fit: cover;
     width: 10vw;
@@ -136,7 +135,7 @@ p{
     width: 90%;
     text-align: center;
     font-size: 1.2rem;
-    margin-block: 1rem;
+    margin-block: .75rem;
 }
 
 @media screen and (max-width: 768px){
@@ -151,11 +150,6 @@ h1{
 
 .wrapper{
     padding: 0;
-}
-
-.wrapper h2{
-    margin-left: 0;
-    text-align: center;
 }
 
 .wrapper li, .wrapper span{
