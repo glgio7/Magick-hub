@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.main`
 width: 100%;
+height: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
 background: rgb(255,0,0);
-background: radial-gradient(circle, rgba(96,0,255,.25) 0%, rgba(0,0,0,.25) 100%);
-min-height: 100vh;
+background: radial-gradient(circle, rgba(96,0,255,.25) 0%, rgba(0,0,0,.25) 75%);
 
 
 h3{
@@ -18,20 +18,22 @@ h3{
     text-align: center;
 }
 
-.wrapper{
-    margin-block: 1rem;
-    position: relative;
-    width: 100vw;
-    padding: 0 2vw;
-}
-
-.wrapper h2{
+h2{
     font-family: 'Lobster', cursive;
     color: #fff;
     text-shadow: 0 3px 15px #8000ff;
     margin-block: 1rem;
     margin-left: .5rem;
 }
+
+.wrapper{
+    /* background-color: aliceblue; */
+    margin-block: 1rem;
+    position: relative;
+    width: 100vw;
+    padding: 0 2vw;
+}
+
 .wrapper:hover .arrow{
     width: 48px;
     &:hover{
@@ -46,8 +48,8 @@ h3{
     background-color: rgba(0,0,0,.1);
     box-shadow: 0px 0px 15px #000;
     position: absolute;
-    top: 25%;
-    height: 50%;
+    bottom: 25%;
+    height: 30%;
     width: 0px;
     font-size: 2rem;
     transition: all ease 300ms;
@@ -76,31 +78,28 @@ h3{
 .wrapper li{
     display: flex;
     position: relative;
-    margin-right: 1rem;
+    margin-right: .75rem;
     flex-direction: column;
     align-items: center;
-    width: 15vw;
+    width: 10vw;
     height: max-content;
     cursor: pointer;
-    transition: all ease 300ms;
     border-radius: 6px;
-    &:hover{
-        scale: 1.025;
-    }
     &:last-child{
         margin-right: 0;
     }
 }
 
-.list-image{
-    aspect-ratio: 9/16;
+.wrapper img {
+    aspect-ratio: 16/9;
+    object-position: top;
     border-radius: 6px;
     object-fit: cover;
-    width: 15vw;
+    width: 10vw;
     opacity: 1;
     transition: all ease 200ms;
     &:hover{
-        border: 2px inset #6000ff;
+        border: 2px outset #6000ff;
     }
 }
 
@@ -109,35 +108,66 @@ h3{
     color: #fff;
     font-weight: bold;
     font-size: .9rem;
-    font-family: 'Nunito', sans-serif;
     margin-top: .5rem;
     text-shadow: 0 0 9px #8000ff;
     text-align: center;
 }
+
+article{
+    /* background-color: #404040; */
+    width: 100%;
+    min-height: 75vh;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article img{
+    width: 300px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+p{
+    color: #fff;
+    width: 90%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-block: 1rem;
+}
+
 @media screen and (max-width: 768px){
 
 h1{
     width: 100%;
 }
 
+.arrow{
+    display: none;
+}
+
+.wrapper{
+    padding: 0;
+}
+
 .wrapper h2{
-    margin-left: 1rem;
+    margin-left: 0;
+    text-align: center;
 }
 
 .wrapper li, .wrapper span{
-    width: 40vw;
+    width: 30vw;
 }
 
 .wrapper li:first-child{
     margin-left: .5rem;
 }
 
-.arrow{
-    display: none;
-}
-
-.list-image{
-    width: 40vw;
+.wrapper img{
+    width: 30vw;
 }
     
 }

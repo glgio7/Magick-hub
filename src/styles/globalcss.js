@@ -18,6 +18,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   background-color: black;
+    font-family: 'Nunito', sans-serif;
 }
 
 img{

@@ -15,7 +15,7 @@ root.render(
     <Header/>
     <Routes>
       <Route exact path='/' element={<Home />} />
-      <Route  path='/categories' element={<Categories />} />
+      <Route  path='/categories/:title' element={<Categories />} />
     </Routes>
     <Footer/>
   </BrowserRouter>

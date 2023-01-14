@@ -33,7 +33,7 @@ section{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-block: 4rem;
+    margin-block: 3rem;
 }
 
 h2{
@@ -42,36 +42,40 @@ h2{
     color: #fff;
     text-shadow: 0 3px 15px #8000ff;
     margin-block: 1rem;
-    
+    text-align: center;
 }
+
 .wrapper h3{
-    cursor: pointer;
     font-weight: bold;
     width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
     text-shadow: 0 0 9px #8000ff;
 
-        img{
-        object-fit: cover;
-        border-radius: 6px;
-        aspect-ratio: 9/16;
-        &:hover{
-        border: 2px inset #6000ff;
+    span{
+        margin-block: .25rem;
     }
-        }
+
+    img{
+        object-fit: cover;
+        border-radius: 6px 6px 0 0;
+        aspect-ratio: 9/16;
+    }
 }
 
 .wrapper ul{
     width: 65%;
     display: flex;
     justify-content: center;
-    align-content: space-between;
+    align-content: center;
     flex-wrap: wrap;
     transition: all ease 200ms;
     scrollbar-width: none;
 }
 
 .wrapper li{
-    cursor: pointer;
     list-style: none;
     display: flex;
     position: relative;
@@ -80,7 +84,6 @@ h2{
     width: 30%;
     margin: 0 .25rem;
     aspect-ratio: 1;
-    
     &:hover img{
         border: 2px inset #6000ff;
     }
@@ -109,24 +112,29 @@ h2{
     color: #fff;
     width: 100%;
     text-align: center;
-    padding: .25rem 0;
-    margin-top: 1rem;
-    border-radius: 3px;
+    padding: .5rem 0;
+    border-radius: 0 0 3px 3px;
     background: rgba(0,0,0,.25);
     transition: all ease 300ms;
     &:hover{
         background: rgba(255,255,255,.75);
+    }
 
-        p{
-            color: #000;
-        }
+    &:hover p{
+        color: #000;
     }
     p{
         width: 100%;
+        font-size: 1rem;
+        text-shadow: none;
     }
 }
 
 @media screen and (max-width: 768px){
+
+h2{
+    margin-left: 0;
+}
 
 section{
     padding: 0 1rem;
@@ -149,9 +157,9 @@ section{
     margin-block: 1rem;
     
     img{
+        border-radius: 6px;
         object-fit: cover;
         object-position: top;
-        border-radius: 6px;
         aspect-ratio:16/9;
     }
 }
@@ -166,10 +174,13 @@ section{
     width: 100%;
 }
 .see-more{
-    width: 95%;
-    margin-top: 1rem;
-    padding: 0;
-    background: transparent;
+    margin-top: .25rem;
+    background: rgba(0,0,0,.5);
+    border-radius: 6px;
+
+        p{
+            color: #fff;
+        }
 }
 }
 `
