@@ -91,7 +91,7 @@ h2{
 }
 
 .wrapper img {
-    aspect-ratio: 16/9;
+    aspect-ratio: 9/16;
     border-radius: 6px;
     object-fit: cover;
     width: 10vw;
@@ -136,6 +136,12 @@ p{
     text-align: center;
     font-size: 1.2rem;
     margin-block: .75rem;
+    &:nth-child(3n + 1){
+        font-weight: bold;
+    }
+    &:last-child{
+        font-weight: normal;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -153,7 +159,7 @@ h1{
 }
 
 .wrapper li, .wrapper span{
-    width: 30vw;
+    width: 20vw;
 }
 
 .wrapper li:first-child{
@@ -161,7 +167,7 @@ h1{
 }
 
 .wrapper img{
-    width: 30vw;
+    width: 20vw;
 }
     
 }

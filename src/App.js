@@ -10,13 +10,14 @@ import Header from './components/Header';
 
 function App() {
   const [menu, setMenu] = useState(false)
-  const toggleMenu = () => setMenu(!menu)
+  const toggleMenu = () => setMenu(!menu);
+
 
   return (
     <BrowserRouter>
       <GlobalCSS />
       <Sidebar displayed={menu} toggleMenu={toggleMenu} />
-      <Header toggleMenu={toggleMenu} />
+      <Header toggleMenu={toggleMenu}/>
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/categories/:title' element={<Categories />} />
