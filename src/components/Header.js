@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom"
 import styled from "styled-components"
+import { Link } from "react-router-dom"
 import { HiMenu } from "react-icons/hi";
 
 const StyledHeader = styled.header`
@@ -9,6 +9,7 @@ position: relative;
 align-items: center;
 justify-content: center;
 padding: .5rem 0;
+z-index: 90;
 background: linear-gradient(180deg, rgba(100,0,255, .2) 0%, rgba(0,0,0, 1) 75%);
 
 .menu{

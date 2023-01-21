@@ -9,6 +9,23 @@ align-items: center;
 background: rgb(255,0,0);
 background: radial-gradient(circle, rgba(96,0,255,.25) 0%, rgba(0,0,0,.25) 75%);
 
+.loading{
+    height: 80vh;
+    position: fixed;
+    top: 20%;
+    z-index: 9;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    img{
+        object-fit: cover;
+        width: 480px;
+        border-radius: 50%;
+    }
+}
+
 h3{
     font-family: 'Lobster', sans-serif;
     font-weight: normal;
@@ -137,6 +154,14 @@ h2{
     margin-left: 0;
 }
 
+.loading{
+    top: 0;
+    height: 100vh;
+
+    img{
+    width: 280px;
+}}
+
 section{
     padding: 0 1rem;
     padding-bottom: 1rem;
@@ -156,6 +181,10 @@ section{
     width: 100%;
     margin-block: 1rem;
     
+    span{
+        margin-block: 1rem;
+    }
+
     img{
         border-radius: 6px;
         object-fit: cover;

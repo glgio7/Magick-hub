@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { GlobalCSS } from './styles/globalcss';
 import Home from './pages/index/index'
 import Categories from './pages/categories'
+import Numerology from './pages/numerology'
 import Footer from './components/Footer';
 import { Sidebar } from './components/Sidebar';
 import Header from './components/Header';
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/categories/:title' element={<Categories />} />
+        <Route path='/numerology' element={<Numerology />} />
       </Routes>
       <Footer />
     </BrowserRouter>

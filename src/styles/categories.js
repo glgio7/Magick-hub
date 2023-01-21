@@ -70,7 +70,6 @@ h2{
     overflow-x: scroll;
     overflow-y: hidden;
     display: flex;
-    align-items: center;
     transition: all ease 200ms;
     scrollbar-width: none;
 }
@@ -106,7 +105,7 @@ h2{
     width: 100%;
     color: #fff;
     font-weight: bold;
-    font-size: .9rem;
+    font-size: .8rem;
     margin-top: .5rem;
     text-shadow: 0 0 9px #8000ff;
     text-align: center;
@@ -136,9 +135,9 @@ p{
     text-align: center;
     font-size: 1.2rem;
     margin-block: .75rem;
-    &:nth-child(3n + 1){
+    /* &:nth-child(3n + 1){
         font-weight: bold;
-    }
+    } */
     &:last-child{
         font-weight: normal;
     }
