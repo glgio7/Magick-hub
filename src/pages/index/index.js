@@ -6,7 +6,7 @@ import { useState } from 'react';
 function Home() {
   const [loaded, setLoaded] = useState(false);
 
-  setTimeout(() => { setLoaded(true) }, 2000)
+  setTimeout(() => { setLoaded(true) }, 1500)
 
   return (
     <>

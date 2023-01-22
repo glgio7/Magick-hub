@@ -10,9 +10,9 @@ background: rgb(255,0,0);
 background: radial-gradient(circle, rgba(96,0,255,.25) 0%, rgba(0,0,0,.25) 75%);
 
 .loading{
-    height: 80vh;
+    height: 100vh;
     position: fixed;
-    top: 20%;
+    top: 0;
     z-index: 9;
     background-color: #000;
     display: flex;
@@ -154,13 +154,9 @@ h2{
     margin-left: 0;
 }
 
-.loading{
-    top: 0;
-    height: 100vh;
-
-    img{
+.loading img{
     width: 280px;
-}}
+}
 
 section{
     padding: 0 1rem;

@@ -34,6 +34,7 @@ height: 100vh;
 
 .content-box{
     background-color: #000;
+    overflow-y: auto;
     position: fixed;
     top: 00%;
     height: 100%;
@@ -111,7 +112,6 @@ span{
     }
     
     .content-box{
-        overflow-y: auto;
         top: 0;
         height: 100%;
         left: 25vw;
@@ -134,18 +134,21 @@ export function Sidebar({ displayed, toggleMenu }) {
 
         
     const about = [
+        'Disclaimer: se você não está disposto a ver o mundo de uma forma diferente, a se abrir a novos conhecimentos ou a praticar a tolerância de idéias, sugiro que não continue.',
         'Nessa sessão você entenderá o propósito desse site e, também encontrará as fontes dos artigos aqui escritos.',
-        'Primeiramente gostaria de agradecer sua visita, e dizer que estou realmente feliz que tenha se interessado pelo assunto abordado aqui no MagickHub.',
+        'Primeiramente, gostaria de agradecer a sua visita, e dizer que estou realmente feliz que tenha se interessado pelo assunto abordado aqui no MagickHub.',
         'No momento desenvolvo-o sozinho, toda a parte de design, funcionalidades, páginas e banco de dados.',
         'Caso você tenha alguma sugestão, correção ou apenas queira entrar em contato por algum outro motivo, mande me um e-mail no endereço: giovanelucas00@outlook.com.',
-        'Aproximadamente a 6 anos atrás, o desenvolvedor desse site passou por experiências de vida que o levou a níveis extremos de estresse. Apesar de negativas, essas experiências aconteceram no momento em que a adolescência dele terminava, e o seu córtex pré-frontal começava a desenvolver uma maturidade minimamente suficiente para uma vida equilibrada.',
-        'A partir daí, ele começou a questionar a motivação de seus atos e das pessoas que convivia. Depois de um bom tempo, percebeu que essas respostas talvez não sejam tão exatas, mas que podem ser exploradas a partir de alguma estrutura lógica.',
-        'Ele sempre teve facilidade em reconhecer padrões, e em determinado momento, começou a sincretizar arquétipos psicológicos e figuras mitológicas, pois era nítido que algumas atitudes embora não tivessem suas causas totalmente rastreáveis, aconteciam pois o indivíduo em questão agia como uma figura arquetípica.',
-        'Me chamo Giovane Lucas, e sou o desenvolvedor citado na história. Meu propósito aqui é apresentar as características de diversas figuras mitológicas, para que você saiba qual comportamento deve ter conforme a situação que a vida lhe dá, e ter mais controle sobre seus atos. Lembre-se, a sua liberdade termina quando a do próximo começa.',
-        'Não seja intolerante filosóficamente ou de qualquer outra maneira, o conhecimento ilumina!',
+        'Meu propósito aqui é apresentar as características de diversas figuras mitológicas e um pouco de suas respectivas histórias.',
+        'Para explicar um pouco mais sobre a idéia dessa aplicação irei conceituá-los um pouco sobre nossos comportamentos arquetípicos.' ,
+        'Estudos das áreas de psicologia e neurociência relatam que aproximadamente até os 5 anos de idade nós, seres humanos, não temos noção de individualidade, nos enxergamos como parte de um todo. Logo após o termino dessa fase, comecei a perceber padrões dos mais diversos tipos e alguns lapsos de abstrações comportamentais começaram a se fazer presentes em minha realidade, como qualia e consciência, questionamentos sobre a motivação de meus atos e das pessoas que convivia. Durante a adolescência isso diminuiu, porém, após essa fase, passei anos estudando de maneira psiconauta, e percebi que respostas para esses tipos de questões (que acredito que todo mundo já se fez em algum momento da vida) talvez não sejam tão exatas quanto imaginei, mas que podem ser exploradas a partir de alguma estrutura lógica.',
+        'Compreender o sincretismo que existe na história da humanidade pode nos ajudar a entender nossos comportamentos. Carl Jung conseguiu reduzir as figuras mitológicas (não de forma pejorativa) a alguns modelos arquetípicos, e você pode mesmo pode perceber como alguns deuses de diferentes mitologias se comportam de forma bem parecida. Ainda falando de comportamento, você já percebeu como alguns atores/atrizes são extremamente realistas em seus papéis de atuação? As vezes você até percebe qual figura arquetípica ele está assumindo, e com o decorrer da história entende as causas de seu comportamento. O mesmo acontece em nossas vidas, embora seja difícil admitir.',
+        'De acordo com o arquétipo de cada personagem, uma história individual se desenvolve. Então por quê não trazer o poder os arquétipos e da atuação para sua vida e mudar a sua história? Não se trata de fantasia, mas sim de ter satisfação na história em que se vive. Trazer um pouco de história e ajudá-lo nesse caminho é o propósito do MagickHub.',
+        'Vale lembrar que nossa psique é muito mais complexa do que imaginamos, e seria frívolo demais assumir que somos um arquétipo ou outro, isso ou aquilo. No geral, possuímos um pouco de cada figura arquetípica.',
+        'Não seja intolerante filosóficamente ou de qualquer outra maneira, pois estamos sempre aprendendo.',
         'Fontes',
         'Arquétipos de Jung - Autor: José Roberto Marques',
-        'Mitologia Egípcia - TodaMatéria e QueroBolsa',
+        'Mitologia Egípcia - TodaMatéria e Museu Egípcio e Rosacruz',
         'Descrição dos números na cabala - WeMystic'
     ]
 
