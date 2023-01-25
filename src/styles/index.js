@@ -50,6 +50,32 @@ section{
     flex-flow: row wrap;
     justify-content: space-between;
     margin-block: 3rem;
+    position: relative;
+    z-index: 5;
+    border-radius: 10px;
+}
+
+.coming-soon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.75);
+
+    p{
+        color: #fff;
+        font-family: "Lobster", sans-serif;
+        font-size: 5rem;
+    }
+
 }
 
 h2{

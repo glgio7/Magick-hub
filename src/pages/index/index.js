@@ -38,6 +38,7 @@ function Home() {
               </ul>
             </div>
             <div className='wrapper'>
+              <div className='coming-soon'><p>Em Breve</p></div>
               <h3>
                 <span>{greek[1].name}</span>
                 <img src={greek[1].image_path} alt='' />
@@ -57,6 +58,7 @@ function Home() {
               </ul>
             </div>
             <div className='wrapper'>
+            <div className='coming-soon'><p>Em Breve</p></div>
               <h3>
                 <span>{judaism[1].name}</span>
                 <img src={judaism[1].image_path} alt='' />
@@ -76,6 +78,7 @@ function Home() {
               </ul>
             </div>
             <div className='wrapper'>
+            <div className='coming-soon'><p>Em Breve</p></div>
               <h3>
                 <span>{celtic[1].name}</span>
                 <img src={celtic[1].image_path} alt='' />
@@ -95,6 +98,7 @@ function Home() {
               </ul>
             </div>
             <div className='wrapper'>
+            <div className='coming-soon'><p>Em Breve</p></div>
               <h3>
                 <span>{hindu[1].name}</span>
                 <img src={hindu[1].image_path} alt='' />
@@ -114,6 +118,7 @@ function Home() {
               </ul>
             </div>
             <div className='wrapper'>
+            <div className='coming-soon'><p>Em Breve</p></div>
               <h3>
                 <span>{nordic[1].name}</span>
                 <img src={nordic[1].image_path} alt='' />
@@ -133,6 +138,7 @@ function Home() {
               </ul>
             </div>
             <div className='wrapper'>
+            <div className='coming-soon'><p>Em Breve</p></div>
               <h3>
                 <span>{afro[1].name}</span>
                 <img src={afro[1].image_path} alt='' />
