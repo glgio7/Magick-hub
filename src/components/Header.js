@@ -39,7 +39,7 @@ background: linear-gradient(180deg, rgba(100,0,255, .2) 0%, rgba(0,0,0, 1) 75%);
 
 @media screen and (max-width: 768px){
 .menu{
-    left: .5rem;
+    display: none;
 }    
 h1{
     padding: 1rem;
