@@ -157,7 +157,7 @@ export const egypt = [
             'Na mitologia desenvolvida na cidade de Heliópolis, Néftis era esposa do deus Seth, que era estéril, e para poder conceber um filho se disfarçou de Isis, que era casada com Osíris, e passou uma noite com o marido de sua irmã. Desse ato nasceu Anúbis, deus da mumificação.',
             'As principais representações iconográficas da deusa aparecem em tumbas ou sarcófagos. Podemos usar para melhor entende-la os “Textos das Pirâmides” e os “Textos dos Sarcófagos”, que são um conjunto de fórmulas mágicas, encontrados nos caixões e paredes das tumbas. Seu nome significa “Senhora da Casa” ou “Senhora do Templo”, embora ainda não se tenha encontrado nenhum centro de culto dedicado a deusa.',
             'A literatura egípcia esclarece pouco sobre o papel de Néftis, pois antes da mitologia da cidade de Heliópolis, não se conhece outro texto com citação sobre a deusa. O que sabemos é que ela está ligada com a mitologia Osiriana. Muitas vezes, Néftis aparece associada com Isis e no contexto funerário elas protegem o morto. Isis vai a frente do morto protegendo seus pés, Néftis vai atrás protegendo a cabeça. Segunda a mitologia, Néftis chorou com sua irmã pelo falecimento do deus Osíris. Dentro das tumbas a deusa aparece como protetora dos mortos e dos vasos canópicos. Muitos amuletos foram produzidos para a deusa principalmente durante as 22° e 26° dinastias egípcias, onde a produção desses objetos é muito comum. Infelizmente podemos saber apenas alguns aspectos e definições de Néfits, porém, ela foi largamente representada no Egito, desde o Reino Antigo chegando até a Baixa Época. Por mais que o papel da deusa não fique completamente definido, podemos concluir que ela foi muito importante para os egípcios, pois ela é a mãe do deus da mumificação, Anúbis, além de estar relacionada à crença da vida além-túmulo, pois auxiliava o morto em sua travessia para os campos de Osíris.',
-    ]
+        ]
     },
     {
         name: 'Hathor',
@@ -202,64 +202,114 @@ export const greek = [
     {
         name: 'Zeus',
         image_path: '/assets/deus-zeus.jpg',
-        overview: ''
-    },
-    {
-        name: 'Hera',
-        image_path: '/assets/deusa-hera.jpg',
-        overview: ''
-    },
-    {
-        name: 'Ares',
-        image_path: '/assets/deus-ares.jpg',
-        overview: ''
+        overview: [
+            'Zeus é o rei dos deuses do Olimpo e é conhecido como o senhor do céu e do trovão.',
+            'Ele é considerado um dos deuses mais poderosos da mitologia grega e é o deus da lei, da ordem e da justiça.',
+            'Apesar de ser casado com Hera, Zeus é conhecido por suas muitas aventuras amorosas com outras deusas e mortais.'
+        ]
     },
     {
         name: 'Poseidon',
         image_path: '/assets/deus-poseidon.jpg',
-        overview: ''
+        overview: [
+            'Poseidon é o deus do mar e dos terremotos e irmão de Zeus e Hades.',
+            'Ele é frequentemente retratado segurando um tridente, que lhe dá controle sobre as águas, e é conhecido por sua ira e seu temperamento.',
+            'Além de controlar o mar, ele também é o protetor dos cavalos e é frequentemente retratado montando um deles.'
+        ]
     },
     {
         name: 'Atena',
         image_path: '/assets/deusa-atena.jpg',
-        overview: ''
+        overview: [
+            'Atena é a deusa da sabedoria, da estratégia e da guerra e é filha de Zeus.',
+            'Ela é frequentemente retratada segurando uma lança e um escudo, e é conhecida por sua astúcia e inteligência.',
+            'Além de ser uma deusa guerreira, Atena é também a padroeira da cidade de Atenas e é associada à justiça e à civilização.'
+        ]
     },
     {
-        name: 'Deméter',
-        image_path: '/assets/deusa-demeter.jpg',
-        overview: ''
+        name: "Ártemis",
+        image_path: "/assets/deusa-artemis.jpg",
+        overview: [
+            "Artemis é a deusa da caça, da natureza selvagem e da lua.",
+            "Ela é conhecida por sua habilidade em caçar animais selvagens e proteger a natureza.",
+            "Além de ser a deusa da caça, Artemis também é a protetora das mulheres e das crianças."
+        ]
     },
     {
-        name: 'Apolo',
-        image_path: '/assets/deus-apolo.jpg',
-        overview: ''
+        name: "Apolo",
+        image_path: "/assets/deus-apolo.jpg",
+        overview: [
+            "Apolo é o deus da música, da poesia e do sol.",
+            "Ele é conhecido por sua habilidade em inspirar os artistas e poetas.",
+            "Além de ser o deus da música, Apolo também é o protetor das artes e da medicina."
+        ]
     },
     {
-        name: 'Ártemis',
-        image_path: '/assets/deusa-artemis.jpg',
-        overview: ''
+        name: "Demeter",
+        overview: [
+          "Deméter é a deusa da agricultura, da colheita e da fertilidade.",
+          "Ela é conhecida por sua habilidade em garantir a fertilidade da terra e proteger as plantações.",
+          "Além de ser a deusa da agricultura, Deméter é a mãe de Perséfone, a rainha do submundo."
+        ],
+        image_path: "/assets/deusa-demeter.jpg"
+      },
+      {
+        name: "Ares",
+        overview: [
+          "Ares é o deus da guerra, da violência e do conflito.",
+          "Ele é conhecido por sua habilidade em liderar os exércitos e causar destruição.",
+          "Além de ser o deus da guerra, Ares também é o protetor dos guerreiros e dos soldados."
+        ],
+        image_path: "/assets/deus-ares.jpg"
+      },
+      {
+        name: "Hera",
+        overview: [
+          "Hera é a deusa do casamento, da família e do lar.",
+          "Ela é conhecida por sua habilidade em proteger o casamento e a união familiar.",
+          "Além de ser a deusa do casamento, Hera também é a rainha dos deuses e a protetora das mulheres casadas."
+        ],
+        image_path: "/assets/deusa-hera.jpg"
+      },
+      {
+        name: "Afrodite",
+        overview: [
+          "Afrodite é a deusa do amor, beleza e sexualidade na mitologia grega.",
+          "Ela é frequentemente representada como uma jovem e bela mulher, adornada com jóias e vestida com roupas elegantes.",
+          "Afrodite é conhecida por seu charme e sedução, e é capaz de influenciar os corações e mentes das pessoas."
+        ],
+        image_path: "/assets/deusa-afrodite.jpg"
+      },
+      {
+        name: "Hefesto",
+        overview: [
+          "Hefesto é o deus do fogo, da metalurgia e dos ferreiros.",
+          "Ele é frequentemente retratado como um homem idoso e feio, com um pé coxo e um rosto deformado.",
+          "No entanto, ele é extremamente habilidoso em sua arte e é capaz de criar as mais belas obras de metalurgia."
+        ],
+        image_path: "/assets/deus-hefesto.jpg"
+      },
+    {
+        name: "Dionísio",
+        overview: [
+          "Dionísio é o deus do vinho, da fertilidade e da celebração.",
+          "Ele é conhecido por sua habilidade em trazer alegria e êxtase aos mortais.",
+          "Dionísio também é o deus da fertilidade, e é responsável por garantir o crescimento das plantas e a prosperidade das colheitas."
+        ],
+        image_path: "/assets/deus-dionisio.jpg"
     },
     {
-        name: 'Hefesto',
-        image_path: '/assets/deus-hefesto.jpg',
-        overview: ''
-    },
-    {
-        name: 'Afrodite',
-        image_path: '/assets/deusa-afrodite.jpg',
-        overview: ''
-    },
-    {
-        name: 'Hermes',
-        image_path: '/assets/deus-hermes.jpg',
-        overview: ''
-    },
-    {
-        name: 'Dionísio',
-        image_path: '/assets/deus-dionisio.jpg',
-        overview: ''
-    },
+        name: "Hermes",
+        image_path: "/assets/deus-hermes.jpg",
+        overview: [
+          "Hermes é o deus da comunicação, do comércio e dos viajantes.",
+          "Ele é conhecido por sua habilidade em proteger os viajantes e facilitar a comunicação entre os mortais e os deuses.",
+          "Hermes também é o mensageiro dos deuses, e é responsável por levar as mensagens divinas aos mortais."
+        ],
+      },
 ]
+
+// Afrodite, Hefesto, Dioniso, Hermes, Hera, Ares, Demeter, Apolo, Atena, Ártemis, Poseidon, Zeus
 
 export const judaism = [
     {
@@ -681,7 +731,7 @@ export const jung = [
             'Por fim, outro ponto que merece atenção por parte daqueles que se identificam com esse arquétipo é o esquecimento de si mesmo. Isso significa que boa parte dos indivíduos que dedicam muito esforço e muito tempo das suas vidas aos outros podem acabar deixando as próprias necessidades em segundo plano.',
             'Isso certamente não será positivo. Alguém que vive em função dos outros e negligencia o autocuidado e os próprios objetivos pode acabar adoecendo, física e/ou mentalmente. É bacana ser solidário, mas certamente poderemos ajudar mais pessoas quando nós mesmos estivermos bem também!',
             'Diante disso, podemos concluir que o prestativo é um indivíduo com espírito maternal e compassivo, sempre pronto para auxiliar os demais. O mundo realmente precisa de pessoas assim, sobretudo diante de tantos indivíduos sofrendo pelos mais diversos motivos. Essas pessoas têm um propósito nobre. Só não podem se esquecer de cuidar de si mesmas!',
-    ],
+        ],
     },
     {
         name: 'O Inocente',
@@ -826,6 +876,6 @@ export const jung = [
             'Por fim, não podemos deixar de citar que o aventureiro tem um grande entusiasmo. Ele está sempre pensando em novos caminhos e em diferentes formas de fazer as coisas, fugindo de tudo aquilo que é comum e usual. Ele se empolga com a ideia de liberdade, sentindo-se extremamente feliz e motivado quando vê diferentes caminhos à sua escolha.',
             'Esse tipo de pessoa prefere a certeza do erro à incerteza de nunca ter tentado. Mesmo que um resultado tenha sido negativo, o aventureiro sente-se feliz por ter experimentado e tirado a dúvida. Em geral, ele lida bem com as consequências dos seus atos.',
             'O aventureiro, portanto, é o indivíduo que se entedia com facilidade e que gosta de experimentar tudo aquilo que é novo. Individualista, explorador e sedento por liberdade, ele não mede esforços para encontrar a sua felicidade, mesmo que ela esteja em lugares pouco procurados. No entanto, ele precisa ser capaz de lidar com os resultados das suas escolhas, que nem sempre serão os que ele esperava encontrar.',
-    ],
+        ],
     },
 ]

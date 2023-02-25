@@ -38,7 +38,6 @@ function Home() {
               </ul>
             </div>
             <div className='wrapper'>
-              <div className='coming-soon'><p>Em Breve</p></div>
               <h3>
                 <span>{greek[1].name}</span>
                 <img src={greek[1].image_path} alt='' />
