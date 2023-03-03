@@ -99,7 +99,7 @@ export const egypt = [
     },
     {
         name: 'Thoth',
-        image_path: '/assets/deus-thot.jpg',
+        image_path: '/assets/deus-thoth.jpg',
         overview: [
             'Deus Toth: a deificação da sabedoria e da escrita',
             'Representado com as formas da ave íbis ou de um babuíno, deus Toth era relacionado pelos antigos egípcios à escrita e à sabedoria. Para eles, Toth teria sido o responsável pela criação da escrita hieroglífica, da matemática, arquitetura, medicina, e todas as demais ciências das quais os egípcios faziam uso. Segundo a crença dessa civilização, essa divindade compreendia todos os mistérios da mente humana.',
