@@ -1,5 +1,5 @@
-import { Container } from '../../styles';
-import { afro, celtic, egypt, greek, hindu, judaism, jung, nordic } from '../../api/mythologies';
+import { Container } from './styles';
+import { afro, celtic, egypt, greek, hindu, jung, nordic } from '../../api/mythologies';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -12,7 +12,9 @@ function Home() {
     <>
       <Container>
         {!loaded &&
-          <div className='loading'><img src='/assets/loading.gif' alt='' /></div>
+            <video autoPlay muted loop>
+              <source src="/assets/unsplash.mp4" type="video/mp4" />
+            </video>
         }
         <>
           <h3>Se a psique não é obrigada a viver apenas no tempo e no espaço, então não está sujeita a essas leis, o que indica uma continuação prática da vida... - Carl Jung</h3>
@@ -57,27 +59,6 @@ function Home() {
               </ul>
             </div>
             <div className='wrapper'>
-            <div className='coming-soon'><p>Em Breve</p></div>
-              <h3>
-                <span>{judaism[1].name}</span>
-                <img src={judaism[1].image_path} alt='' />
-              </h3>
-              <ul>
-                <h2>Mitologia Judaica</h2>
-                {judaism.map((item, index) => index > 1 && index < 8 && (
-                  <li key={`id_${index}`}>
-                    <img src={item.image_path} alt={item.name} className='list-image' />
-                    <span>{item.name}</span>
-                  </li>
-                ))
-                }
-                <Link to={'/categories/judaism'} className='see-more'>
-                  <p>Ver todos</p>
-                </Link>
-              </ul>
-            </div>
-            <div className='wrapper'>
-            <div className='coming-soon'><p>Em Breve</p></div>
               <h3>
                 <span>{celtic[1].name}</span>
                 <img src={celtic[1].image_path} alt='' />
@@ -97,7 +78,7 @@ function Home() {
               </ul>
             </div>
             <div className='wrapper'>
-            <div className='coming-soon'><p>Em Breve</p></div>
+              <div className='coming-soon'><p>Em Breve</p></div>
               <h3>
                 <span>{hindu[1].name}</span>
                 <img src={hindu[1].image_path} alt='' />
@@ -117,7 +98,7 @@ function Home() {
               </ul>
             </div>
             <div className='wrapper'>
-            <div className='coming-soon'><p>Em Breve</p></div>
+              <div className='coming-soon'><p>Em Breve</p></div>
               <h3>
                 <span>{nordic[1].name}</span>
                 <img src={nordic[1].image_path} alt='' />
@@ -137,7 +118,7 @@ function Home() {
               </ul>
             </div>
             <div className='wrapper'>
-            <div className='coming-soon'><p>Em Breve</p></div>
+              <div className='coming-soon'><p>Em Breve</p></div>
               <h3>
                 <span>{afro[1].name}</span>
                 <img src={afro[1].image_path} alt='' />

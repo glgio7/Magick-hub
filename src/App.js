@@ -5,11 +5,11 @@ import Home from './pages/index/index'
 import Categories from './pages/categories'
 import Numerology from './pages/numerology'
 import Footer from './components/Footer';
-import { Sidebar } from './components/Sidebar';
+import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 
 
-function App() {
+const App = () => {
   const [menu, setMenu] = useState(false)
   const toggleMenu = () => setMenu(!menu);
 

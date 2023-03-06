@@ -10,7 +10,7 @@ export const egypt = [
     },
     {
         name: 'Rá',
-        image_path: '/assets/deus-ra.jpg',
+        image_path: '/assets/egypt/deus-ra.jpg',
         overview: ['Rá (do português Ré) é o Deus Egípcio do Sol sendo a principal divindade da religião egípcia. O culto ao Deus Sol foi muito próspero no Egito, sendo a principal forma de adoração e um culto oficial por cerca de vinte séculos.',
             'As divindades geralmente estão ligados a fenômenos da natureza, e, em função da luz no cultivo dos alimentos, os antigos egípcios atribuíram a Rá grande importância.',
             'Além de ser a divindade central do panteão egípcio, Rá é também um deus primordial e criador dos deuses e da ordem divina, junto de sua esposa, a Deusa Ret (cujo nome é a versão feminina do nome Ré e pode ser a mesma divindade) originaram a genealogia: Shu e Tefnut, Geb e Nut, Osíris, Seth, Ísis e Néftis.',
@@ -28,7 +28,7 @@ export const egypt = [
     },
     {
         name: 'Anúbis',
-        image_path: '/assets/deus-anubis.jpg',
+        image_path: '/assets/egypt/deus-anubis.jpg',
         overview: [
             'Anúbis, também chamado de Anupo, é o deus egípcio protetor, guardião e guia dos mortos. Na mitologia egípcia, ele auxilia os mortos no encontro com Osíris.',
             'Para isso, é associado ao olho de Hórus e também apontado como o deus dos ritos funerários, como o processo de mumificação dos faraós.',
@@ -49,7 +49,7 @@ export const egypt = [
     },
     {
         name: 'Hórus',
-        image_path: '/assets/deus-horus.jpg',
+        image_path: '/assets/egypt/deus-horus.jpg',
         overview: [
             'O deus Hórus é o deus solar dos céus e um dos mais importantes da mitologia egípcia. A imagem de Hórus está associada ao firmamento, e portanto, ele representa a luz, o poder e a realeza.',
             'A partir de 2200 a.C., Hórus é elevado a símbolo do Egito unificado quando vence seu tio numa das batalhas, e o faraó, o rei egípcio, passa a ser tratado como sua encarnação.',
@@ -73,7 +73,7 @@ export const egypt = [
     },
     {
         name: 'Osíris',
-        image_path: '/assets/deus-osiris.jpg',
+        image_path: '/assets/egypt/deus-osiris.jpg',
         overview: [
             'Osíris é o deus do julgamento, do além e da vegetação, sendo considerado um dos mais importantes e populares da mitologia egípcia.',
             'Os cultos a Osíris eram muito comuns e são registrados a partir de 2400 a.C. Por esse motivo, diversos templos foram erguidos em sua homenagem.',
@@ -99,7 +99,7 @@ export const egypt = [
     },
     {
         name: 'Thoth',
-        image_path: '/assets/deus-thoth.jpg',
+        image_path: '/assets/egypt/deus-thoth.jpg',
         overview: [
             'Deus Toth: a deificação da sabedoria e da escrita',
             'Representado com as formas da ave íbis ou de um babuíno, deus Toth era relacionado pelos antigos egípcios à escrita e à sabedoria. Para eles, Toth teria sido o responsável pela criação da escrita hieroglífica, da matemática, arquitetura, medicina, e todas as demais ciências das quais os egípcios faziam uso. Segundo a crença dessa civilização, essa divindade compreendia todos os mistérios da mente humana.',
@@ -112,7 +112,7 @@ export const egypt = [
     },
     {
         name: 'Bastet',
-        image_path: '/assets/deusa-bastet.jpg',
+        image_path: '/assets/egypt/deusa-bastet.jpg',
         overview: [
             'Para os antigos egípcios a religião era o modo de explicar a realidade, e os deuses agiam para favorecer a vida no Egito. Todos os dias ao amanhecer ocorria nos templos uma cerimônia dedicada as divindades que deveriam manter a Ordem criada no momento da concepção do mundo. Entre os diversos deuses do panteão egípcio está Bastet representada como uma gata ou com o corpo humano e a cabeça do animal. Era filha de Rá, e aparece entre as divindades egípcias desde o Reino Antigo.',
             'No início do período dinástico, Bastet tinha uma representação diferente da que mencionamos acima, pois era associada à leoa e, por isso, representada como tal. Era evocada para proteger o rei na batalha. Foi somente a partir do primeiro milênio antes de Cristo, período também em que o gato já havia sido domesticado pelos egípcios, que a sua representação como este animal felino tornou-se mais comum, passando também a ter atributos mais pacíficos.',
@@ -125,7 +125,7 @@ export const egypt = [
     },
     {
         name: 'Seth',
-        image_path: '/assets/deus-seth.jpg',
+        image_path: '/assets/egypt/deus-seth.jpg',
         overview: [
             'Filho de Geb (a terra) e de Nut (o céu), irmão de Ísis, Osíris e Néftis, esta divindade passou a estar associada ao caos e à maldade, a partir da Época Baixa, com a popularização do culto de Osíris. A figura de Seth foi, a partir deste período, alvo de perseguições, enquanto assassino e desmembrador de Osíris, que culminaram na destruição sistemática de muitas das representações deste deus. Seth foi venerado desde tempos pré-históricos, por todo o Egito, facto comprovado por se encontrar representado em muitos objetos deste período.',
             'Seth queria assumir o trono no lugar de Osíris e por isso, o matou. Osíris por sua vez renasceu, se tornando o rei do submundo e responsável por pesar o coração de cada pessoa que falecia, para ver seus pecados.',
@@ -138,7 +138,7 @@ export const egypt = [
     },
     {
         name: 'Ísis',
-        image_path: '/assets/deusa-isis.jpg',
+        image_path: '/assets/egypt/deusa-isis.jpg',
         overview: [
             'A Grande Senhora da Magia',
             'Conhecida como deusa da magia, exemplo de mãe e esposa ideal, protetora do lar e das crianças, a deusa Ísis foi adorada em diversos períodos da história egípcia antiga. Com templos em locais como Quft, Behbeitel-Hagar e Ilha de Philae, sendo o último o mais conhecido, Ísis é uma das deusas mais populares da cultura egípcia. Referências a ela podem ser encontradas em diversos mitos, sendo os mais conhecidos o mito da “Criação do Mundo”, da cidade de Heliópolis, e o mito de “Isis e Rá”.',
@@ -151,7 +151,7 @@ export const egypt = [
     },
     {
         name: 'Néftis',
-        image_path: '/assets/deusa-neftis.jpg',
+        image_path: '/assets/egypt/deusa-neftis.jpg',
         overview: [
             'Embora pouco lembrada, Néftis é uma deusa da enéade da cidade de Heliópolis, e uma das principais divindades presentes no panteão dos egípcios antigos, tendo sua aparência idêntica à de sua irmã Isis. Porém, muitos de seus aspectos são misteriosos até os dias de hoje.',
             'Na mitologia desenvolvida na cidade de Heliópolis, Néftis era esposa do deus Seth, que era estéril, e para poder conceber um filho se disfarçou de Isis, que era casada com Osíris, e passou uma noite com o marido de sua irmã. Desse ato nasceu Anúbis, deus da mumificação.',
@@ -161,7 +161,7 @@ export const egypt = [
     },
     {
         name: 'Hathor',
-        image_path: '/assets/deusa-hathor.jpg',
+        image_path: '/assets/egypt/deusa-hathor.jpg',
         overview: [
             'Háthor em egípcio antigo ḥwt-ḥr, que significa recinto ou casa de Hórus, era uma das deusas mais cultuadas pelos antigos egípcios. Dentre suas várias representações ela aparece como sendo uma mulher com um disco solar acima de sua cabeça entre seus chifres bovinos ou com corpo de mulher e orelhas de vaca, quase sempre segurando um was, cetro com cabeça de um cervo, ou ainda o wadj, um cetro com a planta de papiro, já que para os egípcios a morada dessa deusa era nas plantações desse vegetal que localizavam-se na parte Delta do rio Nilo, onde havia também muitos rebanhos de bovinos.',
             'Entre as suas múltiplas denominações as principais aparecem como: “A Grande Vaca Selvagem”, “A Distante” ou “A Senhora do Ocidente” pois era a senhora do deserto e das terras estrangeiras, “A Senhora Turquesa” e “A Dourada” uma vez que era também a deusa dos metais e dos minérios, e “A Senhora do Submundo”, sendo ela protetora dos mortos. Seu culto no Egito faraônico remonta ao Reino Antigo (2686-2181 a.C) considerando os registros de cabeça bovina esculpidos na paleta de Narmer (3100 a.C) e os achados arqueológicos junto a fonte textual no Templo do Rei Khafra (2520-2494 a.C). Contudo, houve claramente uma veneração de deusas-vacas no Egito pré-dinástico (5500- 3100 a.C) como a deusa Bat que foi associada a Háthor posteriormente.',
@@ -173,23 +173,43 @@ export const egypt = [
     },
     {
         name: 'Sekhmeth',
-        image_path: '/assets/deusa-sekhmeth.jpg',
-        overview: '',
+        image_path: '/assets/egypt/deusa-sekhmeth.jpg',
+        overview: [
+            "Sekhmet é uma das deusas mais antigas e importantes da mitologia egípcia, representando a força e a ferocidade feminina. Ela é frequentemente retratada com a cabeça de leão, simbolizando seu poder e capacidade de proteger seus seguidores. Sekhmet também é associada à cura e à proteção contra doenças, embora também possa trazer a morte e a destruição quando provocada.",
+            "De acordo com a lenda, Sekhmet foi criada pela deusa Ra para punir os mortais que se rebelavam contra ele. No entanto, ela logo se tornou tão violenta que ameaçou destruir toda a humanidade. Para impedir isso, Ra a embriagou com vinho tingido de vermelho para que ela pensasse que estava bebendo sangue. Isso a acalmou e a transformou em uma deusa benéfica.",
+            "Sekhmet era adorada em todo o Egito Antigo, mas seu principal centro de culto era em Memphis. Lá, ela tinha um templo dedicado a ela e seu consorte, Ptah. Os sacerdotes de Sekhmet eram considerados especialmente poderosos, pois acreditava-se que eles tinham acesso direto à deusa e podiam curar doenças e prever o futuro.",
+            "Além de sua importância religiosa, Sekhmet também teve um papel na política do Egito Antigo. Ela foi muitas vezes invocada pelos faraós como uma protetora do reino, e seu símbolo era frequentemente usado em estandartes de guerra. Sekhmet também foi associada ao faraó Amenhotep III, que construiu um grande templo em seu nome.",
+            "Até hoje, a imagem de Sekhmet continua a inspirar artistas e praticantes de religiões pagãs modernas. Ela é vista como uma deusa poderosa e corajosa, capaz de proteger seus seguidores e curar doenças. Sua história também é um lembrete da importância de equilibrar a ferocidade com a compaixão, e de como a transformação pode ocorrer mesmo em seres divinos."
+        ],
     },
     {
         name: 'Mut',
-        image_path: '/assets/deusa-mut.jpg',
-        overview: '',
+        image_path: '/assets/egypt/deusa-mut.jpg',
+        overview: ["Mut é uma deusa da mitologia egípcia que representa a maternidade, a fertilidade e a realeza. Ela é frequentemente retratada com uma coroa de dois chifres e uma serpente em volta, simbolizando seu papel como mãe e protetora. Mut também era associada à lua e ao céu, e seu nome significa \"mãe\" em egípcio antigo.",
+            "De acordo com a lenda, Mut era a esposa do deus Amon e a mãe do deus Khonsu. Ela era adorada em todo o Egito Antigo, mas seu principal centro de culto era em Tebas, onde ela tinha um templo grandioso chamado de Ipet Sut. O templo era famoso por suas procissões anuais, que incluíam a parada da barca sagrada de Mut.",
+            "Mut também era vista como uma protetora dos faraós, e seu nome era frequentemente incluído nos títulos dos faraós como um sinal de sua legitimidade. Ela era vista como a mãe divina do faraó, que era considerado seu filho adotivo. Como tal, ela era muitas vezes associada à fertilidade e à renovação.",
+            "Além de seu papel religioso, Mut também teve um papel político na história egípcia. Ela foi uma das poucas deusas a serem representadas no trono, e seu símbolo era frequentemente usado em estandartes de guerra. Mut também foi associada à rainha Hatshepsut, que se apresentava como a filha divina de Amon e Mut.",
+            "Até hoje, Mut é vista como uma deusa poderosa e benéfica, capaz de proteger e nutrir seus filhos. Sua história é um lembrete da importância da maternidade e da fertilidade na cultura egípcia antiga, e de como esses temas ainda são relevantes em nossa compreensão do divino feminino."]
+        ,
     },
     {
         name: 'Wadjet',
-        image_path: '/assets/deusa-wadjet.jpg',
-        overview: '',
+        image_path: '/assets/egypt/deusa-wadjet.jpg',
+        overview: ["Wadjet é uma deusa da mitologia egípcia associada à proteção, à realeza e à cura. Ela é frequentemente retratada como uma cobra ou como uma mulher com uma cobra na cabeça. Wadjet também é conhecida como a protetora do faraó e era uma das divindades mais antigas do Egito.",
+            "Wadjet era adorada em todo o Egito Antigo, mas seu principal centro de culto era na cidade de Buto, no Delta do Nilo. Lá, ela era adorada como a deusa local e como uma protetora dos reis e rainhas do Egito. Wadjet era frequentemente retratada nas coroas dos faraós como um símbolo de sua proteção divina.",
+            "Além de seu papel como protetora, Wadjet era vista como uma deusa da cura. Ela era frequentemente invocada em rituais de cura e era considerada uma divindade benéfica que poderia curar as doenças. Ela também era associada à fertilidade e à renovação, e seu nome significa \"a verde\" em egípcio antigo, possivelmente referindo-se à renovação da natureza.",
+            "Na mitologia egípcia, Wadjet era frequentemente associada à deusa Nekhbet, que era a protetora do Alto Egito e também era retratada como uma cobra. As duas deusas eram frequentemente retratadas juntas como as \"Duas Senhoras\", simbolizando a unificação do Alto e Baixo Egito sob a realeza. A cobra de Wadjet também era um dos símbolos da coroa do Baixo Egito.",
+            "Até hoje, Wadjet é vista como uma deusa poderosa e protetora, que pode oferecer cura e renovação. Sua história é um lembrete da importância da proteção divina na cultura egípcia antiga e de como essa proteção estava intimamente ligada à realeza e à cura."]
+        ,
     },
     {
         name: 'Maat',
-        image_path: '/assets/deusa-maat.jpg',
-        overview: '',
+        image_path: '/assets/egypt/deusa-maat.jpg',
+        overview: ["Maat é a deusa egípcia da justiça, da verdade e da harmonia. Ela é frequentemente retratada como uma mulher com uma pena de avestruz em sua cabeça, simbolizando a balança da justiça. Maat era uma das divindades mais importantes do panteão egípcio e sua importância se estendeu por toda a história do Egito Antigo.",
+            "Maat era responsável por manter a ordem e a harmonia no universo e, como tal, era considerada uma força poderosa e divina. Ela estava presente em todos os aspectos da vida egípcia, desde a política até a religião. Seu papel era tão importante que muitos faraós se consideravam seus representantes na Terra.",
+            "Além de seu papel como juíza da verdade e da justiça, Maat também era associada à ideia de equilíbrio. Ela era vista como uma deusa que mantinha o equilíbrio entre os opostos, como a luz e a escuridão, o bem e o mal e a vida e a morte. Acreditava-se que, se o equilíbrio fosse perturbado, a ordem natural do universo seria ameaçada.",
+            "Na mitologia egípcia, Maat era frequentemente retratada junto com o deus Thoth, o deus da sabedoria e da escrita. Juntos, eles eram responsáveis por registrar as ações dos seres humanos no julgamento final. Acredita-se que, após a morte, a alma de uma pessoa seria julgada em uma sala do tribunal e teria seu coração pesado em uma balança com a pena de Maat.",
+            "Até hoje, Maat é vista como uma deusa importante na cultura egípcia e em muitas tradições espirituais modernas. Sua mensagem de justiça, verdade e equilíbrio é vista como uma inspiração para aqueles que buscam viver suas vidas em harmonia e com integridade. A história de Maat é um lembrete do poder da justiça e da verdade em nossa sociedade e de como esses valores são fundamentais para uma vida significativa."],
     },
 ]
 
@@ -201,7 +221,7 @@ export const greek = [
     },
     {
         name: 'Zeus',
-        image_path: '/assets/deus-zeus.jpg',
+        image_path: '/assets/greek/deus-zeus.jpg',
         overview: [
             'Zeus é o rei dos deuses do Olimpo e é conhecido como o senhor do céu e do trovão.',
             'Ele é considerado um dos deuses mais poderosos da mitologia grega e é o deus da lei, da ordem e da justiça.',
@@ -210,7 +230,7 @@ export const greek = [
     },
     {
         name: 'Poseidon',
-        image_path: '/assets/deus-poseidon.jpg',
+        image_path: '/assets/greek/deus-poseidon.jpg',
         overview: [
             'Poseidon é o deus do mar e dos terremotos e irmão de Zeus e Hades.',
             'Ele é frequentemente retratado segurando um tridente, que lhe dá controle sobre as águas, e é conhecido por sua ira e seu temperamento.',
@@ -219,7 +239,7 @@ export const greek = [
     },
     {
         name: 'Atena',
-        image_path: '/assets/deusa-atena.jpg',
+        image_path: '/assets/greek/deusa-atena.jpg',
         overview: [
             'Atena é a deusa da sabedoria, da estratégia e da guerra e é filha de Zeus.',
             'Ela é frequentemente retratada segurando uma lança e um escudo, e é conhecida por sua astúcia e inteligência.',
@@ -228,7 +248,7 @@ export const greek = [
     },
     {
         name: "Ártemis",
-        image_path: "/assets/deusa-artemis.jpg",
+        image_path: "/assets/greek/deusa-artemis.jpg",
         overview: [
             "Artemis é a deusa da caça, da natureza selvagem e da lua.",
             "Ela é conhecida por sua habilidade em caçar animais selvagens e proteger a natureza.",
@@ -237,7 +257,7 @@ export const greek = [
     },
     {
         name: "Apolo",
-        image_path: "/assets/deus-apolo.jpg",
+        image_path: "/assets/greek/deus-apolo.jpg",
         overview: [
             "Apolo é o deus da música, da poesia e do sol.",
             "Ele é conhecido por sua habilidade em inspirar os artistas e poetas.",
@@ -247,160 +267,150 @@ export const greek = [
     {
         name: "Demeter",
         overview: [
-          "Deméter é a deusa da agricultura, da colheita e da fertilidade.",
-          "Ela é conhecida por sua habilidade em garantir a fertilidade da terra e proteger as plantações.",
-          "Além de ser a deusa da agricultura, Deméter é a mãe de Perséfone, a rainha do submundo."
+            "Deméter é a deusa da agricultura, da colheita e da fertilidade.",
+            "Ela é conhecida por sua habilidade em garantir a fertilidade da terra e proteger as plantações.",
+            "Além de ser a deusa da agricultura, Deméter é a mãe de Perséfone, a rainha do submundo."
         ],
-        image_path: "/assets/deusa-demeter.jpg"
-      },
-      {
+        image_path: "/assets/greek/deusa-demeter.jpg"
+    },
+    {
         name: "Ares",
         overview: [
-          "Ares é o deus da guerra, da violência e do conflito.",
-          "Ele é conhecido por sua habilidade em liderar os exércitos e causar destruição.",
-          "Além de ser o deus da guerra, Ares também é o protetor dos guerreiros e dos soldados."
+            "Ares é o deus da guerra, da violência e do conflito.",
+            "Ele é conhecido por sua habilidade em liderar os exércitos e causar destruição.",
+            "Além de ser o deus da guerra, Ares também é o protetor dos guerreiros e dos soldados."
         ],
-        image_path: "/assets/deus-ares.jpg"
-      },
-      {
+        image_path: "/assets/greek/deus-ares.jpg"
+    },
+    {
         name: "Hera",
         overview: [
-          "Hera é a deusa do casamento, da família e do lar.",
-          "Ela é conhecida por sua habilidade em proteger o casamento e a união familiar.",
-          "Além de ser a deusa do casamento, Hera também é a rainha dos deuses e a protetora das mulheres casadas."
+            "Hera é a deusa do casamento, da família e do lar.",
+            "Ela é conhecida por sua habilidade em proteger o casamento e a união familiar.",
+            "Além de ser a deusa do casamento, Hera também é a rainha dos deuses e a protetora das mulheres casadas."
         ],
-        image_path: "/assets/deusa-hera.jpg"
-      },
-      {
+        image_path: "/assets/greek/deusa-hera.jpg"
+    },
+    {
         name: "Afrodite",
         overview: [
-          "Afrodite é a deusa do amor, beleza e sexualidade na mitologia grega.",
-          "Ela é frequentemente representada como uma jovem e bela mulher, adornada com jóias e vestida com roupas elegantes.",
-          "Afrodite é conhecida por seu charme e sedução, e é capaz de influenciar os corações e mentes das pessoas."
+            "Afrodite é a deusa do amor, beleza e sexualidade na mitologia grega.",
+            "Ela é frequentemente representada como uma jovem e bela mulher, adornada com jóias e vestida com roupas elegantes.",
+            "Afrodite é conhecida por seu charme e sedução, e é capaz de influenciar os corações e mentes das pessoas."
         ],
-        image_path: "/assets/deusa-afrodite.jpg"
-      },
-      {
+        image_path: "/assets/greek/deusa-afrodite.jpg"
+    },
+    {
         name: "Hefesto",
         overview: [
-          "Hefesto é o deus do fogo, da metalurgia e dos ferreiros.",
-          "Ele é frequentemente retratado como um homem idoso e feio, com um pé coxo e um rosto deformado.",
-          "No entanto, ele é extremamente habilidoso em sua arte e é capaz de criar as mais belas obras de metalurgia."
+            "Hefesto é o deus do fogo, da metalurgia e dos ferreiros.",
+            "Ele é frequentemente retratado como um homem idoso e feio, com um pé coxo e um rosto deformado.",
+            "No entanto, ele é extremamente habilidoso em sua arte e é capaz de criar as mais belas obras de metalurgia."
         ],
-        image_path: "/assets/deus-hefesto.jpg"
-      },
+        image_path: "/assets/greek/deus-hefesto.jpg"
+    },
     {
         name: "Dionísio",
         overview: [
-          "Dionísio é o deus do vinho, da fertilidade e da celebração.",
-          "Ele é conhecido por sua habilidade em trazer alegria e êxtase aos mortais.",
-          "Dionísio também é o deus da fertilidade, e é responsável por garantir o crescimento das plantas e a prosperidade das colheitas."
+            "Dionísio é o deus do vinho, da fertilidade e da celebração.",
+            "Ele é conhecido por sua habilidade em trazer alegria e êxtase aos mortais.",
+            "Dionísio também é o deus da fertilidade, e é responsável por garantir o crescimento das plantas e a prosperidade das colheitas."
         ],
-        image_path: "/assets/deus-dionisio.jpg"
+        image_path: "/assets/greek/deus-dionisio.jpg"
     },
     {
         name: "Hermes",
-        image_path: "/assets/deus-hermes.jpg",
+        image_path: "/assets/greek/deus-hermes.jpg",
         overview: [
-          "Hermes é o deus da comunicação, do comércio e dos viajantes.",
-          "Ele é conhecido por sua habilidade em proteger os viajantes e facilitar a comunicação entre os mortais e os deuses.",
-          "Hermes também é o mensageiro dos deuses, e é responsável por levar as mensagens divinas aos mortais."
+            "Hermes é o deus da comunicação, do comércio e dos viajantes.",
+            "Ele é conhecido por sua habilidade em proteger os viajantes e facilitar a comunicação entre os mortais e os deuses.",
+            "Hermes também é o mensageiro dos deuses, e é responsável por levar as mensagens divinas aos mortais."
         ],
-      },
-]
-
-// Afrodite, Hefesto, Dioniso, Hermes, Hera, Ares, Demeter, Apolo, Atena, Ártemis, Poseidon, Zeus
-
-export const judaism = [
-    {
-        title: 'Mitologia Judaica',
-        overview: ['O judaísmo é a religião monoteísta mais antiga do mundo. Originou-se por volta do século XVIII a.C., quando Deus mandou Abraão procurar a terra prometida. Seu desenvolvimento ocorreu de forma conjunta ao da civilização hebraica, através de Moisés, Davi, Salomão etc., sendo que foram esses dois últimos os reis que construíram o primeiro templo em Jerusalém.',
-            'Os judeus acreditam que YHWH (Javé em português) seja o criador do universo, um ser onipresente, onipotente e onisciente, que influencia todo o universo e tem uma relação especial com seu povo. O livro sagrado dos judeus é o Torá ou Pentateuco, revelado diretamente por Deus. Para o judaísmo, o pecado mais mortal de todos é o da idolatria, ou seja, a prática de adoração a ídolos e imagens.',
-            'Os livros sagrados dentro do judaísmo não fazem referência à vida após a morte, no entanto, após o exílio na Babilônia, os judeus assimilaram essa ideia. Na verdade, essas crenças variam conforme as várias seitas judaicas. A base da religião judaica está na obediência aos mandamentos divinos estabelecidos nos livros sagrados, uma vez que, para eles, isso é fazer a vontade de Deus e demonstrar respeito e amor pelo criador. O judaísmo é a religião monoteísta que possui o menor número de adeptos no mundo, cerca de 12 a 15 milhões.']
-    },
-    {
-        name: 'YHWH',
-        image_path: '/assets/deus.jpg',
-        overview: '',
-    },
-    {
-        name: 'Lilith',
-        image_path: '/assets/lilith.jpg',
-        overview: '',
-    },
-    {
-        name: 'Gabriel',
-        image_path: '/assets/arcanjo-gabriel.jpg',
-        overview: '',
-    },
-    {
-        name: 'Astaroth',
-        image_path: '/assets/astaroth.jpg',
-        overview: '',
-    },
-    {
-        name: 'Baal',
-        image_path: '/assets/baal.jpg',
-        overview: '',
-    },
-    {
-        name: 'Miguel',
-        image_path: '/assets/arcanjo-miguel.jpg',
-        overview: '',
-    },
-    {
-        name: 'Belial',
-        image_path: '/assets/belial.jpg',
-        overview: '',
-    },
-    {
-        name: 'Metatron',
-        image_path: '/assets/metatron.jpg',
-        overview: '',
-    },
-    {
-        name: 'Lúcifer',
-        image_path: '/assets/lucifer.jpg',
-        overview: '',
     },
 ]
+
 
 export const celtic = [
     { title: 'Mitologia Celta' },
     {
         name: 'Dagda',
-        image_path: '/assets/deus-dagda.jpg',
-        overview: '',
+        image_path: '/assets/celtic/deus-dagda.jpg',
+        overview: [
+            "Dagda é um deus associado à fertilidade, agricultura, cura e morte. Ele é frequentemente retratado como um homem idoso e poderoso, com um grande caldeirão mágico, um porrete e uma harpa mágica.",
+            "Dagda é visto como um deus gentil e generoso, que tem o poder de curar os doentes e de ressuscitar os mortos. Ele também é um deus da vida e da morte, e é responsável por levar as almas dos mortos para o outro mundo.",
+            "Na mitologia celta, Dagda é frequentemente associado a cerimônias religiosas e celebrações, especialmente no festival celta de Samhain, que marca o fim da colheita e o início do ano novo celta. Ele é visto como um protetor da terra e dos seus habitantes, e é frequentemente invocado para trazer fertilidade e prosperidade para as terras.",
+            "Dagda é um deus sábio e poderoso, que tem o poder de controlar o tempo e o clima. Ele é frequentemente retratado como um pai amoroso, que cuida de seus filhos e guia-os através da vida.",
+            "Dagda é uma figura importante da mitologia celta, e é visto como uma divindade poderosa e protetora da natureza e de seus habitantes. Ele é um símbolo da força e da sabedoria da terra, e é honrado em festivais e cerimônias religiosas em todo o mundo."
+        ],
     },
     {
         name: 'Cuchulainn',
-        image_path: '/assets/deus-cu-chulainn.jpg',
-        overview: '',
+        image_path: '/assets/celtic/deus-cu-chulainn.jpg',
+        overview: [
+            "Cuchulain é um dos heróis mais famosos da mitologia celta. Ele é conhecido por sua força sobrenatural e sua habilidade na batalha, além de sua personalidade impetuosa e apaixonada.",
+            "Cuchulain nasceu com o nome de Setanta, mas recebeu seu nome atual após matar o cão de guarda do líder da Irlanda, que foi substituído pelo próprio Cuchulain como guardião. Esse incidente o tornou um herói, e ele foi treinado na arte da guerra por seu tio Conchobar.",
+            "Durante sua vida, Cuchulain enfrentou inúmeros desafios e batalhas, incluindo uma invasão de guerreiros estrangeiros liderados por Maeve, a rainha de Connaught. Cuchulain lutou bravamente contra eles, sozinho, e se tornou lendário por sua coragem e habilidade.",
+            "Uma das histórias mais famosas envolvendo Cuchulain é a do \"combate único\", em que ele é desafiado para uma batalha pelo guerreiro Ferdia, seu melhor amigo e antigo companheiro de treinamento. Embora relutante, Cuchulain eventualmente mata Ferdia em uma luta épica.",
+            "Cuchulain é um dos personagens mais emblemáticos da mitologia celta, simbolizando a coragem, a habilidade e a lealdade. Sua história é contada em muitas lendas e poemas, e sua imagem é frequentemente usada como um símbolo de orgulho irlandês e celta."
+        ],
     },
     {
         name: 'Cernunnos',
-        image_path: '/assets/deus-cernunnos.jpg',
-        overview: '',
+        image_path: '/assets/celtic/deus-cernunnos.jpg',
+        overview: [
+            "Cernunnos é um deus associado à natureza, fertilidade, animais e renovação. Ele é frequentemente retratado como um homem com chifres de cervo, sentado em posição de lótus e com animais ao seu redor.",
+            "Cernunnos é considerado um deus da vida selvagem, e sua imagem é frequentemente encontrada em inscrições e artefatos da Idade do Ferro na Europa. Ele é visto como um protetor dos animais e das florestas, e muitas vezes é associado à caça e à agricultura.",
+            "Segundo a lenda, Cernunnos é um deus antigo e sábio, que possui conhecimentos profundos sobre a natureza e seus mistérios. Ele é visto como um guia espiritual para aqueles que desejam se conectar com a natureza e encontrar equilíbrio e harmonia em suas vidas.",
+            "Cernunnos é frequentemente associado a outros deuses da natureza, como o deus grego Pã e o deus romano Fauno. Sua imagem é frequentemente encontrada em altares e santuários dedicados à natureza, e é honrado em festivais e celebrações pagãs em todo o mundo.",
+            "Na mitologia celta, Cernunnos é visto como um deus poderoso e misterioso, que representa a conexão entre a humanidade e a natureza. Ele é um símbolo da sabedoria e do poder da natureza, e é honrado como uma divindade importante da tradição celta."
+        ],
     },
     {
         name: 'Lugh',
-        image_path: '/assets/deus-lugh.jpg',
-        overview: '',
+        image_path: '/assets/celtic/deus-lugh.jpg',
+        overview: [
+            "Lugh é um dos deuses mais importantes da mitologia celta, sendo associado à luz, à cura, à habilidade e à vitória. Ele é frequentemente descrito como um guerreiro e um artesão habilidoso, além de ser um poeta e músico talentoso.",
+            "Lugh é considerado um deus solar, e é associado ao sol nascente, à primavera e ao equinócio de verão. Ele é também conhecido como Samildánach, ou \"aquele que é habilidoso em muitas artes\", sendo um mestre em várias atividades, como artesanato, poesia, música e estratégia militar.",
+            "Segundo a lenda, Lugh liderou as Tuatha Dé Danann na batalha contra os Fomorianos, e venceu graças às suas habilidades excepcionais. Ele também foi responsável por liderar a construção da colina de Tara, um importante centro de cerimônias religiosas e políticas na Irlanda.",
+            "Lugh é frequentemente associado a outros deuses solares, como o deus grego Apolo e o deus romano Júpiter, e sua imagem é frequentemente encontrada em inscrições e artefatos da Idade do Ferro na Europa.",
+            "Na mitologia celta, Lugh é visto como um deus poderoso e benevolente, que representa a habilidade, a vitória e a luz. Ele é um símbolo da cultura celta e da rica tradição da Irlanda, e é honrado em festivais e celebrações em todo o mundo."
+        ],
     },
     {
         name: 'Brigit',
-        image_path: '/assets/deusa-brigit.jpg',
-        overview: '',
+        image_path: '/assets/celtic/deusa-brigit.jpg',
+        overview: [
+            "Brigit é uma deusa que representa a fertilidade, a cura e o fogo sagrado. Ela é considerada uma deusa tripla, representando três aspectos diferentes: a donzela, a mãe e a anciã. Como donzela, ela simboliza a juventude, a beleza e a inspiração. Como mãe, ela representa a maternidade, a proteção e a cura. E como anciã, ela personifica a sabedoria, a transformação e a renovação.",
+            "Além de suas características divinas, Brigit também é lembrada por sua influência na vida cotidiana das pessoas. Ela é associada ao fogo sagrado, que era mantido aceso em sua honra nas casas e templos. Esse fogo era considerado uma fonte de proteção, iluminação e inspiração. Brigit também é reconhecida por sua habilidade em curar doenças e ferimentos, e muitas vezes é invocada em rituais de cura.",
+            "Brigit é frequentemente associada à primavera e ao início do ciclo agrícola. Seu festival, Imbolc, é comemorado em 1º de fevereiro e marca o início do fim do inverno e o despertar da natureza. Nessa data, era comum fazer oferendas em sua honra, como tranças de cabelo e ramos de árvores.",
+            "Além da Irlanda, onde Brigit era venerada como uma das principais divindades, sua influência se estendia por outras regiões celtas, como a Escócia e a Bretanha. Seu nome também foi associado a lugares sagrados, como poços, rios e colinas. Acredita-se que esses locais sejam portais para o mundo dos deuses e que ofereçam proteção e inspiração aos que os visitam.",
+            "Apesar da influência cristã na Irlanda, Brigit continuou sendo adorada pelos celtas por séculos, e sua figura permanece como uma das mais importantes da mitologia celta. Seu legado também é lembrado por meio de histórias, poemas e canções que celebram sua beleza, sabedoria e poder divino."
+        ]
+        ,
     },
     {
         name: 'Morrigan',
-        image_path: '/assets/deusa-morrigan.jpg',
-        overview: '',
+        image_path: '/assets/celtic/deusa-morrigan.jpg',
+        overview: [
+            "Morrigan é uma das principais figuras da mitologia celta. Ela é conhecida por sua aparência sinistra, com cabelos negros e roupas escuras, e por sua habilidade em se transformar em diferentes animais.",
+            "Morrigan é associada à guerra e à morte, e muitas vezes é vista como uma deusa da batalha. Ela é frequentemente retratada como uma guerreira que lidera as tropas para a vitória.",
+            "Além de sua conexão com a guerra, Morrigan também é vista como uma protetora da natureza e dos animais. Ela é associada a corvos e outros pássaros de rapina, e é frequentemente retratada com esses animais.",
+            "Morrigan é uma figura complexa e muitas vezes misteriosa. Ela é vista como uma deusa que pode trazer tanto a morte quanto a cura, e muitas vezes é retratada como uma figura dualista, com aspectos tanto positivos quanto negativos.",
+            "Hoje em dia, Morrigan continua a ser uma figura popular na cultura celta e na espiritualidade pagã. Ela é vista como uma deusa forte e poderosa que pode ajudar na batalha e na superação de desafios difíceis."
+        ]
+        ,
     },
     {
         name: 'Belenus',
-        image_path: '/assets/deus-belenus.jpg',
-        overview: '',
+        image_path: '/assets/celtic/deus-belenus.jpg',
+        overview: [
+            "Belennus é uma divindade que representa o sol e a luz. Sua origem é incerta, mas é provável que tenha sido adorado pelos celtas da região da Gália. Ele é frequentemente retratado como um jovem guerreiro, vestindo uma armadura e um capacete com chifres.",
+            "Acredita-se que Belennus seja uma das divindades mais importantes do panteão celta, associado a cura, purificação e proteção. Ele é frequentemente associado a águas curativas, locais sagrados e fontes termais. Seu culto se espalhou pela Europa e muitos templos foram erguidos em sua homenagem.",
+            "Além de sua conexão com o sol e a luz, Belennus também é frequentemente associado à cura e à proteção. Ele é conhecido por seu poder de afastar doenças e malefícios, sendo muitas vezes invocado em rituais de cura e purificação. Alguns mitos celtas relatam que Belennus foi capaz de curar os ferimentos de outros deuses e mortais.",
+            "Na mitologia celta, Belennus é frequentemente associado a rituais de fertilidade e de renovação da vida. Ele é considerado um deus benevolente e protetor, que pode trazer prosperidade e abundância às colheitas. Seu culto está intimamente ligado às celebrações de Beltane, um festival que marca o início do verão na cultura celta.",
+            "Belennus é um dos deuses mais importantes da mitologia celta, associado à luz, à cura e à fertilidade. Seu culto se espalhou por toda a Europa, e muitos templos e locais sagrados foram erguidos em sua homenagem. Ainda hoje, ele é considerado uma figura importante na cultura celta e é frequentemente invocado em rituais e celebrações."
+          ]
+          ,
     },
 ]
 
@@ -408,37 +418,37 @@ export const hindu = [
     { title: 'Mitologia Hinduísta' },
     {
         name: 'Brahma',
-        image_path: '/assets/brahma.jpg',
+        image_path: '/assets/hindu/brahma.jpg',
         overview: '',
     },
     {
         name: 'Krishna',
-        image_path: '/assets/krishna.jpg',
+        image_path: '/assets/hindu/krishna.jpg',
         overview: '',
     },
     {
         name: 'Vishnu',
-        image_path: '/assets/vishnu.jpg',
+        image_path: '/assets/hindu/vishnu.jpg',
         overview: '',
     },
     {
         name: 'Shiva',
-        image_path: '/assets/shiva.jpg',
+        image_path: '/assets/hindu/shiva.jpg',
         overview: '',
     },
     {
         name: 'Ganesha',
-        image_path: '/assets/ganesha.jpg',
+        image_path: '/assets/hindu/ganesha.jpg',
         overview: '',
     },
     {
         name: 'Saraswati',
-        image_path: '/assets/saraswati.jpg',
+        image_path: '/assets/hindu/saraswati.jpg',
         overview: '',
     },
     {
         name: 'Lakshmi',
-        image_path: '/assets/lakshmi.jpg',
+        image_path: '/assets/hindu/lakshmi.jpg',
         overview: '',
     },
 ]
@@ -447,37 +457,37 @@ export const nordic = [
     { title: 'Mitologia Nórdica' },
     {
         name: 'Odin',
-        image_path: '/assets/deus-odin.jpg',
+        image_path: '/assets/nordic/deus-odin.jpg',
         overview: '',
     },
     {
         name: 'Loki',
-        image_path: '/assets/deus-loki.jpg',
+        image_path: '/assets/nordic/deus-loki.jpg',
         overview: '',
     },
     {
         name: 'Frigg',
-        image_path: '/assets/deusa-frigg.jpg',
+        image_path: '/assets/nordic/deusa-frigg.jpg',
         overview: '',
     },
     {
         name: 'Hel',
-        image_path: '/assets/deusa-hel.jpg',
+        image_path: '/assets/nordic/deusa-hel.jpg',
         overview: '',
     },
     {
         name: 'Thor',
-        image_path: '/assets/deus-thor.jpg',
+        image_path: '/assets/nordic/deus-thor.jpg',
         overview: '',
     },
     {
         name: 'Bragi',
-        image_path: '/assets/deus-bragi.jpg',
+        image_path: '/assets/nordic/deus-bragi.jpg',
         overview: '',
     },
     {
         name: 'Tyr',
-        image_path: '/assets/deus-tyr.jpg',
+        image_path: '/assets/nordic/deus-tyr.jpg',
         overview: '',
     },
 ]
@@ -486,37 +496,37 @@ export const afro = [
     { title: 'Mitologia Africana' },
     {
         name: 'Exu',
-        image_path: '/assets/exu.jpg',
+        image_path: '/assets/african/orixa-exu.jpg',
         overview: '',
     },
     {
         name: 'Xangô',
-        image_path: '/assets/xango.jpg',
+        image_path: '/assets/african/orixa-xango.jpg',
         overview: '',
     },
     {
         name: 'Ogum',
-        image_path: '/assets/ogum.jpg',
+        image_path: '/assets/african/orixa-ogum.jpg',
         overview: '',
     },
     {
         name: 'Iansã',
-        image_path: '/assets/iansa.jpg',
+        image_path: '/assets/african/orixa-iansa.jpg',
         overview: '',
     },
     {
         name: 'Oxum',
-        image_path: '/assets/oxum.jpg',
+        image_path: '/assets/african/orixa-oxum.jpg',
         overview: '',
     },
     {
         name: 'Iemanjá',
-        image_path: '/assets/iemanja.jpg',
+        image_path: '/assets/african/orixa-iemanja.jpg',
         overview: '',
     },
     {
         name: 'Olorum',
-        image_path: '/assets/olorum.jpg',
+        image_path: '/assets/african/orixa-olorum.jpg',
         overview: '',
     },
 ]
@@ -531,7 +541,7 @@ export const jung = [
     },
     {
         name: 'O herói',
-        image_path: '/assets/heroi.jpg',
+        image_path: '/assets/archetypes/heroi.jpg',
         overview: [
             'O herói é um dos arquétipos de Jung mais conhecidos. Ele representa os indivíduos corajosos e bondosos, que lutam pelos seus ideais e que ajudam a quem estiver ao seu redor, sendo símbolos da justiça e da determinação. O seu objetivo é provar o seu valor por meio da coragem, fazendo o bem ao mundo. O seu grande medo é passar pela vida como alguém “acomodado” ou covarde.',
             '1. CORAGEM E DETERMINAÇÃO',
@@ -560,7 +570,7 @@ export const jung = [
     },
     {
         name: 'O Comum',
-        image_path: '/assets/homem-comum.jpg',
+        image_path: '/assets/archetypes/homem-comum.jpg',
         overview: [
             'O “comum” é o arquétipo que representa as pessoas cujo perfil seja voltado às atividades cotidianas e à sua vontade de pertencer a um grupo social. O seu desejo é o de conectar-se com outras pessoas. Você, com certeza, conhece pessoas assim e até mesmo pode se identificar com esse arquétipo.',
             '1. NECESSIDADE DE PERTENCIMENTO',
@@ -589,7 +599,7 @@ export const jung = [
     },
     {
         name: 'O Criador',
-        image_path: '/assets/criador.jpg',
+        image_path: '/assets/archetypes/criador.jpg',
         overview: [
             'O criador é um dos 12 arquétipos identificados por Jung. Ele representa todos os indivíduos que têm a criatividade como a sua característica principal, isto é, que gostam de criar coisas de valor duradouro. São pessoas que desenvolvem uma visão diferenciada para resolver problemas e que gostam de inovar.',
             '1. INOVAÇÃO',
@@ -619,7 +629,7 @@ export const jung = [
     },
     {
         name: 'O Sábio',
-        image_path: '/assets/sabio.jpg',
+        image_path: '/assets/archetypes/sabio.jpg',
         overview: [
             'Albert Einstein, Mark Zuckerberg e até mesmo o Mestre Yoda (do universo de Star Wars) são exemplos clássicos de pessoas ou personagens que traduzem a essência do arquétipo do sábio. O objetivo de quem tem esse arquétipo forte dentro de si é encontrar a verdade e utilizar a inteligência para compreender o mundo. São curiosos, inteligentes e ativos na compreensão dos fatos. Gostam de refletir e de estudar. Contudo, a sua fraqueza pode ser justamente um apego à teoria, deixando de colocar os seus saberes em prática.',
             '1. BUSCA PELA VERDADE',
@@ -648,7 +658,7 @@ export const jung = [
     },
     {
         name: 'O Mago',
-        image_path: '/assets/mago.jpg',
+        image_path: '/assets/archetypes/mago.jpg',
         overview: [
             'O mago é um dos 12 arquétipos de Jung. Ele é caracterizado por um conhecimento que não é somente racional, mas também místico e espiritual. O seu objetivo é transformar sonhos em realidade, tanto os seus quanto os de outras pessoas. Assim, esse arquétipo procura desenvolver uma visão específica de vida e viver de acordo com ela.',
             '1. ENTENDER O UNIVERSO',
@@ -677,7 +687,7 @@ export const jung = [
     },
     {
         name: 'O Amante',
-        image_path: '/assets/amante.jpg',
+        image_path: '/assets/archetypes/amante.jpg',
         overview: [
             'O amante é um dos arquétipos junguianos que mais atraem o interesse das pessoas. Essencialmente emocional e intenso, esse arquétipo representa as pessoas que têm por objetivo relacionar-se de forma significativa com outras pessoas. Aqui, estamos falando não apenas do relacionamento amoroso, mas também da amizade, do apego à família, dos colegas de trabalho, e por aí vai.',
             '1. VAIDADE E SENSUALIDADE',
@@ -706,7 +716,7 @@ export const jung = [
     },
     {
         name: 'O Altruísta',
-        image_path: '/assets/altruista.jpg',
+        image_path: '/assets/archetypes/altruista.jpg',
         overview: [
             'O altruísta, também conhecido como “o cuidador”, é um arquétipo junguiano que representa as pessoas compassivas e benevolentes. Ele tem um espírito paternal ou maternal, que se preocupa em cuidar do outro, protegendo-o e garantindo a sua segurança.',
             '1. EMPATIA',
@@ -735,7 +745,7 @@ export const jung = [
     },
     {
         name: 'O Inocente',
-        image_path: '/assets/inocente.jpg',
+        image_path: '/assets/archetypes/inocente.jpg',
         overview: [
             'Um indivíduo simples e otimista, mas que pode beirar a ingenuidade se não for cauteloso.',
             '1. OTIMISMO',
@@ -764,7 +774,7 @@ export const jung = [
     },
     {
         name: 'O Rebelde',
-        image_path: '/assets/rebelde.jpg',
+        image_path: '/assets/archetypes/rebelde.jpg',
         overview: [
             'O arquétipo daqueles que se rebelam contra um sistema vigente, questionando as regras que, na sua visão, limitam a sua liberdade de agir e de ser quem são. “Fora da lei” ou “vivendo no limite” são títulos fáceis de atribuir a esses indivíduos.',
             '1. CONHECIMENTO DAS REGRAS',
@@ -793,7 +803,7 @@ export const jung = [
     },
     {
         name: 'O Bobo',
-        image_path: '/assets/bobo.jpg',
+        image_path: '/assets/archetypes/bobo.jpg',
         overview: [
             'O comediante também conhecido como “bobo da corte”, é um dos arquétipos junguianos mais fáceis de reconhecer: trata-se do “palhaço” da família, do círculo de amigos, da sala de aula, entre outros ambientes. Esse indivíduo tem elevado senso de humor, é engraçado, gosta da diversão e de entreter quem estiver ao seu redor.',
             '1. DIVERSÃO E BUSCA PELO PRAZER',
@@ -822,7 +832,7 @@ export const jung = [
     },
     {
         name: 'O governante',
-        image_path: '/assets/governante.jpg',
+        image_path: '/assets/archetypes/governante.jpg',
         overview: [
             'Segundo Jung, esse arquétipo representa basicamente todos os indivíduos que apresentam o chamado “espírito de liderança”. Assim, são pessoas que lidam bem com o poder e com o controle em diferentes contextos, como a família, o grupo de amigos, a equipe de trabalho, a empresa, a comunidade etc.',
             '1. VONTADE DE PODER',
@@ -851,7 +861,7 @@ export const jung = [
     },
     {
         name: 'O Explorador',
-        image_path: '/assets/explorador.jpg',
+        image_path: '/assets/archetypes/explorador.jpg',
         overview: [
             'Um dos 12 arquétipos de Jung é o explorador, também conhecido como aventureiro. Trata-se de um indivíduo ousado e destemido, que está sempre em busca de novidades e explorando novas formas de agir, que vão além do que comumente é escolhido pelas pessoas.',
             '1. CORAGEM',

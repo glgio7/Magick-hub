@@ -1,7 +1,7 @@
-import { Container } from '../../styles/categories';
+import { Container } from './styles';
 import { HiChevronRight, HiChevronLeft } from "react-icons/hi";
 import { useRef, useState } from 'react';
-import { afro, celtic, egypt, greek, hindu, judaism, jung, nordic } from '../../api/mythologies';
+import { afro, celtic, egypt, greek, hindu, jung, nordic } from '../../api/mythologies';
 import { useParams } from 'react-router-dom';
 
 
@@ -12,10 +12,9 @@ function Categories() {
       title === 'celtic' ? celtic :
         title === 'greek' ? greek :
           title === 'hindu' ? hindu :
-            title === 'judaism' ? judaism :
-              title === 'jung' ? jung :
-                title === 'afro' ? afro
-                  : nordic;
+            title === 'jung' ? jung :
+              title === 'afro' ? afro
+                : nordic;
   const [card, setCard] = useState(list[0]);
   const carousel = useRef();
 
