@@ -6,17 +6,19 @@ import { useParams } from 'react-router-dom';
 
 
 function Categories() {
-  const { title } = useParams();
+  const { address } = useParams();
   const list =
-    title === 'egypt' ? egypt :
-      title === 'celtic' ? celtic :
-        title === 'greek' ? greek :
-          title === 'hindu' ? hindu :
-            title === 'jung' ? jung :
-              title === 'afro' ? afro
+    address === 'egypt' ? egypt :
+      address === 'celtic' ? celtic :
+        address === 'greek' ? greek :
+          address === 'hindu' ? hindu :
+            address === 'jung' ? jung :
+              address === 'afro' ? afro
                 : nordic;
   const [card, setCard] = useState(list[0]);
   const carousel = useRef();
+
+  console.log(address)
 
   const handleList = (direction) => {
     direction === "left" ?

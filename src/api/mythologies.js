@@ -335,7 +335,7 @@ export const celtic = [
     {
         title: 'Mitologia Celta',
         overview: [],
-        addres: 'celtic'
+        address: 'celtic'
     },
     {
         name: 'Dagda',
@@ -469,7 +469,7 @@ export const jung = [
             'Arquétipo é um conceito da psicologia utilizado para representar padrões de comportamento associados a um personagem ou papel social. A mãe, o sábio e o herói são exemplos de arquétipos. Esses “personagens” têm características percebidas de maneira semelhante por todos os seres humanos. Esse conceito foi desenvolvido por Carl G. Jung, psiquiatra suíço e fundador da psicologia analítica.',
             'Para Jung, esses comportamentos estão no inconsciente coletivo e, por isso, são percebidos de maneira similar por todos. Jung dizia que os arquétipos são uma herança psicológica, ou seja, resultam das experiências de milhares de gerações de seres humanos no enfrentamento das situações cotidianas. As imagens dos arquétipos são encontradas em mitos, lendas, na literatura, nos filmes e até mesmo nos nossos sonhos. Também são utilizados na publicidade. Quando um animal é utilizado em uma marca, espera-se que os clientes associem a marca às características daquele animal.',
         ],
-addres: 'jung'
+        address: 'jung'
     },
     {
         name: 'O herói',
@@ -823,9 +823,11 @@ addres: 'jung'
 ]
 
 export const hindu = [
-    { title: 'Mitologia Hinduísta',
-    overview: [],
-    addres: 'hindu' },
+    {
+        title: 'Mitologia Hinduísta',
+        overview: [],
+        address: 'hindu'
+    },
     {
         name: 'Brahma',
         image_path: '/assets/hindu/brahma.jpg',
@@ -864,9 +866,11 @@ export const hindu = [
 ]
 
 export const nordic = [
-    { title: 'Mitologia Nórdica',
-    overview: [],
-    addres: 'nordic' },
+    {
+        title: 'Mitologia Nórdica',
+        overview: [],
+        address: 'nordic'
+    },
     {
         name: 'Odin',
         image_path: '/assets/nordic/deus-odin.jpg',
@@ -905,9 +909,11 @@ export const nordic = [
 ]
 
 export const afro = [
-    { title: 'Mitologia Africana',
-    overview: [],
-    addres: 'afro' },
+    {
+        title: 'Mitologia Africana',
+        overview: [],
+        address: 'afro'
+    },
     {
         name: 'Exu',
         image_path: '/assets/african/orixa-exu.jpg',

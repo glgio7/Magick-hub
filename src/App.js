@@ -20,7 +20,7 @@ const App = () => {
       <Header toggleMenu={toggleMenu}/>
       <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route path='/categories/:title' element={<Categories />} />
+        <Route path='/categories/:address' element={<Categories />} />
         <Route path='/numerology' element={<Numerology />} />
       </Routes>
     </BrowserRouter>

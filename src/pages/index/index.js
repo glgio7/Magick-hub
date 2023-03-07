@@ -1,6 +1,5 @@
 import { Container } from './styles';
 import { afro, celtic, egypt, greek, hindu, jung, nordic } from '../../api/mythologies';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Footer from '../../components/Footer';
 import List from '../../components/List';
