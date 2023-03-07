@@ -66,14 +66,13 @@ function Numerology() {
   return (
     <>
       <Container onLoad={() => window.scrollTo(0, 0)}>
-        <h3>O homem sofre porque leva a sério o que os deuses fizeram para se divertir... -Alan Watts</h3>
         <section>
           <h2>Numerologia Cabalística</h2>
           <p>
             Os resultados da Numerologia Cabalística são baseados na soma dos números correspondentes à cada letra do nome da pessoa. Os valores são:
           </p>
           <p>
-            A=1 B=2 C=3 D=4 E=5 F=6 G=7 H=8 I=9 J=9 K=10 L=20 M=30 N=40 O=50 P=60 Q=70 R=80 S=90 T=100 U=200 V=200 W=200 X=300 Y=9 Z=400
+            A=1, B=2, C=3, D=4, E=5, F=6, G=7, H=8, I=9, J=9, K=10, L=20, M=30, N=40, O=50, P=60, Q=70, R=80, S=90, T=100, U=200, V=200, W=200, X=300, Y=9, Z=400.
           </p>
           <p>Para facilitar a soma dos valores, abaixo você pode consultar seu número com facilidade.</p>
           <p>

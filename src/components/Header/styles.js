@@ -2,13 +2,59 @@ import styled from "styled-components"
 
 const StyledHeader = styled.header`
 width: 100vw;
+height: 108px;
+
+/* position: fixed;
+top: 0; */
+
 display: flex;
-position: relative;
+flex-wrap: wrap;
 align-items: center;
 justify-content: center;
-padding: .5rem 0;
+
 z-index: 90;
-background: linear-gradient(180deg, rgba(100,0,255, .2) 0%, rgba(0,0,0, 1) 75%);
+
+background: linear-gradient(180deg, rgba(50,0,150, 1) 0%, rgba(0,0,0, 1) 100%);
+
+img{
+    width: 100%;
+}
+
+.container{
+    padding: .5rem 0;
+    
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__image{
+    width: 96px;
+}
+
+h1{
+    font-family: 'Oleo Script', 'Ubuntu';
+    font-size: 3rem;
+
+    background: rgb(255,130,0);
+    background: linear-gradient(180deg, rgba(255,130,0,1) 0%, rgba(255,170,0,1) 100%);
+    background-clip: text;
+ 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3{
+    font-family: 'Oleo Script', cursive;
+    font-weight: normal;
+    color: #fff;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+}
 
 .menu{
     position: absolute;
@@ -24,26 +70,21 @@ background: linear-gradient(180deg, rgba(100,0,255, .2) 0%, rgba(0,0,0, 1) 75%);
     }
 }
 
-.logo, h1{
-    margin: 0 auto;
-    width: 480px;
-    padding: .5rem 0;
-    opacity: .95;
-    transition: all ease 250ms;
-    &:hover{
-        opacity: 1;
+@media screen and (max-width: 900px){
+    .menu{
+        display: none;
     }
+    h3, .container{
+        width: 90%;
+    }
+
+    .container__image{
+    width: 72px;
 }
 
-@media screen and (max-width: 768px){
-.menu{
-    display: none;
-}    
-h1{
-    padding: 1rem;
-    width: 90%;
-    margin: 0 auto;
-}
+    h1{
+        font-size: 2.5rem;
+    }
 }
 `
 

@@ -6,6 +6,10 @@ export const GlobalCSS = createGlobalStyle`
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Oleo Script', cursive;
+  list-style: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::-webkit-scrollbar{
@@ -15,10 +19,10 @@ export const GlobalCSS = createGlobalStyle`
 
 html,
 body {
+  color: #fff;
   max-width: 100vw;
   overflow-x: hidden;
   background-color: black;
-    font-family: 'Nunito', sans-serif;
 }
 
 img{

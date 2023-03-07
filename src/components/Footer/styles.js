@@ -2,10 +2,12 @@ import styled from "styled-components"
 
 const StyledFooter = styled.footer`
 width: 100vw;
+min-height: 36px;
+
 display: flex;
 align-items: center;
+
 background-color: #141414;
-min-height: 36px;
 
 p{
     font-family: 'Nunito', sans-serif;
@@ -14,7 +16,7 @@ p{
     margin: 0 auto;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
     min-height: 42px;
 p{
     font-size: .8rem;

@@ -5,13 +5,14 @@ width: 100%;
 height: 100%;
 display: flex;
 flex-direction: column;
+padding: 3rem 0;
 align-items: center;
 background: rgb(255,0,0);
 background: radial-gradient(circle, rgba(96,0,255,.25) 0%, rgba(0,0,0,.25) 50%);
 
 
 h3{
-    font-family: 'Lobster', cursive;
+    /* font-family: 'Lobster', cursive; */
     font-weight: normal;
     color: #fff;
     max-width: 90%;
@@ -19,7 +20,7 @@ h3{
 }
 
 h2{
-    font-family: 'Lobster', cursive;
+    /* font-family: 'Lobster', cursive; */
     color: #fff;
     text-shadow: 0 1px 9px #8000ff;
     margin-block: 1rem;
@@ -65,7 +66,7 @@ button{
     cursor: pointer;
     background-color: rgba(10,10,10, 1);
     color: #fff;
-    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
     border-radius: 3px;
     margin-block: 1rem;
     border: none;
@@ -94,7 +95,9 @@ p{
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
+
+    margin-top: 2rem;
 
 h1{
     width: 100%;

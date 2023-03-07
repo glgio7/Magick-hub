@@ -91,7 +91,7 @@ span{
     color: #fff;
     margin: 0 auto;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
 
     button{
         width: 20vw;

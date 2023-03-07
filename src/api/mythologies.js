@@ -6,7 +6,8 @@ export const egypt = [
             'A mitologia egípcia é constituída por um conjunto de mitos, lendas e histórias utilizadas por aquele povo para explicar a sua vida cotidiana. Vale ressaltar que, durante a Antiguidade Oriental pouco se sabia sobre o funcionamento científico da natureza e do universo.',
             'Sendo assim, a mitologia egípcia era uma forma de entender os fenômenos naturais. Além disso, a mitologia estava entrelaçada com a religião do Egito Antigo, a qual era politeísta (pregava a crença em vários deuses). Essas divindades podiam ser antropomórficas (os deuses possuem características humanas, entretanto, se diferenciam através de poderes, principalmente o de transformação), zoomórficas (deuses em forma de animais) ou antropozoomórficas (deuses com características humanas e animais).',
             'O estudo sobre a mitologia egípcia é realizado de várias formas, como através de pirâmides, túmulos, estátuas e fontes escritas. As principais fontes escritas utilizadas são o Livro das Pirâmides, o Livro dos Sarcófagos, o Livro dos Mortos, os textos de Heródoto e os textos de Plutarco. Ainda assim não há total consenso sobre as informações referentes a mitologia egípcia, devido a divergências a respeito dela em diferentes regiões do Egito Antigo.',
-        ]
+        ],
+        address: 'egypt'
     },
     {
         name: 'Rá',
@@ -217,7 +218,8 @@ export const greek = [
     {
         title: 'Mitologia Grega',
         overview: ['A mitologia grega é um conjunto de histórias (lendas e mitos) inventadas pela civilização da Grécia Antiga. A maioria desses mitos narra uma história épica, a qual conta com seres sobrenaturais, deuses e semideuses, que coexistem no mundo com os seres humanos. De modo geral, essas lendas foram o meio encontrado pelos gregos de explicarem fenômenos naturais.',
-            'Os deuses dessas histórias eram adorados como divindades reais. Pode-se dizer então que a religião grega era politeísta (possuía mais de uma divindade, sendo o deus principal Zeus) e antropomórfica (os deuses se assemelhavam aos humanos, tanto físico quanto comportamentalmente; no entanto, o que os diferenciava dos seres humanos era a imortalidade e os poderes). Disso, conclui-se que a mitologia e a religião gregas estão fortemente entrelaçadas.']
+            'Os deuses dessas histórias eram adorados como divindades reais. Pode-se dizer então que a religião grega era politeísta (possuía mais de uma divindade, sendo o deus principal Zeus) e antropomórfica (os deuses se assemelhavam aos humanos, tanto físico quanto comportamentalmente; no entanto, o que os diferenciava dos seres humanos era a imortalidade e os poderes). Disso, conclui-se que a mitologia e a religião gregas estão fortemente entrelaçadas.'],
+        address: 'greek'
     },
     {
         name: 'Zeus',
@@ -329,9 +331,12 @@ export const greek = [
     },
 ]
 
-
 export const celtic = [
-    { title: 'Mitologia Celta' },
+    {
+        title: 'Mitologia Celta',
+        overview: [],
+        addres: 'celtic'
+    },
     {
         name: 'Dagda',
         image_path: '/assets/celtic/deus-dagda.jpg',
@@ -353,6 +358,17 @@ export const celtic = [
             "Uma das histórias mais famosas envolvendo Cuchulain é a do \"combate único\", em que ele é desafiado para uma batalha pelo guerreiro Ferdia, seu melhor amigo e antigo companheiro de treinamento. Embora relutante, Cuchulain eventualmente mata Ferdia em uma luta épica.",
             "Cuchulain é um dos personagens mais emblemáticos da mitologia celta, simbolizando a coragem, a habilidade e a lealdade. Sua história é contada em muitas lendas e poemas, e sua imagem é frequentemente usada como um símbolo de orgulho irlandês e celta."
         ],
+    },
+    {
+        name: 'Danu',
+        image_path: '/assets/celtic/deusa-danu.jpg',
+        overview: [
+            "Danu é uma deusa da mitologia celta, frequentemente associada com a natureza, a fertilidade e a sabedoria. Ela é vista como a mãe de todos os deuses e deusas celtas, e é frequentemente retratada como uma mulher sábia e poderosa.",
+            "Danu era adorada em toda a região que hoje conhecemos como Irlanda e Escócia, e muitas lendas celtas falam de sua importância na criação do mundo e dos seres humanos. Ela também era vista como uma protetora dos rios, das árvores e das plantas.",
+            "Em algumas tradições celtas, Danu era vista como uma deusa da guerra e da soberania, que liderava exércitos divinos na batalha e concedia aos reis e rainhas a autoridade para governar. Ela também era considerada uma patrona das artes e da poesia.",
+            "Danu era frequentemente honrada com oferendas de frutas, leite e mel, e muitas vezes era invocada em cerimônias de fertilidade e de proteção. Ela também era vista como uma protetora das mulheres grávidas e dos recém-nascidos.",
+            "Embora Danu tenha sido esquecida por muitos no mundo moderno, ela ainda é lembrada e homenageada por muitos praticantes de religiões neopagãs e reconstrucionistas celtas como uma importante deusa da natureza, da fertilidade e da sabedoria."
+        ]
     },
     {
         name: 'Cernunnos',
@@ -386,8 +402,8 @@ export const celtic = [
             "Além da Irlanda, onde Brigit era venerada como uma das principais divindades, sua influência se estendia por outras regiões celtas, como a Escócia e a Bretanha. Seu nome também foi associado a lugares sagrados, como poços, rios e colinas. Acredita-se que esses locais sejam portais para o mundo dos deuses e que ofereçam proteção e inspiração aos que os visitam.",
             "Apesar da influência cristã na Irlanda, Brigit continuou sendo adorada pelos celtas por séculos, e sua figura permanece como uma das mais importantes da mitologia celta. Seu legado também é lembrado por meio de histórias, poemas e canções que celebram sua beleza, sabedoria e poder divino."
         ]
-        ,
     },
+
     {
         name: 'Morrigan',
         image_path: '/assets/celtic/deusa-morrigan.jpg',
@@ -398,7 +414,6 @@ export const celtic = [
             "Morrigan é uma figura complexa e muitas vezes misteriosa. Ela é vista como uma deusa que pode trazer tanto a morte quanto a cura, e muitas vezes é retratada como uma figura dualista, com aspectos tanto positivos quanto negativos.",
             "Hoje em dia, Morrigan continua a ser uma figura popular na cultura celta e na espiritualidade pagã. Ela é vista como uma deusa forte e poderosa que pode ajudar na batalha e na superação de desafios difíceis."
         ]
-        ,
     },
     {
         name: 'Belenus',
@@ -409,126 +424,42 @@ export const celtic = [
             "Além de sua conexão com o sol e a luz, Belennus também é frequentemente associado à cura e à proteção. Ele é conhecido por seu poder de afastar doenças e malefícios, sendo muitas vezes invocado em rituais de cura e purificação. Alguns mitos celtas relatam que Belennus foi capaz de curar os ferimentos de outros deuses e mortais.",
             "Na mitologia celta, Belennus é frequentemente associado a rituais de fertilidade e de renovação da vida. Ele é considerado um deus benevolente e protetor, que pode trazer prosperidade e abundância às colheitas. Seu culto está intimamente ligado às celebrações de Beltane, um festival que marca o início do verão na cultura celta.",
             "Belennus é um dos deuses mais importantes da mitologia celta, associado à luz, à cura e à fertilidade. Seu culto se espalhou por toda a Europa, e muitos templos e locais sagrados foram erguidos em sua homenagem. Ainda hoje, ele é considerado uma figura importante na cultura celta e é frequentemente invocado em rituais e celebrações."
-          ]
-          ,
-    },
-]
-
-export const hindu = [
-    { title: 'Mitologia Hinduísta' },
-    {
-        name: 'Brahma',
-        image_path: '/assets/hindu/brahma.jpg',
-        overview: '',
+        ]
     },
     {
-        name: 'Krishna',
-        image_path: '/assets/hindu/krishna.jpg',
-        overview: '',
+        name: 'Taranis',
+        image_path: '/assets/celtic/deus-taranis.jpg',
+        overview: [
+            "Taranis era o deus celta do trovão e do relâmpago. Ele era frequentemente retratado como um homem de barba e cabelos longos segurando um raio em uma das mãos e um martelo na outra.",
+            "Taranis era uma das divindades mais importantes da mitologia celta, frequentemente associado com a realeza, a guerra e a justiça. Ele era adorado em toda a região que hoje conhecemos como França, Bélgica, Luxemburgo e partes da Alemanha e Suíça.",
+            "Em algumas tradições celtas, Taranis era associado com a roda, que representava a rotação do universo e a passagem do tempo. Ele era frequentemente chamado de 'Senhor da Roda' e era considerado um protetor dos viajantes e dos viajantes. Ele também era visto como um mediador entre os deuses e os mortais, capaz de trazer justiça e equilíbrio ao mundo.",
+            "Os celtas costumavam oferecer sacrifícios a Taranis, geralmente animais como bois ou cavalos. Acredita-se que esses sacrifícios foram feitos para apaziguar sua ira e garantir que ele não lançasse tempestades violentas ou raios mortais sobre a terra.",
+            "Embora Taranis não seja tão conhecido quanto outras divindades celtas como Cernunnos ou Morrigan, ele ainda é lembrado e homenageado por muitos pagãos modernos e praticantes da bruxaria como um símbolo do poder divino da natureza e do universo."
+        ]
     },
     {
-        name: 'Vishnu',
-        image_path: '/assets/hindu/vishnu.jpg',
-        overview: '',
+        name: 'Arawn',
+        image_path: '/assets/celtic/deus-arawn.jpg',
+        overview: [
+            "Arawn é um deus da mitologia celta, associado com a vida após a morte e o submundo. Ele é frequentemente retratado como um homem com uma aparência sombria e assustadora, vestido com peles de animais e segurando um cajado.",
+            "Arawn era uma das divindades mais importantes para os celtas da região que hoje conhecemos como País de Gales. Ele era visto como um governante benevolente do reino subterrâneo conhecido como Annwn, que era o destino final para as almas dos mortos.",
+            "Em algumas tradições celtas, Arawn era associado com a caça selvagem, que consistia em um grupo de cães fantasmagóricos liderados pelo próprio deus. Acredita-se que a caça selvagem aparecesse no céu noturno e que seu uivo sinistro fosse um prenúncio de morte iminente.",
+            "Arawn era frequentemente honrado com oferendas de animais, alimentos e bebidas alcoólicas, feitas por aqueles que buscavam sua proteção e bênção. Ele era especialmente importante para os caçadores, que frequentemente faziam oferendas a ele antes de sair em busca de presas.",
+            "Embora Arawn seja um deus menos conhecido do que outros na mitologia celta, ele ainda é lembrado e homenageado por muitos pagãos modernos e praticantes da bruxaria como um protetor dos mortos e um guia para o submundo."
+        ]
     },
     {
-        name: 'Shiva',
-        image_path: '/assets/hindu/shiva.jpg',
-        overview: '',
-    },
-    {
-        name: 'Ganesha',
-        image_path: '/assets/hindu/ganesha.jpg',
-        overview: '',
-    },
-    {
-        name: 'Saraswati',
-        image_path: '/assets/hindu/saraswati.jpg',
-        overview: '',
-    },
-    {
-        name: 'Lakshmi',
-        image_path: '/assets/hindu/lakshmi.jpg',
-        overview: '',
-    },
-]
-
-export const nordic = [
-    { title: 'Mitologia Nórdica' },
-    {
-        name: 'Odin',
-        image_path: '/assets/nordic/deus-odin.jpg',
-        overview: '',
-    },
-    {
-        name: 'Loki',
-        image_path: '/assets/nordic/deus-loki.jpg',
-        overview: '',
-    },
-    {
-        name: 'Frigg',
-        image_path: '/assets/nordic/deusa-frigg.jpg',
-        overview: '',
-    },
-    {
-        name: 'Hel',
-        image_path: '/assets/nordic/deusa-hel.jpg',
-        overview: '',
-    },
-    {
-        name: 'Thor',
-        image_path: '/assets/nordic/deus-thor.jpg',
-        overview: '',
-    },
-    {
-        name: 'Bragi',
-        image_path: '/assets/nordic/deus-bragi.jpg',
-        overview: '',
-    },
-    {
-        name: 'Tyr',
-        image_path: '/assets/nordic/deus-tyr.jpg',
-        overview: '',
-    },
-]
-
-export const afro = [
-    { title: 'Mitologia Africana' },
-    {
-        name: 'Exu',
-        image_path: '/assets/african/orixa-exu.jpg',
-        overview: '',
-    },
-    {
-        name: 'Xangô',
-        image_path: '/assets/african/orixa-xango.jpg',
-        overview: '',
-    },
-    {
-        name: 'Ogum',
-        image_path: '/assets/african/orixa-ogum.jpg',
-        overview: '',
-    },
-    {
-        name: 'Iansã',
-        image_path: '/assets/african/orixa-iansa.jpg',
-        overview: '',
-    },
-    {
-        name: 'Oxum',
-        image_path: '/assets/african/orixa-oxum.jpg',
-        overview: '',
-    },
-    {
-        name: 'Iemanjá',
-        image_path: '/assets/african/orixa-iemanja.jpg',
-        overview: '',
-    },
-    {
-        name: 'Olorum',
-        image_path: '/assets/african/orixa-olorum.jpg',
-        overview: '',
-    },
+        name: 'Epona',
+        image_path: '/assets/celtic/deusa-epona.jpg',
+        overview: [
+            "Epona é uma deusa da mitologia celta, frequentemente associada com os cavalos, a fertilidade e a proteção. Ela é vista como a protetora dos cavalos, dos cavaleiros e dos animais em geral, e é frequentemente retratada como uma mulher montada em um cavalo.",
+            "Era adorada em toda a região que hoje conhecemos como França, Bélgica, Alemanha e partes da Itália e Suíça. Ela era vista como uma protetora dos viajantes e dos comerciantes, e muitos acreditavam que ela poderia trazer riqueza e boa sorte.",
+            "Em algumas tradições celtas, Epona era vista como uma deusa guerreira, que liderava exércitos de cavaleiros divinos em batalha. Ela também era considerada uma protetora das artes e da poesia, e muitas histórias celtas falam de seu papel como patrona dos bardos e dos músicos.",
+            "Epona era frequentemente honrada com oferendas de grãos, frutas e mel, e muitas vezes era invocada em cerimônias de fertilidade e de proteção. Ela também era vista como uma protetora das mulheres grávidas e dos recém-nascidos.",
+            "Embora ela tenha sido esquecida por muitos no mundo moderno, ela ainda é lembrada e homenageada por muitos praticantes de religiões neopagãs e reconstrucionistas celtas como uma importante deusa da fertilidade, da proteção e dos cavalos."
+        ]
+    }
+    // Epona, Danu, Arawn, Taranis
 ]
 
 export const jung = [
@@ -537,7 +468,8 @@ export const jung = [
         overview: [
             'Arquétipo é um conceito da psicologia utilizado para representar padrões de comportamento associados a um personagem ou papel social. A mãe, o sábio e o herói são exemplos de arquétipos. Esses “personagens” têm características percebidas de maneira semelhante por todos os seres humanos. Esse conceito foi desenvolvido por Carl G. Jung, psiquiatra suíço e fundador da psicologia analítica.',
             'Para Jung, esses comportamentos estão no inconsciente coletivo e, por isso, são percebidos de maneira similar por todos. Jung dizia que os arquétipos são uma herança psicológica, ou seja, resultam das experiências de milhares de gerações de seres humanos no enfrentamento das situações cotidianas. As imagens dos arquétipos são encontradas em mitos, lendas, na literatura, nos filmes e até mesmo nos nossos sonhos. Também são utilizados na publicidade. Quando um animal é utilizado em uma marca, espera-se que os clientes associem a marca às características daquele animal.',
-        ]
+        ],
+addres: 'jung'
     },
     {
         name: 'O herói',
@@ -887,5 +819,128 @@ export const jung = [
             'Esse tipo de pessoa prefere a certeza do erro à incerteza de nunca ter tentado. Mesmo que um resultado tenha sido negativo, o aventureiro sente-se feliz por ter experimentado e tirado a dúvida. Em geral, ele lida bem com as consequências dos seus atos.',
             'O aventureiro, portanto, é o indivíduo que se entedia com facilidade e que gosta de experimentar tudo aquilo que é novo. Individualista, explorador e sedento por liberdade, ele não mede esforços para encontrar a sua felicidade, mesmo que ela esteja em lugares pouco procurados. No entanto, ele precisa ser capaz de lidar com os resultados das suas escolhas, que nem sempre serão os que ele esperava encontrar.',
         ],
+    },
+]
+
+export const hindu = [
+    { title: 'Mitologia Hinduísta',
+    overview: [],
+    addres: 'hindu' },
+    {
+        name: 'Brahma',
+        image_path: '/assets/hindu/brahma.jpg',
+        overview: '',
+    },
+    {
+        name: 'Krishna',
+        image_path: '/assets/hindu/krishna.jpg',
+        overview: '',
+    },
+    {
+        name: 'Vishnu',
+        image_path: '/assets/hindu/vishnu.jpg',
+        overview: '',
+    },
+    {
+        name: 'Shiva',
+        image_path: '/assets/hindu/shiva.jpg',
+        overview: '',
+    },
+    {
+        name: 'Ganesha',
+        image_path: '/assets/hindu/ganesha.jpg',
+        overview: '',
+    },
+    {
+        name: 'Saraswati',
+        image_path: '/assets/hindu/saraswati.jpg',
+        overview: '',
+    },
+    {
+        name: 'Lakshmi',
+        image_path: '/assets/hindu/lakshmi.jpg',
+        overview: '',
+    },
+]
+
+export const nordic = [
+    { title: 'Mitologia Nórdica',
+    overview: [],
+    addres: 'nordic' },
+    {
+        name: 'Odin',
+        image_path: '/assets/nordic/deus-odin.jpg',
+        overview: '',
+    },
+    {
+        name: 'Loki',
+        image_path: '/assets/nordic/deus-loki.jpg',
+        overview: '',
+    },
+    {
+        name: 'Frigg',
+        image_path: '/assets/nordic/deusa-frigg.jpg',
+        overview: '',
+    },
+    {
+        name: 'Hel',
+        image_path: '/assets/nordic/deusa-hel.jpg',
+        overview: '',
+    },
+    {
+        name: 'Thor',
+        image_path: '/assets/nordic/deus-thor.jpg',
+        overview: '',
+    },
+    {
+        name: 'Bragi',
+        image_path: '/assets/nordic/deus-bragi.jpg',
+        overview: '',
+    },
+    {
+        name: 'Tyr',
+        image_path: '/assets/nordic/deus-tyr.jpg',
+        overview: '',
+    },
+]
+
+export const afro = [
+    { title: 'Mitologia Africana',
+    overview: [],
+    addres: 'afro' },
+    {
+        name: 'Exu',
+        image_path: '/assets/african/orixa-exu.jpg',
+        overview: '',
+    },
+    {
+        name: 'Xangô',
+        image_path: '/assets/african/orixa-xango.jpg',
+        overview: '',
+    },
+    {
+        name: 'Ogum',
+        image_path: '/assets/african/orixa-ogum.jpg',
+        overview: '',
+    },
+    {
+        name: 'Iansã',
+        image_path: '/assets/african/orixa-iansa.jpg',
+        overview: '',
+    },
+    {
+        name: 'Oxum',
+        image_path: '/assets/african/orixa-oxum.jpg',
+        overview: '',
+    },
+    {
+        name: 'Iemanjá',
+        image_path: '/assets/african/orixa-iemanja.jpg',
+        overview: '',
+    },
+    {
+        name: 'Olorum',
+        image_path: '/assets/african/orixa-olorum.jpg',
+        overview: '',
     },
 ]

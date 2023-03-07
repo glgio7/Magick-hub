@@ -24,10 +24,11 @@ function Categories() {
       carousel.current.scrollLeft += (carousel.current.scrollWidth / 3);
   }
 
+  document.title = `Magick Hub | ${list[0].title}`
+
   return (
     <>
       <Container>
-        <h3>O homem sofre porque leva a sério o que os deuses fizeram para se divertir... -Alan Watts</h3>
         <div className='wrapper' onLoad={() => window.scrollTo(0, 0)}>
           <HiChevronLeft className='arrow left' onClick={() => { handleList("left") }} />
           <h2>{list[0].title}</h2>

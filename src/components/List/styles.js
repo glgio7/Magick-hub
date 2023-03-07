@@ -1,74 +1,7 @@
 import styled from "styled-components";
 
-export const Container = styled.main`
-width: 100%;
-min-height: calc(100vh - 108px);
+const ListContainer = styled.div`
 
-padding-top: 3rem;
-
-display: flex;
-flex-direction: column;
-/* align-items: center; */
-
-/* overflow-y: scroll; */
-
-background: rgb(255,0,0);
-background: linear-gradient(0deg, rgba(50,0,150, 1) 0%, rgba(0,0,0, 1) 75%);
-
-
-
-img{
-    width: 100%;
-}
-
-.loading{
-    position: fixed;
-    top: 0;
-
-    z-index: 9;
-
-    background-color: #000;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 100vh;
-    width: 100vw;
-
-    img{
-        width: 300px;
-        height: 300px;
-        
-        object-fit: cover;
-        
-        border-radius: 50%;
-
-        animation: looping linear 2.5s infinite ;
-    }
-
-    @keyframes looping {
-        0%{
-            transform: rotateZ(0deg);
-        }
-        
-        100%{
-            transform: rotateZ(360deg);
-
-        }
-    }
-}
-
-section{
-    width: 100%;
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 2rem;
-}
-
-.wrapper{
     z-index: 5;
     position: relative;
     
@@ -79,16 +12,15 @@ section{
     justify-content: space-between;
     margin-block: 2rem;
     border-radius: 10px;
-}
 
-.wrapper h2{
+ h2{
     width: 100%;
     align-items: flex-start;
     text-align: center;
     
 }
 
-.wrapper h3{
+ h3{
     display: flex;
     flex-direction: column;
     aspect-ratio: 9/16;
@@ -117,7 +49,7 @@ section{
     }
 }
 
-.wrapper ul{
+ ul{
     display: flex;
     justify-content: space-around;
     align-content: space-between;
@@ -128,7 +60,7 @@ section{
         border-radius: 10px;
 }
 
-.wrapper li {
+ li {
     text-align: center;
     width: 30%;
     
@@ -186,55 +118,46 @@ section{
 
 }
 
-
-
 @media screen and (max-width: 900px){
 
-    margin-top: 2rem;
+width: 100vw;
+height: 100%;
 
-    section{
-        
-    padding: 0 1rem;
-    }
-
-    .wrapper{
-    width: 100vw;
-    height: 100%;
-    }
-
-    .wrapper h3 {
-        width: 100%;
-        aspect-ratio: 16/9;
-        border-radius: 10px;
-        
-        span{
-            padding: 1rem;
-            order: -1;
-        }
-
-        img{
-            border-radius: 0;
-            object-position: top;
-        }
-    }
+ h3 {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
     
-    .wrapper h2{
-        padding: 1rem 0;
-        border-radius: 0 0 10px 10px;
+    span{
+        padding: 1rem;
+        order: -1;
     }
 
-    .wrapper ul{
-        width: 100%;
-        border-radius: 0 0 10px 10px;
-    }
-    .wrapper li{
-        margin: 1rem 0;
-    }
-    
-    .see-more{
-        padding: 1rem 0;
-        height: 20%;
-        border-radius: 10px;
+    img{
+        border-radius: 0;
+        object-position: top;
     }
 }
+
+ h2{
+    padding: 1rem 0;
+    border-radius: 0 0 10px 10px;
+}
+
+ ul{
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+ li{
+    margin: 1rem 0;
+}
+
+.see-more{
+    padding: 1rem 0;
+    height: 20%;
+    border-radius: 10px;
+}
+}
 `
+
+export default ListContainer;

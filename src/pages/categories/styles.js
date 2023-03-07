@@ -8,10 +8,11 @@ flex-direction: column;
 align-items: center;
 background: rgb(255,0,0);
 background: radial-gradient(circle, rgba(96,0,255,.25) 0%, rgba(0,0,0,.25) 75%);
+padding: 3rem 0;
 
 
 h3{
-    font-family: 'Lobster', cursive;
+    font-family: 'Oleo Script', cursive;
     font-weight: normal;
     color: #fff;
     max-width: 90%;
@@ -19,7 +20,7 @@ h3{
 }
 
 h2{
-    font-family: 'Lobster', cursive;
+    font-family: 'Oleo Script', cursive;
     color: #fff;
     text-shadow: 0 1px 9px #8000ff;
     margin-block: 1rem;
@@ -143,7 +144,8 @@ p{
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
+margin-top: 2rem;
 
 h1{
     width: 100%;
