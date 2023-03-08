@@ -5,7 +5,7 @@ import ListContainer from "./styles";
 const List = ({ listName }) => {
     return (
         <ListContainer>
-            {!listName[1].overview &&
+            {listName[0].overview.length < 1 &&
                 <div className='coming-soon'>Em Breve</div>
             }
             <h3>

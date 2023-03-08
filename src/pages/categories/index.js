@@ -50,7 +50,7 @@ function Categories() {
           {card.image_path && <img src={card.image_path} alt={card.name} />}
           <h2>{card.name ? card.name : 'Um pouco de história'}</h2>
           {card.overview && (card.overview).map((value, index) => (
-            <p key={`id_${index}`} style={{ fontWeight: value.search(/[0-9]/m) ? 'normal' : 'bold' }}>
+            <p key={`id_${index}`}>
               {value}
             </p>
           ))}

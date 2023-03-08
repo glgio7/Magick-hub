@@ -6,7 +6,6 @@ export const GlobalCSS = createGlobalStyle`
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: 'Nunito', sans-serif;
   font-family: 'Oleo Script', cursive;
   list-style: none;
   -webkit-tap-highlight-color: transparent;

@@ -2,10 +2,10 @@ export const egypt = [
     {
         title: 'Mitologia Egípcia',
         overview: [
-            'A mitologia egípcia reúne diversos mitos, lendas e histórias que fizeram parte do imaginário religioso no Egito Antigo até a chegada do Cristianismo.',
-            'A mitologia egípcia é constituída por um conjunto de mitos, lendas e histórias utilizadas por aquele povo para explicar a sua vida cotidiana. Vale ressaltar que, durante a Antiguidade Oriental pouco se sabia sobre o funcionamento científico da natureza e do universo.',
-            'Sendo assim, a mitologia egípcia era uma forma de entender os fenômenos naturais. Além disso, a mitologia estava entrelaçada com a religião do Egito Antigo, a qual era politeísta (pregava a crença em vários deuses). Essas divindades podiam ser antropomórficas (os deuses possuem características humanas, entretanto, se diferenciam através de poderes, principalmente o de transformação), zoomórficas (deuses em forma de animais) ou antropozoomórficas (deuses com características humanas e animais).',
-            'O estudo sobre a mitologia egípcia é realizado de várias formas, como através de pirâmides, túmulos, estátuas e fontes escritas. As principais fontes escritas utilizadas são o Livro das Pirâmides, o Livro dos Sarcófagos, o Livro dos Mortos, os textos de Heródoto e os textos de Plutarco. Ainda assim não há total consenso sobre as informações referentes a mitologia egípcia, devido a divergências a respeito dela em diferentes regiões do Egito Antigo.',
+            'A mitologia egípcia é uma das mais fascinantes e complexas da história da humanidade, com uma riqueza de deuses, mitos e lendas que influenciaram não apenas a cultura egípcia, mas também a de muitas outras civilizações ao longo dos séculos. Os egípcios acreditavam em uma grande variedade de deuses, cada um com sua própria personalidade, história e função, desde os deuses solares até os deuses da morte e do submundo.',
+            'A mitologia egípcia está intimamente ligada à religião egípcia, que era central na vida cotidiana do povo egípcio. Os egípcios acreditavam na existência de uma vida após a morte, e muitas das práticas religiosas eram focadas em garantir uma passagem segura para o outro lado. O faraó, como líder espiritual e temporal do Egito, desempenhava um papel importante na religião e na mitologia egípcias.',
+            'Os mitos e lendas egípcios são repletos de simbolismo e metáfora, e muitos deles foram representados na arte egípcia, desde os hieróglifos até as estátuas e murais que adornam os templos e túmulos. Alguns dos mitos mais famosos incluem a história de Osíris e Ísis, a batalha entre Hórus e Seth, e a criação do mundo por Rá, o deus sol.',
+            'A mitologia egípcia é uma fonte inesgotável de inspiração para a literatura, a arte e a cultura popular, com muitas histórias e personagens sendo reinterpretados e adaptados ao longo dos séculos. Mesmo hoje, a rica tradição mitológica do Egito continua a fascinar e intrigar, fornecendo um vislumbre fascinante de uma das civilizações mais antigas e influentes da história.',
         ],
         address: 'egypt'
     },
@@ -217,8 +217,12 @@ export const egypt = [
 export const greek = [
     {
         title: 'Mitologia Grega',
-        overview: ['A mitologia grega é um conjunto de histórias (lendas e mitos) inventadas pela civilização da Grécia Antiga. A maioria desses mitos narra uma história épica, a qual conta com seres sobrenaturais, deuses e semideuses, que coexistem no mundo com os seres humanos. De modo geral, essas lendas foram o meio encontrado pelos gregos de explicarem fenômenos naturais.',
-            'Os deuses dessas histórias eram adorados como divindades reais. Pode-se dizer então que a religião grega era politeísta (possuía mais de uma divindade, sendo o deus principal Zeus) e antropomórfica (os deuses se assemelhavam aos humanos, tanto físico quanto comportamentalmente; no entanto, o que os diferenciava dos seres humanos era a imortalidade e os poderes). Disso, conclui-se que a mitologia e a religião gregas estão fortemente entrelaçadas.'],
+        overview: [
+            'A mitologia grega é uma das mais famosas e influentes do mundo, repleta de deuses, heróis e monstros que cativaram a imaginação das pessoas por milhares de anos. A mitologia grega apresenta uma rica variedade de histórias e personagens, que descrevem a origem do mundo e da humanidade, bem como as aventuras e desventuras dos deuses e heróis gregos.',
+            'A mitologia grega é caracterizada pela complexidade e ambiguidade dos personagens, que muitas vezes são retratados como heróis imperfeitos e falíveis, com qualidades e defeitos humanos. Os deuses gregos são retratados como seres poderosos, capazes de interferir na vida dos mortais, mas também sujeitos a conflitos e disputas entre si.',
+            'Muitos dos mitos gregos foram representados na arte, na literatura e no teatro ao longo dos séculos, fornecendo uma fonte inesgotável de inspiração para artistas e escritores de todo o mundo. Alguns dos mitos mais famosos incluem a história de Prometeu e o fogo, a lenda de Orfeu e Eurídice, a saga de Ulisses e sua viagem de volta para casa após a Guerra de Troia e a luta de Perseu contra a Medusa.',
+            'A mitologia grega teve uma influência duradoura na cultura ocidental, moldando a literatura, a arte, a filosofia e a política por séculos. Ainda hoje, a rica tradição mitológica da Grécia continua a fascinar e inspirar, fornecendo uma janela para a rica história e cultura de uma das civilizações mais importantes do mundo antigo.'
+        ],
         address: 'greek'
     },
     {
@@ -334,7 +338,12 @@ export const greek = [
 export const celtic = [
     {
         title: 'Mitologia Celta',
-        overview: [],
+        overview: [
+            'A mitologia celta é uma das mais antigas e menos conhecidas do mundo, repleta de deuses, deusas e criaturas místicas que habitavam a natureza e influenciavam a vida cotidiana das tribos celtas. A mitologia celta é caracterizada pela forte conexão com a natureza e pela valorização da sabedoria e da poesia.',
+            'Os celtas acreditavam em um panteão de deuses e deusas que governavam o universo e influenciavam a vida cotidiana das pessoas. Muitos desses deuses eram associados a elementos naturais, como a terra, o ar, a água e o fogo, e tinham poderes específicos, como a cura, a fertilidade e a guerra. Além dos deuses, a mitologia celta também apresenta uma grande variedade de criaturas místicas, como os banshees, os leprechauns e os dragões.',
+            'Essa mitologia é repleta de simbolismo e metáfora, com muitas histórias sendo contadas por meio da poesia e da música. Muitos dos mitos celtas foram transmitidos oralmente por gerações e só foram registrados por escrito muito depois, o que torna a mitologia celta mais difícil de estudar do que outras mitologias.',
+            'A mitologia celta teve uma influência duradoura na cultura europeia, especialmente na literatura, na música e na arte. Muitos escritores e artistas se inspiraram na rica tradição mitológica celta para criar obras de arte e literatura que capturam a magia e o mistério do mundo celta. Mesmo hoje, a mitologia celta continua a fascinar e intrigar, fornecendo um vislumbre fascinante de uma das culturas mais antigas e enigmáticas da Europa.',
+        ],
         address: 'celtic'
     },
     {
@@ -466,8 +475,11 @@ export const jung = [
     {
         title: 'Mitologia na visão de Jung',
         overview: [
-            'Arquétipo é um conceito da psicologia utilizado para representar padrões de comportamento associados a um personagem ou papel social. A mãe, o sábio e o herói são exemplos de arquétipos. Esses “personagens” têm características percebidas de maneira semelhante por todos os seres humanos. Esse conceito foi desenvolvido por Carl G. Jung, psiquiatra suíço e fundador da psicologia analítica.',
-            'Para Jung, esses comportamentos estão no inconsciente coletivo e, por isso, são percebidos de maneira similar por todos. Jung dizia que os arquétipos são uma herança psicológica, ou seja, resultam das experiências de milhares de gerações de seres humanos no enfrentamento das situações cotidianas. As imagens dos arquétipos são encontradas em mitos, lendas, na literatura, nos filmes e até mesmo nos nossos sonhos. Também são utilizados na publicidade. Quando um animal é utilizado em uma marca, espera-se que os clientes associem a marca às características daquele animal.',
+            'Os arquétipos de Carl Jung são um conjunto de imagens, ideias e padrões de comportamento universais que existem no inconsciente coletivo da humanidade. Jung acreditava que esses arquétipos são uma espécie de "programa" inato que orienta a maneira como as pessoas percebem o mundo e se comportam.',
+            'Existem muitos arquétipos diferentes, cada um com seu próprio conjunto de características e simbolismo. Alguns exemplos comuns incluem o herói, o sábio, o mago, a mãe, o pai e o trickster. Cada arquétipo representa uma força primordial que influencia a maneira como as pessoas pensam e agem.',
+            'Jung também acreditava que os arquétipos estão presentes em muitas das histórias e mitos que as pessoas contam ao longo dos séculos. Por exemplo, muitas histórias de heróis seguem um padrão semelhante, em que o herói deve enfrentar uma série de desafios e provar sua coragem antes de finalmente alcançar a vitória.',
+            'Os arquétipos são importantes porque ajudam as pessoas a entender a si mesmas e aos outros. Ao reconhecer os padrões de comportamento que estão em jogo, as pessoas podem começar a entender melhor por que agem de certas maneiras e como podem mudar para melhorar suas vidas.',
+            'Nesse contexto, existem também implicações importantes para a psicologia e a terapia. Jung acreditava que o objetivo final da psicoterapia era ajudar as pessoas a se tornarem mais conscientes dos arquétipos em jogo em suas vidas e a encontrar maneiras de trabalhar com eles de maneira mais positiva e produtiva.',
         ],
         address: 'jung'
     },
@@ -911,12 +923,23 @@ export const nordic = [
 export const afro = [
     {
         title: 'Mitologia Africana',
-        overview: [],
+        overview: [
+            'A mitologia africana é uma coleção rica e diversa de histórias e crenças que têm sido passadas oralmente de geração em geração. Essas histórias são originárias de diferentes regiões da África e têm muitas variações e interpretações.',
+            'A mitologia africana geralmente enfatiza a conexão entre os seres humanos e a natureza, com muitas histórias girando em torno da relação entre os seres humanos, os deuses e o mundo natural. A mitologia também aborda temas universais, como a origem do mundo, a criação da humanidade, a vida após a morte e o bem e o mal.',
+            'Uma característica importante da mitologia africana é a presença de um panteão de deuses e deusas. Esses deuses e deusas desempenham papéis importantes nas histórias, sendo muitas vezes responsáveis por criar o mundo e proteger a humanidade.',
+            'Ao longo dos anos, a mitologia africana tem sido usada para ensinar valores morais e éticos, preservar a história e a cultura africanas, e celebrar a conexão entre os seres humanos e o mundo natural. A mitologia continua a ser uma parte importante da vida cotidiana em muitas partes da África, mantendo-se viva por meio de contadores de histórias e rituais.',
+            'É importante lembrar que a mitologia africana é diversa e cada região pode ter suas próprias divindades e histórias, portanto, esta sessão não é exata, e pode variar de acordo com a regiões do mundo.',
+        ],
         address: 'afro'
     },
     {
         name: 'Exu',
         image_path: '/assets/african/orixa-exu.jpg',
+        overview: '',
+    },
+    {
+        name: 'Oxum',
+        image_path: '/assets/african/orixa-oxum.jpg',
         overview: '',
     },
     {
@@ -932,11 +955,6 @@ export const afro = [
     {
         name: 'Iansã',
         image_path: '/assets/african/orixa-iansa.jpg',
-        overview: '',
-    },
-    {
-        name: 'Oxum',
-        image_path: '/assets/african/orixa-oxum.jpg',
         overview: '',
     },
     {
