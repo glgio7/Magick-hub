@@ -3,35 +3,41 @@ import styled from "styled-components";
 export const Container = styled.main`
 width: 100%;
 height: 100%;
+
 display: flex;
 flex-direction: column;
-padding: 3rem 0;
 align-items: center;
+
+padding: 3rem 0;
+
 background: rgb(255,0,0);
 background: radial-gradient(circle, rgba(96,0,255,.25) 0%, rgba(0,0,0,.25) 50%);
 
 
 h3{
-    /* font-family: 'Lobster', cursive; */
-    font-weight: normal;
-    color: #fff;
     max-width: 90%;
+    
+    color: #fff;
+    font-weight: normal;
     text-align: center;
 }
 
 h2{
-    /* font-family: 'Lobster', cursive; */
     color: #fff;
     text-shadow: 0 1px 9px #8000ff;
-    margin-block: 1rem;
     text-align: center;
+
+    margin-block: 1rem;
 }
 
 section{
-    margin-block: 1rem;
     position: relative;
+    
     width: 100vw;
+    
     padding: 0 2vw;
+    margin-block: 1rem;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,6 +45,7 @@ section{
 
 .search-bar{
     width: 100%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,16 +53,21 @@ section{
 }
 
 input{
-    font-family: 'Nunito', sans-serif;
     border-radius: 3px;
-    height: 30px;
     border: none;
-    outline: none;
-    width: 50%;
     padding: 0 1rem;
+    
+    height: 30px;
+    width: 50%;
+    
+    font-family: 'Quicksand', sans-serif;
+    
+    outline: none;
+    
     color: #fff;
     font-size: 1rem;
     text-align: center;
+    
     background-color: #303030;
 }
 input:focus{
@@ -64,14 +76,20 @@ input:focus{
 
 button{
     cursor: pointer;
-    background-color: rgba(10,10,10, 1);
+
+    font-size: 1rem;
+    
     color: #fff;
-    /* font-family: 'Nunito', sans-serif; */
+    background-color: rgba(10,10,10, 1);
+    
     border-radius: 3px;
-    margin-block: 1rem;
     border: none;
+
+    margin-block: 1rem;
+
     height: 30px;
     width: 10%;
+
     transition: all 250ms;
     &:hover{
         background-color: rgba(10,10,10, .75);
@@ -81,7 +99,9 @@ button{
 article{
     width: 100%;
     min-height: 75vh;
+    
     padding: 1rem 0;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,14 +109,19 @@ article{
 
 p{
     color: #fff;
-    margin-block: 1rem;
+    
+    font-family: 'Quicksand', sans-serif;
+    
+    line-height: 1.5rem;
     text-align: center;
+    
     max-width: 90%;
+    
+    margin-block: 1rem;
 }
 
 
 @media screen and (max-width: 900px){
-
     margin-top: 2rem;
 
 h1{
@@ -112,7 +137,9 @@ section{
 
 input, button{
     border-radius: 0;
+    
     margin-block: 1px;
+    
     width: 70%;
 }
 

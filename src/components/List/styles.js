@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 const ListContainer = styled.div`
-
     z-index: 5;
     position: relative;
     
     width: 45vw;
     min-height: 50vh;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -15,15 +15,18 @@ const ListContainer = styled.div`
 
  h2{
     width: 100%;
-    align-items: flex-start;
-    text-align: center;
     
+    text-align: center;
 }
 
  h3{
+    margin-top: .25rem;
+
     display: flex;
     flex-direction: column;
+    
     aspect-ratio: 9/16;
+    
     width: calc(100% / 3);
     
     background-color: orange;
@@ -32,8 +35,10 @@ const ListContainer = styled.div`
 
     img{
         height: 90%;
+        
         object-fit: cover;
-            border-radius: 10px 10px 0 0;
+        
+        border-radius: 10px 10px 0 0;
     }
 
     span{
@@ -54,19 +59,24 @@ const ListContainer = styled.div`
     justify-content: space-around;
     align-content: space-between;
     flex-wrap: wrap;
+    
     width: 65%;
     height: 100%;
+    
     background-color: rgba(0,0,0,.75);
-        border-radius: 10px;
+    border-radius: 10px;
 }
 
  li {
     text-align: center;
+    
     width: 30%;
     
     img{
         border-radius: 12px;
+        
         object-fit: cover;
+        
         aspect-ratio: 1/1;
     }
 }
@@ -96,22 +106,28 @@ const ListContainer = styled.div`
 
 .coming-soon{
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    z-index: 5;
-    width: 100%;
-    height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    
+    z-index: 5;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+    width: 100%;
+    height: 100%;
+    
     font-size: 4rem;
+    
     background-color: rgba(0,0,0,.75);
 
     p{
         color: #fff;
+        
         font-family: "Oleo Script", cursive;
         font-size: 5rem;
     }
@@ -125,27 +141,33 @@ height: 100%;
 
  h3 {
     width: 100%;
+    
     aspect-ratio: 16/9;
+    
     border-radius: 10px;
     
     span{
         padding: 1rem;
+    
         order: -1;
     }
 
     img{
         border-radius: 0;
+    
         object-position: top;
     }
 }
 
  h2{
     padding: 1rem 0;
+    
     border-radius: 0 0 10px 10px;
 }
 
  ul{
     width: 100%;
+    
     border-radius: 0 0 10px 10px;
 }
  li{
@@ -154,7 +176,9 @@ height: 100%;
 
 .see-more{
     padding: 1rem 0;
+    
     height: 20%;
+    
     border-radius: 10px;
 }
 }

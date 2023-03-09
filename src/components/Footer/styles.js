@@ -11,8 +11,10 @@ background-color: #141414;
 
 p{
     font-family: 'Nunito', sans-serif;
-    color: #fff;
     text-align: center;
+    
+    color: #fff;
+    
     margin: 0 auto;
 }
 

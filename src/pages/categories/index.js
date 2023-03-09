@@ -18,8 +18,6 @@ function Categories() {
   const [card, setCard] = useState(list[0]);
   const carousel = useRef();
 
-  console.log(address)
-
   const handleList = (direction) => {
     direction === "left" ?
       carousel.current.scrollLeft -= (carousel.current.scrollWidth / 3) :

@@ -4,9 +4,6 @@ const StyledHeader = styled.header`
 width: 100vw;
 height: 108px;
 
-/* position: fixed;
-top: 0; */
-
 display: flex;
 flex-wrap: wrap;
 align-items: center;
@@ -32,7 +29,7 @@ img{
 }
 
 .container__image{
-    width: 96px;
+    width: 72px;
 }
 
 h1{
@@ -50,10 +47,12 @@ h1{
 h3{
     font-family: 'Oleo Script', cursive;
     font-weight: normal;
+    text-align: center;
+    
     color: #fff;
     background-color: #000;
+    
     width: 100%;
-    text-align: center;
 }
 
 .menu{
@@ -77,10 +76,6 @@ h3{
     h3, .container{
         width: 90%;
     }
-
-    .container__image{
-    width: 72px;
-}
 
     h1{
         font-size: 2.5rem;

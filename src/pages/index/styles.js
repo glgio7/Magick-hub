@@ -8,9 +8,6 @@ padding-top: 3rem;
 
 display: flex;
 flex-direction: column;
-/* align-items: center; */
-
-/* overflow-y: scroll; */
 
 background: rgb(255,0,0);
 background: linear-gradient(0deg, rgba(50,0,150, 1) 0%, rgba(0,0,0, 1) 75%);
@@ -62,28 +59,35 @@ img{
 section{
     width: 100%;
     
+    padding: 0 2rem;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 2rem;
 }
 
 .wrapper{
     z-index: 5;
+   
     position: relative;
     
     width: 45vw;
     min-height: 50vh;
+    
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    
     margin-block: 2rem;
+    
     border-radius: 10px;
 }
 
 .wrapper h2{
     width: 100%;
+    
     align-items: flex-start;
+    
     text-align: center;
     
 }
@@ -91,7 +95,9 @@ section{
 .wrapper h3{
     display: flex;
     flex-direction: column;
+    
     aspect-ratio: 9/16;
+    
     width: calc(100% / 3);
     
     background-color: orange;
@@ -100,8 +106,10 @@ section{
 
     img{
         height: 90%;
+        
         object-fit: cover;
-            border-radius: 10px 10px 0 0;
+        
+        border-radius: 10px 10px 0 0;
     }
 
     span{
@@ -119,22 +127,28 @@ section{
 
 .wrapper ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-between;
-    flex-wrap: wrap;
+    
     width: 65%;
     height: 100%;
+    
     background-color: rgba(0,0,0,.75);
-        border-radius: 10px;
+    
+    border-radius: 10px;
 }
 
 .wrapper li {
     text-align: center;
+   
     width: 30%;
     
     img{
         border-radius: 12px;
+        
         object-fit: cover;
+        
         aspect-ratio: 1/1;
     }
 }
@@ -164,22 +178,29 @@ section{
 
 .coming-soon{
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    z-index: 5;
-    width: 100%;
-    height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 10px;
+    
+    z-index: 5;
+    
+    width: 100%;
+    height: 100%;
+    
     font-size: 4rem;
+    
     background-color: rgba(0,0,0,.75);
 
     p{
         color: #fff;
+        
         font-family: "Oleo Script", cursive;
         font-size: 5rem;
     }
@@ -189,42 +210,46 @@ section{
 
 
 @media screen and (max-width: 900px){
-
     margin-top: 2rem;
 
     section{
-        
-    padding: 0 1rem;
+        padding: 0 1rem;
     }
 
     .wrapper{
-    width: 100vw;
-    height: 100%;
+        width: 100vw;
+        height: 100%;
     }
 
     .wrapper h3 {
         width: 100%;
+        
         aspect-ratio: 16/9;
+        
         border-radius: 10px;
         
         span{
             padding: 1rem;
+            
             order: -1;
         }
 
         img{
             border-radius: 0;
+            
             object-position: top;
         }
     }
     
     .wrapper h2{
         padding: 1rem 0;
+        
         border-radius: 0 0 10px 10px;
     }
 
     .wrapper ul{
         width: 100%;
+        
         border-radius: 0 0 10px 10px;
     }
     .wrapper li{
@@ -233,7 +258,9 @@ section{
     
     .see-more{
         padding: 1rem 0;
+        
         height: 20%;
+        
         border-radius: 10px;
     }
 }

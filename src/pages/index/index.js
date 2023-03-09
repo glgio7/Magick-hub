@@ -7,7 +7,9 @@ import List from '../../components/List';
 function Home() {
   const [loaded, setLoaded] = useState(false);
 
-  setTimeout(() => { setLoaded(true) }, 1500)
+  setTimeout(() => { setLoaded(true) }, 1500);
+
+  document.title = "Magick Hub | Home";
 
   return (
     <>

@@ -3,24 +3,31 @@ import styled from "styled-components";
 
 const Aside = styled.aside`
 position: absolute;
-pointer-events: none;
 top: 0;
+
+pointer-events: none;
+
 width: 100vw;
 height: 100vh;
 
+
 .container{
     pointer-events: all;
+
     width: 0vw;
+    height: 100%;
+
+    z-index: 99;
     position: fixed;
-    border-radius: 0 12px 12px 0;
     top: 0%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 100%;
+
     background-color: rgba(15,15,15, .99);
-    z-index: 99;
+
     transition: all 300ms;
 }
 
@@ -28,115 +35,140 @@ height: 100vh;
     width: 15vw;
 }
 
-.content-box{
+.text-container{
     z-index: 99;
-    background-color: #000;
-    overflow-y: auto;
     position: fixed;
     top: 0;
-    height: 100%;
     left: 15vw;
+    
+    background-color: #000;
+    
+    overflow-y: auto;
+    
     padding: 2rem 1rem;
+    
+    height: 100%;
     width: 85vw;
+    
     pointer-events: none;
-    transition: all 500ms;
     opacity: 0;
+    
+    transition: all 500ms;
 }
-.content-box.active{
+
+h2{
+    width: 90%;
+
+    margin: 0 auto;
+    
+    text-align: center;
+    color: #ffa900;
+    font-weight: bold;
+}
+
+p{
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+    
+    margin: 0 auto;
+    margin-block: .5rem;
+    
+    width: 90%;
+    
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+.text-container.active{
     pointer-events: all;
     opacity: 1;
 }
 
-p{
-    color: #fff;
-    margin: 0 auto;
-    margin-block: .5rem;
-    line-height: 1.75rem;
-    width: 90%;
-    text-align: center;
-
-    &:first-child{
-        font-weight: bold;
-    }
-}
-
-.icon{
-    font-size: 1.5rem;
-    color: #fff;
-    width: 100%;
-    opacity: .75;
-    transition: all 250ms;
-}
-
 button{
     cursor: pointer;
+    
     width: 100%;
+    
     background-color: transparent;
+    
     border: none;
-    transition: all 300ms;
+    
     opacity: ${({ displayed }) => displayed ? '1' : '0'};
     pointer-events: ${({ displayed }) => displayed ? 'all' : 'none'};
+    
+    transition: all 300ms;
 }
 
-button:hover .icon{
+button:hover .button__icon{
         opacity: 1;
+        
         scale: 1.1;
+        
         color: #ffa900;
 
 }
-span{
-    font-size: .75rem;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
+
+.button__icon{
+    font-size: 1.5rem;
+    
     color: #fff;
+    
+    width: 100%;
+    
+    opacity: .75;
+    
+    transition: all 250ms;
+
+}
+
+span{
+    font-family: 'Oleo Script', sans-serif;
+    font-weight: bold;
+
+    color: #fff;
+
     margin: 0 auto;
 }
 @media screen and (max-width: 900px){
 
+    .container{
+        border-radius: 0;
+      
+        bottom: 0;
+        top: initial;
+      
+        flex-direction: row;
+        justify-content: space-around;
+      
+        height: 52px;
+        width: 100%;
+    }
+    
+    .text-container{
+        top: 0;
+        left: 0;
+      
+        height: 100%;
+        width:100vw;
+    }
+    
+    .text-container.active{
+        width:100vw;
+    }
+
+    .close-button{
+        display: none;
+    }
+
     button{
         width: 20vw;
+      
         opacity: 1;
         pointer-events: all;
     }
 
-    button:hover .icon{
-        opacity: 1;
-        scale: 1;
-        color: #ffa900;
-
-    }
-
-    .close{
-        display: none;
-    }
-
-    .container, .container.active{
-        border-radius: 0;
-        bottom: 0;
-        top: initial;
-        flex-direction: row;
-        justify-content: space-around;
-        height: 48px;
-        width: 100vw;
-    }
-    
-    .content-box{
-        top: 0;
-        height: 100%;
-        left: 0;
-        width:100vw;
-    }
-    
-    .content-box.active{
-        width:100vw;
-    }
-
-    .icon{
-        font-size: 1rem;
-    }
-
     span{
-        font-size: .55rem;
+        font-size: .75rem;
     }
 }
 `
