@@ -1,176 +1,172 @@
 import styled from "styled-components";
 
-
 const Aside = styled.aside`
-position: absolute;
-top: 0;
+	position: absolute;
+	top: 0;
 
-pointer-events: none;
+	pointer-events: none;
 
-width: 100vw;
-height: 100vh;
+	width: 100vw;
+	height: 100vh;
 
+	.container {
+		pointer-events: all;
 
-.container{
-    pointer-events: all;
+		width: 0vw;
+		height: 100%;
 
-    width: 0vw;
-    height: 100%;
+		z-index: 99;
+		position: fixed;
+		top: 0%;
 
-    z-index: 99;
-    position: fixed;
-    top: 0%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+		background-color: rgba(15, 15, 15, 0.99);
 
-    background-color: rgba(15,15,15, .99);
+		transition: all 300ms;
+	}
 
-    transition: all 300ms;
-}
+	.container.active {
+		width: 15vw;
+	}
 
-.container.active{
-    width: 15vw;
-}
+	.text-container {
+		z-index: 99;
+		position: fixed;
+		top: 0;
+		left: 15vw;
 
-.text-container{
-    z-index: 99;
-    position: fixed;
-    top: 0;
-    left: 15vw;
-    
-    background-color: #000;
-    
-    overflow-y: auto;
-    
-    padding: 2rem 1rem;
-    
-    height: 100%;
-    width: 85vw;
-    
-    pointer-events: none;
-    opacity: 0;
-    
-    transition: all 500ms;
-}
+		background-color: #000;
 
-h2{
-    width: 90%;
+		overflow-y: auto;
 
-    margin: 0 auto;
-    
-    text-align: center;
-    color: #ffa900;
-    font-weight: bold;
-}
+		padding: 2rem 1rem;
 
-p{
-    font-family: "Quicksand", sans-serif;
-    color: #fff;
-    
-    margin: 0 auto;
-    margin-block: .5rem;
-    
-    width: 90%;
-    
-    line-height: 1.75rem;
-    text-align: center;
-}
+		height: 100%;
+		width: 85vw;
 
-.text-container.active{
-    pointer-events: all;
-    opacity: 1;
-}
+		pointer-events: none;
+		opacity: 0;
 
-button{
-    cursor: pointer;
-    
-    width: 100%;
-    
-    background-color: transparent;
-    
-    border: none;
-    
-    opacity: ${({ displayed }) => displayed ? '1' : '0'};
-    pointer-events: ${({ displayed }) => displayed ? 'all' : 'none'};
-    
-    transition: all 300ms;
-}
+		transition: all 500ms;
+	}
 
-button:hover .button__icon{
-        opacity: 1;
-        
-        scale: 1.1;
-        
-        color: #ffa900;
+	h2 {
+		width: 90%;
 
-}
+		margin: 0 auto;
 
-.button__icon{
-    font-size: 1.5rem;
-    
-    color: #fff;
-    
-    width: 100%;
-    
-    opacity: .75;
-    
-    transition: all 250ms;
+		text-align: center;
+		color: #ffa900;
+		font-weight: bold;
+	}
 
-}
+	p {
+		font-family: "Quicksand", sans-serif;
+		color: #fff;
 
-span{
-    font-family: 'Oleo Script', sans-serif;
-    font-weight: bold;
+		margin: 0 auto;
+		margin-block: 0.5rem;
 
-    color: #fff;
+		width: 90%;
 
-    margin: 0 auto;
-}
-@media screen and (max-width: 900px){
+		line-height: 1.75rem;
+		text-align: center;
+	}
 
-    .container, .container.active{
-        border-radius: 0;
-      
-        bottom: 0;
-        top: initial;
-      
-        flex-direction: row;
-        justify-content: space-around;
-      
-        height: 52px;
-        width: 100%;
-    }
-    
-    .text-container{
-        top: 0;
-        left: 0;
-      
-        height: 100%;
-        width:100vw;
-    }
-    
-    .text-container.active{
-        width:100vw;
-    }
+	.text-container.active {
+		pointer-events: all;
+		opacity: 1;
+	}
 
-    .close-button{
-        display: none;
-    }
+	button {
+		cursor: pointer;
 
-    button{
-        width: 20vw;
-      
-        opacity: 1;
-        pointer-events: all;
-    }
+		width: 100%;
 
-    span{
-        font-size: .75rem;
-    }
-}
-`
+		background-color: transparent;
+
+		border: none;
+
+		opacity: ${({ displayed }) => (displayed ? "1" : "0")};
+		pointer-events: ${({ displayed }) => (displayed ? "all" : "none")};
+
+		transition: all 300ms;
+	}
+
+	button:hover .button__icon {
+		opacity: 1;
+
+		scale: 1.1;
+
+		color: #ffa900;
+	}
+
+	.button__icon {
+		font-size: 1.5rem;
+
+		color: #fff;
+
+		width: 100%;
+
+		opacity: 0.75;
+
+		transition: all 250ms;
+	}
+
+	span {
+		font-family: "Oleo Script", sans-serif;
+		font-weight: bold;
+
+		color: #fff;
+
+		margin: 0 auto;
+	}
+	@media screen and (max-width: 900px) {
+		.container,
+		.container.active {
+			border-radius: 0;
+
+			bottom: 0;
+			top: initial;
+
+			flex-direction: row;
+			justify-content: space-around;
+
+			height: 52px;
+			width: 100%;
+		}
+
+		.text-container {
+			top: 0;
+			left: 0;
+
+			height: 100%;
+			width: 100vw;
+		}
+
+		.text-container.active {
+			width: 100vw;
+		}
+
+		.close-button {
+			display: none;
+		}
+
+		button {
+			width: 20vw;
+
+			opacity: 1;
+			pointer-events: all;
+		}
+
+		span {
+			font-size: 0.75rem;
+		}
+	}
+`;
 
 export default Aside;

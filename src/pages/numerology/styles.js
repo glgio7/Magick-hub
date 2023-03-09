@@ -1,147 +1,149 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-width: 100%;
-height: 100%;
+	width: 100%;
+	height: 100%;
 
-display: flex;
-flex-direction: column;
-align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-padding: 3rem 0;
+	padding: 3rem 0;
 
-background: rgb(255,0,0);
-background: radial-gradient(circle, rgba(96,0,255,.25) 0%, rgba(0,0,0,.25) 50%);
+	background: rgb(255, 0, 0);
+	background: radial-gradient(
+		circle,
+		rgba(96, 0, 255, 0.25) 0%,
+		rgba(0, 0, 0, 0.25) 50%
+	);
 
+	h3 {
+		max-width: 90%;
 
-h3{
-    max-width: 90%;
-    
-    color: #fff;
-    font-weight: normal;
-    text-align: center;
-}
+		color: #fff;
+		font-weight: normal;
+		text-align: center;
+	}
 
-h2{
-    color: #fff;
-    text-shadow: 0 1px 9px #8000ff;
-    text-align: center;
+	h2 {
+		color: #fff;
+		text-shadow: 0 1px 9px #8000ff;
+		text-align: center;
 
-    margin-block: 1rem;
-}
+		margin-block: 1rem;
+	}
 
-section{
-    position: relative;
-    
-    width: 100vw;
-    
-    padding: 0 2vw;
-    margin-block: 1rem;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+	section {
+		position: relative;
 
-.search-bar{
-    width: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+		width: 100vw;
 
-input{
-    border-radius: 3px;
-    border: none;
-    padding: 0 1rem;
-    
-    height: 30px;
-    width: 50%;
-    
-    font-family: 'Quicksand', sans-serif;
-    
-    outline: none;
-    
-    color: #fff;
-    font-size: 1rem;
-    text-align: center;
-    
-    background-color: #303030;
-}
-input:focus{
-    outline: thin solid #ffa900;
-}
+		padding: 0 2vw;
+		margin-block: 1rem;
 
-button{
-    cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
-    font-size: 1rem;
-    
-    color: #fff;
-    background-color: rgba(10,10,10, 1);
-    
-    border-radius: 3px;
-    border: none;
+	.search-bar {
+		width: 100%;
 
-    margin-block: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 
-    height: 30px;
-    width: 10%;
+	input {
+		border-radius: 3px;
+		border: none;
+		padding: 0 1rem;
 
-    transition: all 250ms;
-    &:hover{
-        background-color: rgba(10,10,10, .75);
-    }
-}
+		height: 30px;
+		width: 50%;
 
-article{
-    width: 100%;
-    min-height: 75vh;
-    
-    padding: 1rem 0;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+		font-family: "Quicksand", sans-serif;
 
-p{
-    color: #fff;
-    
-    font-family: 'Quicksand', sans-serif;
-    
-    line-height: 1.5rem;
-    text-align: center;
-    
-    max-width: 90%;
-    
-    margin-block: 1rem;
-}
+		outline: none;
 
+		color: #fff;
+		font-size: 1rem;
+		text-align: center;
 
-@media screen and (max-width: 900px){
-    margin-top: 2rem;
+		background-color: #303030;
+	}
+	input:focus {
+		outline: thin solid #ffa900;
+	}
 
-h1{
-    width: 100%;
-}
+	button {
+		cursor: pointer;
 
-section{
-    padding: 0;
-}
-.search-bar{
-    flex-direction: column;
-}
+		font-size: 1rem;
 
-input, button{
-    border-radius: 0;
-    
-    margin-block: 1px;
-    
-    width: 70%;
-}
+		color: #fff;
+		background-color: rgba(10, 10, 10, 1);
 
-}
-`
+		border-radius: 3px;
+		border: none;
+
+		margin-block: 1rem;
+
+		height: 30px;
+		width: 10%;
+
+		transition: all 250ms;
+		&:hover {
+			background-color: rgba(10, 10, 10, 0.75);
+		}
+	}
+
+	article {
+		width: 100%;
+		min-height: 75vh;
+
+		padding: 1rem 0;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	p {
+		color: #fff;
+
+		font-family: "Quicksand", sans-serif;
+
+		line-height: 1.5rem;
+		text-align: center;
+
+		max-width: 90%;
+
+		margin-block: 1rem;
+	}
+
+	@media screen and (max-width: 900px) {
+		margin-top: 2rem;
+
+		h1 {
+			width: 100%;
+		}
+
+		section {
+			padding: 0;
+		}
+		.search-bar {
+			flex-direction: column;
+		}
+
+		input,
+		button {
+			border-radius: 0;
+
+			margin-block: 1px;
+
+			width: 70%;
+		}
+	}
+`;
