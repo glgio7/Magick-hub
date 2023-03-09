@@ -131,7 +131,7 @@ span{
 }
 @media screen and (max-width: 900px){
 
-    .container{
+    .container, .container.active{
         border-radius: 0;
       
         bottom: 0;
