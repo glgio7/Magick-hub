@@ -10,8 +10,11 @@ const ListContainer = styled.div`
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
+
 	margin-block: 2rem;
 	border-radius: 10px;
+
+	pointer-events: ${({ emptyList }) => (emptyList ? "none" : "all")};
 
 	h2 {
 		width: 100%;

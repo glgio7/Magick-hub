@@ -2,8 +2,16 @@ import { Link } from "react-router-dom";
 import ListContainer from "./styles";
 
 const List = ({ listName }) => {
+	const isEmptyList = () => {
+		if (listName[0].overview.length < 1) {
+			return true;
+		} else {
+			return;
+		}
+	};
+
 	return (
-		<ListContainer>
+		<ListContainer emptyList={isEmptyList()}>
 			{listName[0].overview.length < 1 && (
 				<div className="coming-soon">Em Breve</div>
 			)}

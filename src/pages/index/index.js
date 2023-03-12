@@ -7,6 +7,7 @@ import {
 	hindu,
 	jung,
 	nordic,
+	japanese,
 } from "../../api/mythologies";
 import { useState } from "react";
 import Footer from "../../components/Footer";
@@ -35,8 +36,9 @@ function Home() {
 					<List listName={celtic} />
 					<List listName={jung} />
 					<List listName={afro} />
-					<List listName={nordic} />
 					<List listName={hindu} />
+					<List listName={japanese} />
+					<List listName={nordic} />
 				</section>
 
 				<Footer />
