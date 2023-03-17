@@ -9,6 +9,8 @@ import {
 	hindu,
 	jung,
 	nordic,
+	japanese,
+	roman,
 } from "../../api/mythologies";
 import { useParams } from "react-router-dom";
 
@@ -27,7 +29,14 @@ function Categories() {
 			? jung
 			: address === "afro"
 			? afro
-			: nordic;
+			: address === "nordic"
+			? nordic
+			: address === "japanese"
+			? japanese
+			: address === "roman"
+			? roman
+			: null;
+
 	const [card, setCard] = useState(list[0]);
 	const carousel = useRef();
 
