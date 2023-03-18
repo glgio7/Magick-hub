@@ -8,25 +8,33 @@ export default function Home() {
 	const [loaded, setLoaded] = useState(false);
 
 	const [lists, setLists] = useState();
-	const [apiUrl, setApiUrl] = useState("http://localhost:3000/api/data");
+	const [apiUrl, setApiUrl] = useState("https://magickhub.vercel.app/api/data");
 
 	setTimeout(() => {
 		setLoaded(true);
 	}, 1500);
 
 	useEffect(() => {
-		const url = window.location.href.split("//");
+		const getUrl = () => {
+			const url = window.location.href.split("//");
 
-		url[1] !== "localhost:3000/"
-			? setApiUrl("https://magickhub.vercel.app/api/data")
-			: setApiUrl(apiUrl);
-	}, []);
+			url[1] === "localhost:3000/"
+				? setApiUrl("http://localhost:3000/api/data")
+				: setApiUrl(apiUrl);
+		};
 
-	useEffect(() => {
-		fetch(apiUrl)
-			.then((response) => response.json())
-			.then((data) => setLists(Object.values(data).map((item) => item)))
-			.catch((err) => console.log(err));
+		const getData = () => {
+			fetch(apiUrl, {
+				headers: {
+					"Access-Control-Allow-Origin": "*",
+				},
+			})
+				.then((response) => response.json())
+				.then((data) => setLists(Object.values(data).map((item) => item)))
+				.catch((err) => console.log(err));
+		};
+
+		Promise.all([getUrl(), getData()]);
 	}, []);
 
 	return (
