@@ -1,26 +1,24 @@
 import Head from "next/head";
 import Container from "../styles/index";
-import {
-	afro,
-	celtic,
-	egypt,
-	greek,
-	hindu,
-	jung,
-	nordic,
-	japanese,
-	roman,
-} from "./api/mythologies";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import List from "../components/List";
 
 export default function Home() {
 	const [loaded, setLoaded] = useState(false);
 
+	const [lists, setLists] = useState();
+
 	setTimeout(() => {
 		setLoaded(true);
 	}, 1500);
+
+	useEffect(() => {
+		fetch(`https://magickhub.vercel.app/api/data`)
+			.then((response) => response.json())
+			.then((data) => setLists(Object.values(data).map((item) => item)))
+			.catch((err) => console.log(err));
+	}, []);
 
 	return (
 		<>
@@ -37,15 +35,8 @@ export default function Home() {
 					</div>
 				)}
 				<section>
-					<List listName={egypt} />
-					<List listName={greek} />
-					<List listName={celtic} />
-					<List listName={jung} />
-					<List listName={afro} />
-					<List listName={hindu} />
-					<List listName={roman} />
-					<List listName={japanese} />
-					<List listName={nordic} />
+					{lists &&
+						lists.map((item, index) => <List listName={item} key={index} />)}
 				</section>
 				<Footer />
 			</Container>
