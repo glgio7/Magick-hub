@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container } from "./styles";
+import Container from "./styles";
 
 function Numerology() {
 	const [userName, setUserName] = useState("");

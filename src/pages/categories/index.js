@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import Container from "./styles";
 import { HiChevronRight, HiChevronLeft } from "react-icons/hi";
 import { useRef, useState } from "react";
 import { useRouter } from "next/router";
