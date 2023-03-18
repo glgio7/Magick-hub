@@ -21,8 +21,6 @@ function Home() {
 		setLoaded(true);
 	}, 1500);
 
-	// document.title = "Magick Hub | Home";
-
 	return (
 		<>
 			<Container>
