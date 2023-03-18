@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.main`
+const Container = styled.main`
 	width: 100%;
 	min-height: calc(100vh - 108px);
 
@@ -261,3 +261,6 @@ export const Container = styled.main`
 		}
 	}
 `;
+
+
+export default Container

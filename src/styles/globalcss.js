@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalCSS = createGlobalStyle`
+const GlobalCSS = createGlobalStyle`
 * {
   box-sizing: border-box;
   padding: 0;
@@ -37,3 +37,5 @@ a {
   color: #ffa900;
 }
 `;
+
+export default GlobalCSS;

@@ -30,11 +30,8 @@ export default class MyDocument extends Document {
 
 	render() {
 		return (
-			<Html>
-				<Head>
-					<link rel="icon" href="/favicon.png" />
-					<title>Magick Hub</title>
-				</Head>
+			<Html lang="pt-br">
+				<Head />
 				<body>
 					<Main />
 					<NextScript />
