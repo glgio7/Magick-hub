@@ -44,6 +44,7 @@ const Aside = styled.aside`
 		overflow-y: auto;
 
 		padding: 2rem 1rem;
+		padding-bottom: 52px;
 
 		height: 100%;
 		width: 85vw;
@@ -52,6 +53,11 @@ const Aside = styled.aside`
 		opacity: 0;
 
 		transition: all 500ms;
+	}
+
+	.text-container.active {
+		pointer-events: all;
+		opacity: 1;
 	}
 
 	h2 {
@@ -75,11 +81,6 @@ const Aside = styled.aside`
 
 		line-height: 1.75rem;
 		text-align: center;
-	}
-
-	.text-container.active {
-		pointer-events: all;
-		opacity: 1;
 	}
 
 	button {

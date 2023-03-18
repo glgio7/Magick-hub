@@ -8,13 +8,22 @@ export default function Home() {
 	const [loaded, setLoaded] = useState(false);
 
 	const [lists, setLists] = useState();
+	const [apiUrl, setApiUrl] = useState("http://localhost:3000/api/data");
 
 	setTimeout(() => {
 		setLoaded(true);
 	}, 1500);
 
 	useEffect(() => {
-		fetch(`https://magickhub.vercel.app/api/data`)
+		const url = window.location.href.split("//");
+
+		url[1] !== "localhost:3000/"
+			? setApiUrl("https://magickhub.vercel.app/api/data")
+			: setApiUrl(apiUrl);
+	}, []);
+
+	useEffect(() => {
+		fetch(apiUrl)
 			.then((response) => response.json())
 			.then((data) => setLists(Object.values(data).map((item) => item)))
 			.catch((err) => console.log(err));
