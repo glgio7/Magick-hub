@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import {
 	HiHome,
@@ -6,7 +7,6 @@ import {
 	HiOutlineSparkles,
 	HiShare,
 } from "react-icons/hi";
-import { Link } from "react-router-dom";
 import Aside from "./styles";
 
 const Sidebar = ({ displayed, toggleMenu }) => {
@@ -56,7 +56,7 @@ const Sidebar = ({ displayed, toggleMenu }) => {
 					>
 						<HiOutlineChevronDoubleLeft className="button__icon" />
 					</button>
-					<Link to={"/"}>
+					<Link href={"/"}>
 						<button
 							onClick={() => {
 								closeMenu();
@@ -67,7 +67,7 @@ const Sidebar = ({ displayed, toggleMenu }) => {
 							<span>Início</span>
 						</button>
 					</Link>
-					<Link to={"/numerology"}>
+					<Link href={"/numerology"}>
 						<button
 							onClick={() => {
 								closeMenu();
@@ -78,13 +78,13 @@ const Sidebar = ({ displayed, toggleMenu }) => {
 							<span>Numeros</span>
 						</button>
 					</Link>
-					<Link>
+					<Link href={""}>
 						<button onClick={() => setContent(!content)}>
 							<HiOutlineExclamationCircle className="button__icon" />
 							<span>Infos</span>
 						</button>
 					</Link>
-					<Link>
+					<Link href={""}>
 						<button onClick={shareLink}>
 							<HiShare className="button__icon" />
 							<span>Share</span>

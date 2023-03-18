@@ -36,4 +36,4 @@ a {
 ::selection{
   color: #ffa900;
 }
-`
+`;

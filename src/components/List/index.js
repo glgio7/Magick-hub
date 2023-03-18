@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import ListContainer from "./styles";
 
 const List = ({ listName }) => {
@@ -25,7 +25,7 @@ const List = ({ listName }) => {
 					(item, index) =>
 						index > 1 &&
 						index < 8 && (
-							<li key={`id_${index}}`}>
+							<li key={`id_${index}}`} className="list-item">
 								<img
 									src={item.image_path}
 									alt={item.name}
@@ -35,8 +35,12 @@ const List = ({ listName }) => {
 							</li>
 						)
 				)}
-				<Link to={`/categories/${listName[0].address}`} className="see-more">
-					<p>Ver todos</p>
+				<Link
+					className="see-more"
+					href={`/categories/${listName[0].address}`}
+					passHref
+				>
+					Ver todos
 				</Link>
 			</ul>
 		</ListContainer>

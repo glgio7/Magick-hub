@@ -184,6 +184,43 @@ export const Container = styled.main`
 		max-width: 90%;
 	}
 
+	.loading {
+		position: fixed;
+		top: 0;
+
+		z-index: 9;
+
+		background-color: #000;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		height: 100vh;
+		width: 100vw;
+
+		img {
+			width: 300px;
+			height: 300px;
+
+			object-fit: cover;
+
+			border-radius: 50%;
+
+			animation: looping linear 2.5s infinite;
+		}
+
+		@keyframes looping {
+			0% {
+				transform: rotateZ(0deg);
+			}
+
+			100% {
+				transform: rotateZ(360deg);
+			}
+		}
+	}
+
 	@media screen and (max-width: 900px) {
 		margin-top: 2rem;
 
