@@ -14,10 +14,7 @@ const Sidebar = ({ displayed, toggleMenu }) => {
 
 	const [content, setContent] = useState(false);
 
-	const shareLink = () => {
-		navigator.clipboard.writeText(window.location.href);
-		window.alert("Link da página copiado para compartilhar!");
-	};
+	const [share, setShare] = useState(false);
 
 	const infoParagraphs = [
 		"| Aviso |",
@@ -34,16 +31,77 @@ const Sidebar = ({ displayed, toggleMenu }) => {
 		"No MagickHub, acreditamos no poder dos arquétipos para mudar nossa história e alcançar uma vida mais satisfatória. Vale lembrar, no entanto, que nossa psique é muito mais complexa do que podemos imaginar e que possuímos um pouco de cada figura arquetípica em nós. Por isso, é importante não sermos intolerantes filosoficamente ou de qualquer outra maneira, pois estamos sempre aprendendo e evoluindo.",
 	];
 
+	const handleShare = (type) => {
+		switch (type) {
+			case "whatsapp":
+				window.open(
+					`https://api.whatsapp.com/send?text=${encodeURIComponent(
+						window.location.href
+					)}`,
+					"_blank"
+				);
+				break;
+			case "instagram":
+				window.open(
+					`https://www.instagram.com/add/url/?url=${encodeURIComponent(
+						window.location.href
+					)}`,
+					"_blank"
+				);
+				break;
+			case "copy":
+				navigator.clipboard.writeText(window.location.href);
+				window.alert("Link copiado!");
+				break;
+			default:
+				break;
+		}
+	};
+
+	console.log(share);
+
 	return (
 		<>
 			<Aside displayed={displayed}>
-				<div className={content ? "text-container active" : "text-container"}>
-					{infoParagraphs.map((value, index) =>
-						value.startsWith("|") ? (
-							<h2 key={index}>{value}</h2>
-						) : (
-							<p key={index}>{value}</p>
+				<div
+					className={
+						content || share ? "text-container active" : "text-container"
+					}
+				>
+					{content ? (
+						infoParagraphs.map((value, index) =>
+							value.startsWith("|") ? (
+								<h2 key={index}>{value}</h2>
+							) : (
+								<p key={index}>{value}</p>
+							)
 						)
+					) : share ? (
+						<>
+							<button
+								className="share-button"
+								onClick={() => handleShare("instagram")}
+							>
+								<img src="/assets/instagram.svg" alt="Share on Instagram" />
+								<span>Compartilhar no Instagram</span>
+							</button>
+							<button
+								className="share-button"
+								onClick={() => handleShare("whatsapp")}
+							>
+								<img src="/assets/whatsapp.svg" alt="Share on Whatsapp" />
+								<span>Compartilhar no Whatsapp</span>
+							</button>
+							<button
+								onClick={() => handleShare("copy")}
+								className="share-button"
+							>
+								<img src="/assets/clipboard.svg" alt="Copiar link" />
+								<span>Copiar link</span>
+							</button>
+						</>
+					) : (
+						""
 					)}
 				</div>
 				<div className={displayed ? "container active" : "container"}>
@@ -52,6 +110,7 @@ const Sidebar = ({ displayed, toggleMenu }) => {
 						onClick={() => {
 							closeMenu();
 							setContent(false);
+							setShare(false);
 						}}
 					>
 						<HiOutlineChevronDoubleLeft className="button__icon" />
@@ -61,6 +120,7 @@ const Sidebar = ({ displayed, toggleMenu }) => {
 							onClick={() => {
 								closeMenu();
 								setContent(false);
+								setShare(false);
 							}}
 						>
 							<HiHome className="button__icon" />
@@ -72,6 +132,7 @@ const Sidebar = ({ displayed, toggleMenu }) => {
 							onClick={() => {
 								closeMenu();
 								setContent(false);
+								setShare(false);
 							}}
 						>
 							<HiOutlineSparkles className="button__icon" />
@@ -79,13 +140,23 @@ const Sidebar = ({ displayed, toggleMenu }) => {
 						</button>
 					</Link>
 					<Link href={""}>
-						<button onClick={() => setContent(!content)}>
+						<button
+							onClick={() => {
+								setContent(!content);
+								setShare(false);
+							}}
+						>
 							<HiOutlineExclamationCircle className="button__icon" />
 							<span>Infos</span>
 						</button>
 					</Link>
 					<Link href={""}>
-						<button onClick={shareLink}>
+						<button
+							onClick={() => {
+								setContent(false);
+								setShare(!share);
+							}}
+						>
 							<HiShare className="button__icon" />
 							<span>Share</span>
 						</button>

@@ -9,6 +9,11 @@ const Aside = styled.aside`
 	width: 100vw;
 	height: 100vh;
 
+	img {
+		width: 100%;
+		/* object-fit: contain; */
+	}
+
 	.container {
 		pointer-events: all;
 
@@ -42,6 +47,7 @@ const Aside = styled.aside`
 		background-color: #000;
 
 		overflow-y: auto;
+		overflow-x: hidden;
 
 		padding: 2rem 1rem;
 		padding-bottom: 52px;
@@ -104,6 +110,32 @@ const Aside = styled.aside`
 		scale: 1.1;
 
 		color: #ffa900;
+	}
+
+	.share-button {
+		font-size: 1.5rem;
+
+		width: auto;
+		display: block;
+		margin: 0 auto;
+
+		color: #fff;
+
+		opacity: 1;
+
+		transition: all 250ms;
+
+		margin-top: 2rem;
+
+		img {
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+
+		span {
+			display: block;
+			font-size: 1.25rem;
+		}
 	}
 
 	.button__icon {

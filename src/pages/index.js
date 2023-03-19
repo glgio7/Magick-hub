@@ -2,39 +2,31 @@ import Head from "next/head";
 import Container from "../styles/index";
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
-import List from "../components/List";
+import ListContainer from "../components/ListContainer";
 
 export default function Home() {
 	const [loaded, setLoaded] = useState(false);
 
 	const [lists, setLists] = useState();
-	const [apiUrl, setApiUrl] = useState("https://magickhub.vercel.app/api/data");
 
 	setTimeout(() => {
 		setLoaded(true);
-	}, 1500);
+	}, 1750);
 
 	useEffect(() => {
-		const getUrl = () => {
-			const url = window.location.href.split("//");
+		// fetch("http://localhost:3000/api/", {
 
-			url[1] === "localhost:3000/"
-				? setApiUrl("http://localhost:3000/api/data")
-				: setApiUrl(apiUrl);
-		};
+		// IF YOU ARE IN DEVELOPMENT MODE COMMENT LINE BELOW AND UNCOMMENT LINE ABOVE
 
-		const getData = () => {
-			fetch(apiUrl, {
-				headers: {
-					"Access-Control-Allow-Origin": "*",
-				},
-			})
-				.then((response) => response.json())
-				.then((data) => setLists(Object.values(data).map((item) => item)))
-				.catch((err) => console.log(err));
-		};
-
-		Promise.all([getUrl(), getData()]);
+		fetch("https://magickhub.vercel.app/api/", {
+			method: "GET",
+			headers: {
+				"Access-Control-Allow-Origin": "*",
+			},
+		})
+			.then((response) => response.json())
+			.then((data) => setLists(Object.values(data).map((item) => item)))
+			.catch((err) => console.log(err));
 	}, []);
 
 	return (
@@ -53,7 +45,9 @@ export default function Home() {
 				)}
 				<section>
 					{lists &&
-						lists.map((item, index) => <List listName={item} key={index} />)}
+						lists.map((item, index) => (
+							<ListContainer listName={item} key={index} />
+						))}
 				</section>
 				<Footer />
 			</Container>
