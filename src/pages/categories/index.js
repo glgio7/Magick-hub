@@ -1,14 +1,43 @@
-import { useRouter } from "next/router";
-import { useRef, useState } from "react";
-import Head from "next/head";
 import Container from "./styles";
 import { HiChevronRight, HiChevronLeft } from "react-icons/hi";
-import { dataList } from "../api";
+import { useRef, useState } from "react";
+import { useRouter } from "next/router";
+import {
+	afro,
+	celtic,
+	egypt,
+	greek,
+	hindu,
+	jung,
+	nordic,
+	japanese,
+	roman,
+} from "../api/mythologies";
+import Head from "next/head";
 
 function Categories() {
 	const router = useRouter();
 	const { address } = router.query;
-	const list = dataList[address];
+	const list =
+		address === "egypt"
+			? egypt
+			: address === "celtic"
+			? celtic
+			: address === "greek"
+			? greek
+			: address === "hindu"
+			? hindu
+			: address === "jung"
+			? jung
+			: address === "afro"
+			? afro
+			: address === "nordic"
+			? nordic
+			: address === "japanese"
+			? japanese
+			: address === "roman"
+			? roman
+			: [];
 
 	const [card, setCard] = useState();
 	const carousel = useRef();
