@@ -14,13 +14,13 @@ export default function Home() {
 	}, 1750);
 
 	useEffect(() => {
-		// fetch("http://localhost:3000/api/", {
-		// IF YOU ARE IN DEVELOPMENT MODE COMMENT LINE BELOW AND UNCOMMENT LINE ABOVE
+		fetch("/api", {
+			// IF YOU ARE IN DEV COMMENT LINE BELOW AND UNCOMMENT LINE ABOVE
 
-		fetch("https://magickhub.vercel.app/api/", {
+			// fetch("https://magickhub.vercel.app/api/", {
 			method: "GET",
 			headers: {
-				"Access-Control-Allow-Origin": "*",
+				"Content-Type": "application/json",
 			},
 		})
 			.then((response) => response.json())

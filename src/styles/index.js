@@ -262,5 +262,4 @@ const Container = styled.main`
 	}
 `;
 
-
-export default Container
+export default Container;

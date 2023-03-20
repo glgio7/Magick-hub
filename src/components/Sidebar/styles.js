@@ -11,10 +11,9 @@ const Aside = styled.aside`
 
 	img {
 		width: 100%;
-		/* object-fit: contain; */
 	}
 
-	.container {
+	nav {
 		pointer-events: all;
 
 		width: 0vw;
@@ -34,15 +33,63 @@ const Aside = styled.aside`
 		transition: all 300ms;
 	}
 
-	.container.active {
+	nav.active {
 		width: 15vw;
 	}
 
-	.text-container {
+	button {
+		cursor: pointer;
+
+		width: 100%;
+
+		background-color: transparent;
+
+		border: none;
+
+		opacity: ${({ displayed }) => (displayed ? "1" : "0")};
+		pointer-events: ${({ displayed }) => (displayed ? "all" : "none")};
+
+		transition: all 300ms;
+	}
+
+	.button__icon {
+		font-size: 1.5rem;
+
+		color: #fff;
+
+		width: 100%;
+
+		opacity: 0.75;
+
+		transition: all 250ms;
+	}
+
+	span {
+		font-family: "Quicksand", sans-serif;
+		font-weight: bold;
+
+		color: #fff;
+
+		margin: 0 auto;
+	}
+
+	button:hover .button__icon {
+		opacity: 1;
+
+		scale: 1.1;
+
+		color: #ffa900;
+	}
+
+	.container {
 		z-index: 99;
 		position: fixed;
 		top: 0;
 		left: 15vw;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
 		background-color: #000;
 
@@ -61,12 +108,7 @@ const Aside = styled.aside`
 		transition: all 500ms;
 	}
 
-	.text-container.active {
-		pointer-events: all;
-		opacity: 1;
-	}
-
-	h2 {
+	.container h2 {
 		width: 90%;
 
 		margin: 0 auto;
@@ -76,7 +118,7 @@ const Aside = styled.aside`
 		font-weight: bold;
 	}
 
-	p {
+	.container p {
 		font-family: "Quicksand", sans-serif;
 		color: #fff;
 
@@ -89,78 +131,54 @@ const Aside = styled.aside`
 		text-align: center;
 	}
 
-	button {
-		cursor: pointer;
-
-		width: 100%;
-
-		background-color: transparent;
-
-		border: none;
-
-		opacity: ${({ displayed }) => (displayed ? "1" : "0")};
-		pointer-events: ${({ displayed }) => (displayed ? "all" : "none")};
-
-		transition: all 300ms;
-	}
-
-	button:hover .button__icon {
+	.container.active {
+		pointer-events: all;
 		opacity: 1;
-
-		scale: 1.1;
-
-		color: #ffa900;
 	}
 
-	.share-button {
+	.container button {
 		font-size: 1.5rem;
 
-		width: auto;
-		display: block;
-		margin: 0 auto;
+		width: 50%;
 
+		display: inline-flex;
+		align-items: center;
+
+		background-color: rgba(30, 30, 30, 0.99);
 		color: #fff;
 
 		opacity: 1;
 
 		transition: all 250ms;
 
+		border-radius: 10px;
+
+		padding: 0.5rem;
 		margin-top: 2rem;
 
-		img {
-			width: 2.5rem;
-			height: 2.5rem;
-		}
-
-		span {
-			display: block;
-			font-size: 1.25rem;
+		&:hover {
+			background-color: #ffa900;
+			span {
+				color: #000;
+			}
 		}
 	}
 
-	.button__icon {
-		font-size: 1.5rem;
-
-		color: #fff;
-
-		width: 100%;
-
-		opacity: 0.75;
-
-		transition: all 250ms;
+	.container img {
+		width: 2.5rem;
+		height: 2.5rem;
 	}
 
-	span {
-		font-family: "Oleo Script", sans-serif;
-		font-weight: bold;
-
-		color: #fff;
-
-		margin: 0 auto;
+	.container span {
+		font-size: 1rem;
 	}
+
 	@media screen and (max-width: 900px) {
-		.container,
-		.container.active {
+		.close-button {
+			display: none;
+		}
+		nav,
+		nav.active {
 			border-radius: 0;
 
 			bottom: 0;
@@ -169,24 +187,8 @@ const Aside = styled.aside`
 			flex-direction: row;
 			justify-content: space-around;
 
-			height: 52px;
+			height: 54px;
 			width: 100%;
-		}
-
-		.text-container {
-			top: 0;
-			left: 0;
-
-			height: 100%;
-			width: 100vw;
-		}
-
-		.text-container.active {
-			width: 100vw;
-		}
-
-		.close-button {
-			display: none;
 		}
 
 		button {
@@ -196,8 +198,29 @@ const Aside = styled.aside`
 			pointer-events: all;
 		}
 
+		.button__icon {
+			line-height: 1rem;
+		}
+
 		span {
-			font-size: 0.75rem;
+			font-size: 0.7rem;
+		}
+
+		.container {
+			top: 0;
+			left: 0;
+
+			z-index: 9;
+
+			width: 100vw;
+		}
+
+		.container.active {
+			width: 100vw;
+		}
+
+		.container button {
+			width: 80%;
 		}
 	}
 `;

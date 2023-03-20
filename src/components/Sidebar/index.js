@@ -32,79 +32,36 @@ const Sidebar = ({ displayed, toggleMenu }) => {
 	];
 
 	const handleShare = (type) => {
-		switch (type) {
-			case "whatsapp":
-				window.open(
-					`https://api.whatsapp.com/send?text=${encodeURIComponent(
-						window.location.href
-					)}`,
-					"_blank"
-				);
-				break;
-			case "instagram":
-				window.open(
-					`https://www.instagram.com/add/url/?url=${encodeURIComponent(
-						window.location.href
-					)}`,
-					"_blank"
-				);
-				break;
-			case "copy":
-				navigator.clipboard.writeText(window.location.href);
-				window.alert("Link copiado!");
-				break;
-			default:
-				break;
+		if (typeof window !== undefined) {
+			const url = encodeURIComponent(window.location.href);
+			switch (type) {
+				case "whatsapp":
+					window.open(`https://api.whatsapp.com/send?text=${url}`, "_blank");
+					break;
+				case "facebook":
+					window.open(
+						`https://www.facebook.com/sharer/sharer.php?u=${url}`,
+						"_blank"
+					);
+					break;
+				case "copy":
+					if (navigator.clipboard) {
+						navigator.clipboard.writeText(window.location.href);
+						window.alert("Link copiado!");
+					}
+					break;
+				default:
+					break;
+			}
 		}
 	};
-
-	console.log(share);
 
 	return (
 		<>
 			<Aside displayed={displayed}>
-				<div
-					className={
-						content || share ? "text-container active" : "text-container"
-					}
-				>
-					{content ? (
-						infoParagraphs.map((value, index) =>
-							value.startsWith("|") ? (
-								<h2 key={index}>{value}</h2>
-							) : (
-								<p key={index}>{value}</p>
-							)
-						)
-					) : share ? (
-						<>
-							<button
-								className="share-button"
-								onClick={() => handleShare("instagram")}
-							>
-								<img src="/assets/instagram.svg" alt="Share on Instagram" />
-								<span>Compartilhar no Instagram</span>
-							</button>
-							<button
-								className="share-button"
-								onClick={() => handleShare("whatsapp")}
-							>
-								<img src="/assets/whatsapp.svg" alt="Share on Whatsapp" />
-								<span>Compartilhar no Whatsapp</span>
-							</button>
-							<button
-								onClick={() => handleShare("copy")}
-								className="share-button"
-							>
-								<img src="/assets/clipboard.svg" alt="Copiar link" />
-								<span>Copiar link</span>
-							</button>
-						</>
-					) : (
-						""
-					)}
-				</div>
-				<div className={displayed ? "container active" : "container"}>
+				{/* // Navigation container and nav buttons */}
+
+				<nav className={displayed ? "active" : ""}>
 					<button
 						className="close-button"
 						onClick={() => {
@@ -161,6 +118,46 @@ const Sidebar = ({ displayed, toggleMenu }) => {
 							<span>Share</span>
 						</button>
 					</Link>
+				</nav>
+
+				{/* // Container for displaying content */}
+
+				<div className={content || share ? "container active" : "container"}>
+					{content ? (
+						infoParagraphs.map((value, index) =>
+							value.startsWith("|") ? (
+								<h2 key={index}>{value}</h2>
+							) : (
+								<p key={index}>{value}</p>
+							)
+						)
+					) : share ? (
+						<>
+							<button
+								className="share-button"
+								onClick={() => handleShare("facebook")}
+							>
+								<img src="/assets/facebook.svg" alt="Share on Facebook" />
+								<span>Compartilhar no Facebook</span>
+							</button>
+							<button
+								className="share-button"
+								onClick={() => handleShare("whatsapp")}
+							>
+								<img src="/assets/whatsapp.svg" alt="Share on Whatsapp" />
+								<span>Compartilhar no Whatsapp</span>
+							</button>
+							<button
+								onClick={() => handleShare("copy")}
+								className="share-button"
+							>
+								<img src="/assets/clipboard.svg" alt="Copiar link" />
+								<span>Copiar link</span>
+							</button>
+						</>
+					) : (
+						""
+					)}
 				</div>
 			</Aside>
 		</>
