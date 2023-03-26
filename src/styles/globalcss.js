@@ -6,7 +6,8 @@ const GlobalCSS = createGlobalStyle`
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: 'Oleo Script', cursive;
+  /* font-family: 'Oleo Script', cursive; */
+  font-family: 'Quicksand', cursive;
   list-style: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -21,7 +22,7 @@ body {
   background-color: #000;
   color: #fff;
   
-  width: 100vw;
+  width: 100%;
   
   overflow-x: hidden;
 }

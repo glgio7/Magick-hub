@@ -1,4 +1,4 @@
-import Container from "./styles";
+import StyledCategory, { Wrapper } from "./styles";
 import { HiChevronRight, HiChevronLeft } from "react-icons/hi";
 import { useRef, useState } from "react";
 import { useRouter } from "next/router";
@@ -60,8 +60,8 @@ function Categories() {
 			<Head>
 				<title>{`Magick Hub | ${list[0].title}`}</title>
 			</Head>
-			<Container>
-				<div className="wrapper" onLoad={() => window.scrollTo(0, 0)}>
+			<StyledCategory>
+				<Wrapper onLoad={() => window.scrollTo(0, 0)}>
 					<HiChevronLeft
 						className="arrow left"
 						onClick={() => {
@@ -86,7 +86,7 @@ function Categories() {
 							handleList("right");
 						}}
 					/>
-				</div>
+				</Wrapper>
 				<article>
 					{card ? (
 						<>
@@ -105,7 +105,7 @@ function Categories() {
 						</>
 					)}
 				</article>
-			</Container>
+			</StyledCategory>
 		</>
 	);
 }

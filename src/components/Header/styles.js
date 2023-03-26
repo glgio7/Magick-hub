@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
-	width: 100vw;
-	height: 108px;
+	width: 100%;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -24,7 +23,6 @@ const StyledHeader = styled.header`
 	.container {
 		padding: 0.5rem 0;
 
-		width: 90%;
 		height: 100%;
 
 		display: flex;
@@ -33,12 +31,14 @@ const StyledHeader = styled.header`
 	}
 
 	.container__image {
-		width: 72px;
+		width: 54px;
 	}
 
 	h1 {
 		font-family: "Oleo Script", "Ubuntu";
 		font-size: 3rem;
+
+		z-index: 5;
 
 		background: rgb(255, 130, 0);
 		background: linear-gradient(
@@ -58,7 +58,6 @@ const StyledHeader = styled.header`
 		text-align: center;
 
 		color: #fff;
-		background-color: #000;
 
 		width: 100%;
 	}
@@ -78,12 +77,14 @@ const StyledHeader = styled.header`
 	}
 
 	@media screen and (max-width: 900px) {
+		height: auto;
 		.menu {
 			display: none;
 		}
-		h3,
-		.container {
-			width: 90%;
+		h3 {
+			width: 100%;
+			padding: 0.25rem 5%;
+			line-height: 1.5rem;
 		}
 
 		h1 {

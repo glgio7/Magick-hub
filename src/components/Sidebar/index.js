@@ -93,7 +93,7 @@ const Sidebar = ({ displayed, toggleMenu }) => {
 							}}
 						>
 							<HiOutlineSparkles className="button__icon" />
-							<span>Numeros</span>
+							<span>Números</span>
 						</button>
 					</Link>
 					<Link href={""}>

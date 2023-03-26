@@ -81,6 +81,8 @@ const Aside = styled.aside`
 		color: #ffa900;
 	}
 
+	// Container for displaying content
+
 	.container {
 		z-index: 99;
 		position: fixed;
@@ -110,6 +112,7 @@ const Aside = styled.aside`
 
 	.container h2 {
 		width: 90%;
+		font-family: "Oleo Script", cursive;
 
 		margin: 0 auto;
 

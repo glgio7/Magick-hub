@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Container = styled.main`
 	width: 100%;
+	min-height: calc(100vh - 108px);
 	height: 100%;
 
 	display: flex;
@@ -17,33 +18,78 @@ const Container = styled.main`
 		rgba(0, 0, 0, 0.25) 50%
 	);
 
-	h3 {
-		max-width: 90%;
-
-		color: #fff;
-		font-weight: normal;
-		text-align: center;
-	}
-
-	h2 {
-		color: #fff;
-		text-shadow: 0 1px 9px #8000ff;
-		text-align: center;
-
-		margin-block: 1rem;
-	}
-
 	section {
 		position: relative;
 
 		width: 100vw;
 
-		padding: 0 2vw;
-		margin-block: 1rem;
+		padding: 1rem 2vw;
 
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	h2 {
+		color: #fff;
+
+		text-shadow: 0 1px 9px #8000ff;
+		text-align: center;
+	}
+
+	.intro-container {
+		margin: 0 auto;
+
+		width: 90%;
+
+		text-align: center;
+	}
+
+	.intro-container__letters {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.intro-container p {
+		margin-block: 1rem;
+	}
+
+	p {
+		max-width: 90%;
+		color: #fff;
+
+		font-family: "Quicksand", sans-serif;
+
+		line-height: 1.5rem;
+		text-align: center;
+
+		margin: 0 auto;
+	}
+
+	span {
+		position: relative;
+	}
+
+	span:after {
+		content: ",";
+		position: absolute;
+		bottom: 0;
+		right: -0.25rem;
+	}
+
+	span:first-letter {
+		margin-left: 1rem;
+		color: #ffa900;
+	}
+
+	span:last-child {
+		&::after {
+			content: ".";
+			position: absolute;
+			bottom: 0;
+			right: -0.25rem;
+		}
 	}
 
 	.search-bar {
@@ -99,9 +145,19 @@ const Container = styled.main`
 		}
 	}
 
+	h3 {
+		max-width: 90%;
+
+		margin-block: 2rem;
+
+		color: #fff;
+
+		font-weight: normal;
+		text-align: center;
+	}
+
 	article {
 		width: 100%;
-		min-height: 75vh;
 
 		padding: 1rem 0;
 
@@ -110,29 +166,32 @@ const Container = styled.main`
 		align-items: center;
 	}
 
-	p {
-		color: #fff;
-
-		font-family: "Quicksand", sans-serif;
-
-		line-height: 1.5rem;
-		text-align: center;
-
-		max-width: 90%;
-
-		margin-block: 1rem;
-	}
-
 	@media screen and (max-width: 900px) {
 		margin-top: 2rem;
 
-		h1 {
-			width: 100%;
+		h2,
+		p {
+			margin-top: 1rem;
 		}
 
 		section {
 			padding: 0;
 		}
+
+		.intro-container__letters {
+			justify-content: flex-start;
+		}
+
+		.intro-container__letters span {
+			margin: 0.25rem 0;
+			width: 30%;
+			text-align: justify;
+
+			&::after {
+				display: none;
+			}
+		}
+
 		.search-bar {
 			flex-direction: column;
 		}

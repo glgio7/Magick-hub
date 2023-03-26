@@ -16,6 +16,13 @@ const StyledListContainer = styled.div`
 
 	pointer-events: ${({ emptyList }) => (emptyList ? "none" : "all")};
 
+	h2,
+	h3 span,
+	.see-more,
+	.coming-soon {
+		font-family: "Oleo Script", cursive;
+	}
+
 	h2 {
 		width: 100%;
 
