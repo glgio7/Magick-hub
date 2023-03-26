@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
-export const StyledSection = styled.section`
+const StyledSection = styled.section`
 	display: flex;
 	min-height: calc(100vh - 152px);
 	flex-direction: column;
 	align-items: center;
-	/* justify-content: center; */
 
 	h2 {
 		font-family: "Oleo Script", cursive;
@@ -35,3 +34,4 @@ export const StyledSection = styled.section`
 		width: 80%;
 	}
 `;
+export default StyledSection;
