@@ -1,5 +1,4 @@
-// import Container from "../../styles/index";
-import { StyledSection } from "./styles";
+import StyledSection from "./styles";
 
 function Documentation() {
 	return (
