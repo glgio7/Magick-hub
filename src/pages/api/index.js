@@ -476,7 +476,6 @@ export const dataList = {
 				"Embora ela tenha sido esquecida por muitos no mundo moderno, ela ainda é lembrada e homenageada por muitos praticantes de religiões neopagãs e reconstrucionistas celtas como uma importante deusa da fertilidade, da proteção e dos cavalos.",
 			],
 		},
-		// Epona, Danu, Arawn, Taranis
 	],
 
 	jung: [
@@ -936,13 +935,25 @@ export const dataList = {
 	nordic: [
 		{
 			title: "Mitologia Nórdica",
-			overview: [],
+			overview: [
+				"A mitologia nórdica é um conjunto de histórias e crenças compartilhadas pelos povos da Escandinávia, como dinamarqueses, noruegueses e suecos. Essas histórias foram transmitidas oralmente por muitas gerações antes de serem registradas em manuscritos medievais, como a Edda em prosa e a Edda em verso. A mitologia nórdica é caracterizada por uma rica coleção de deuses, deusas, gigantes, elfos, anões e outros seres sobrenaturais, todos com suas próprias características e personalidades distintas.",
+				"O panteão nórdico é liderado por Odin, o deus dos deuses, que governa Asgard, a morada dos deuses. Ele é acompanhado por sua esposa, Frigg, a deusa do casamento e do amor, e seus filhos Thor, o deus do trovão, e Loki, o deus da trapaça e da travessura. Além disso, há muitos outros deuses, como Freyja, a deusa do amor e da fertilidade, e Tyr, o deus da justiça e da coragem.",
+				"A mitologia nórdica é rica em lendas épicas, como a história de Ragnarok, o fim do mundo, onde os deuses e os gigantes lutam em uma batalha final cataclísmica. Há também muitas histórias envolvendo o martelo de Thor, Mjolnir, que ele usa para proteger Asgard e defender os mortais dos inimigos dos deuses. Outra lenda famosa é a história de Baldur, o deus da luz e da beleza, que é morto por uma flecha de visco envenenada.",
+				"Além dos deuses, a mitologia nórdica também inclui muitos outros seres míticos, como os gigantes, que habitam as terras selvagens além de Asgard, e os elfos, seres sobrenaturais com poderes mágicos que vivem nas florestas. Os anões são também parte importante da mitologia nórdica, sendo conhecidos por sua habilidade na forja de armas e objetos mágicos.",
+				"A mitologia nórdica tem tido um impacto duradouro na cultura popular, com muitos livros, filmes, jogos e séries de TV baseados em suas histórias e personagens. A popularidade da mitologia nórdica é uma prova da fascinação que as pessoas têm por essas histórias épicas e personagens lendários, que têm resistido ao teste do tempo e continuam a encantar e inspirar as pessoas em todo o mundo.",
+			],
 			address: "nordic",
 		},
 		{
 			name: "Odin",
 			image_path: "/assets/nordic/deus-odin.jpg",
-			overview: "",
+			overview: [
+				"Odin é o principal deus da mitologia nórdica e é conhecido como o pai de todos os deuses. Ele governa Asgard, a morada dos deuses, e é o deus da sabedoria, da guerra e da morte. Odin é frequentemente retratado como um homem idoso de barba longa, usando um manto e um chapéu de abas largas, com um olho só, pois teria dado um de seus olhos em troca de sabedoria.",
+				"Além de seu papel como líder dos deuses, Odin é conhecido por sua busca constante por sabedoria e conhecimento. Ele viajou pelos nove mundos em busca de sabedoria e é frequentemente retratado com seus dois corvos Huginn e Muninn, que voam pelo mundo e trazem informações a Odin.",
+				"Odin também é conhecido por sua habilidade em magia e feitiçaria. Ele é frequentemente retratado como um deus misterioso e astuto, que usa sua inteligência e magia para resolver problemas e superar obstáculos.",
+				"Uma das lendas mais famosas envolvendo Odin é a história de sua morte e ressurreição durante o Ragnarok, o fim do mundo. Segundo a lenda, Odin morre lutando contra o lobo gigante Fenrir, mas é ressuscitado após o Ragnarok para ajudar a reconstruir o mundo.",
+				"Odin é um dos personagens mais importantes e reverenciados da mitologia nórdica, e sua influência pode ser vista em muitas culturas europeias e escandinavas até os dias de hoje. Seu papel como líder dos deuses, sua busca por sabedoria e sua habilidade em magia e feitiçaria tornam Odin um personagem complexo e fascinante na mitologia nórdica.",
+			],
 		},
 		{
 			name: "Loki",

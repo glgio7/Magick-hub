@@ -208,6 +208,7 @@ export const Wrapper = styled.div`
 		margin-top: 0.5rem;
 
 		font-weight: bold;
+		font-family: "Oleo Script", cursive;
 		text-shadow: 0 0 9px #8000ff;
 		text-align: center;
 	}
