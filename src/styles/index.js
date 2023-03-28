@@ -16,7 +16,7 @@ const StyledHome = styled.section`
 	article {
 		width: 100%;
 
-		padding: 0 2rem;
+		padding: 0 1rem;
 
 		display: flex;
 		flex-wrap: wrap;
@@ -27,7 +27,6 @@ const StyledHome = styled.section`
 		flex-direction: column;
 
 		article {
-			padding: 0 1rem;
 			justify-content: center;
 		}
 	}

@@ -3,6 +3,7 @@ import { HiChevronRight, HiChevronLeft } from "react-icons/hi";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Loading from "@/components/Loading";
 
 function Categories() {
 	const router = useRouter();
@@ -29,11 +30,7 @@ function Categories() {
 			: (carousel.current.scrollLeft += carousel.current.scrollWidth / 3);
 	};
 	if (!list) {
-		return (
-			<div className="loading">
-				<img src="/assets/loading.jpg" alt="Loading..." />
-			</div>
-		);
+		return <Loading />;
 	}
 
 	return (
