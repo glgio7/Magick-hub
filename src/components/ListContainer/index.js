@@ -25,7 +25,7 @@ const ListContainer = ({ listName }) => {
 					(item, index) =>
 						index > 1 &&
 						index < 8 && (
-							<li key={`id_${index}}`} className="list-item">
+							<li key={`id_${index}}`}>
 								<img
 									src={item.image_path}
 									alt={item.name}

@@ -1,45 +1,26 @@
 import StyledCategory, { Wrapper } from "./styles";
 import { HiChevronRight, HiChevronLeft } from "react-icons/hi";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
-import {
-	afro,
-	celtic,
-	egypt,
-	greek,
-	hindu,
-	jung,
-	nordic,
-	japanese,
-	roman,
-} from "../api/mythologies";
 import Head from "next/head";
 
 function Categories() {
 	const router = useRouter();
 	const { address } = router.query;
-	const list =
-		address === "egypt"
-			? egypt
-			: address === "celtic"
-			? celtic
-			: address === "greek"
-			? greek
-			: address === "hindu"
-			? hindu
-			: address === "jung"
-			? jung
-			: address === "afro"
-			? afro
-			: address === "nordic"
-			? nordic
-			: address === "japanese"
-			? japanese
-			: address === "roman"
-			? roman
-			: [];
 
+	const [listApi, setListApi] = useState();
+	const [list, setList] = useState();
 	const [card, setCard] = useState();
+
+	useEffect(() => {
+		fetch("/api")
+			.then((response) => response.json())
+			.then((data) => {
+				setList(data[address]);
+			})
+			.catch((err) => console.log(err));
+	}, [address]);
+
 	const carousel = useRef();
 
 	const handleList = (direction) => {
@@ -47,7 +28,7 @@ function Categories() {
 			? (carousel.current.scrollLeft -= carousel.current.scrollWidth / 3)
 			: (carousel.current.scrollLeft += carousel.current.scrollWidth / 3);
 	};
-	if (list.length === 0) {
+	if (!list) {
 		return (
 			<div className="loading">
 				<img src="/assets/loading.jpg" alt="Loading..." />
