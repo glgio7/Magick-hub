@@ -9,7 +9,6 @@ function Categories() {
 	const router = useRouter();
 	const { address } = router.query;
 
-	const [listApi, setListApi] = useState();
 	const [list, setList] = useState();
 	const [card, setCard] = useState();
 
@@ -30,7 +29,11 @@ function Categories() {
 			: (carousel.current.scrollLeft += carousel.current.scrollWidth / 3);
 	};
 	if (!list) {
-		return <Loading />;
+		return (
+			<StyledCategory>
+				<Loading />
+			</StyledCategory>
+		);
 	}
 
 	return (

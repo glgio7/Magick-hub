@@ -19,9 +19,7 @@ const StyledLoading = styled.div`
 		width: 300px;
 		height: 300px;
 
-		object-fit: cover;
-
-		border-radius: 50%;
+		object-fit: contain;
 
 		animation: looping linear 2.5s infinite;
 	}
