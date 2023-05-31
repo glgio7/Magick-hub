@@ -9,7 +9,12 @@ import {
 } from "react-icons/hi";
 import Aside from "./styles";
 
-const Sidebar = ({ displayed, toggleMenu }) => {
+type SidebarProps = {
+	displayed: boolean;
+	toggleMenu(): void;
+};
+
+const Sidebar = ({ displayed, toggleMenu }: SidebarProps) => {
 	const closeMenu = toggleMenu;
 
 	const [content, setContent] = useState(false);
@@ -31,7 +36,7 @@ const Sidebar = ({ displayed, toggleMenu }) => {
 		"No MagickHub, acreditamos no poder dos arquétipos para mudar nossa história e alcançar uma vida mais satisfatória. Vale lembrar, no entanto, que nossa psique é muito mais complexa do que podemos imaginar e que possuímos um pouco de cada figura arquetípica em nós. Por isso, é importante não sermos intolerantes filosoficamente ou de qualquer outra maneira, pois estamos sempre aprendendo e evoluindo.",
 	];
 
-	const handleShare = (type) => {
+	const handleShare = (type: string) => {
 		if (typeof window !== undefined) {
 			const url = encodeURIComponent(window.location.href);
 			switch (type) {

@@ -1,9 +1,9 @@
-// import { Link } from "react-router-dom";
 import Link from "next/link";
 import { HiMenu } from "react-icons/hi";
 import StyledHeader from "./styles";
+import { HeaderProps } from "./types";
 
-const Header = ({ toggleMenu }) => {
+const Header = ({ toggleMenu }: HeaderProps) => {
 	return (
 		<StyledHeader>
 			<HiMenu className="menu" onClick={toggleMenu} />

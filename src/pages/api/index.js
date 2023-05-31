@@ -11,6 +11,8 @@ export const dataList = {
 				"A mitologia egípcia é uma fonte inesgotável de inspiração para a literatura, a arte e a cultura popular, com muitas histórias e personagens sendo reinterpretados e adaptados ao longo dos séculos. Mesmo hoje, a rica tradição mitológica do Egito continua a fascinar e intrigar, fornecendo um vislumbre fascinante de uma das civilizações mais antigas e influentes da história.",
 			],
 			address: "egypt",
+			name: "",
+			image_path: "",
 		},
 		{
 			name: "Rá",

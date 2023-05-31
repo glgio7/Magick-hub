@@ -1,27 +1,33 @@
 import Link from "next/link";
 import StyledListContainer from "./styles";
+import { Myth } from "@/pages/api/types";
 
-const ListContainer = ({ listName }) => {
+type ListContainerProps = {
+	list: Myth[];
+	key: number;
+};
+
+const ListContainer = ({ list, key }: ListContainerProps) => {
 	const isEmptyList = () => {
-		if (listName[0].overview.length < 1) {
+		if (list[0]!.overview.length < 1) {
 			return true;
 		} else {
-			return;
+			return false;
 		}
 	};
 
 	return (
 		<StyledListContainer emptyList={isEmptyList()}>
-			{listName[0].overview.length < 1 && (
+			{list[0]!.overview.length < 1 && (
 				<div className="coming-soon">Em Breve</div>
 			)}
 			<h3>
-				<span>{listName[1].name}</span>
-				<img src={listName[1].image_path} alt="" />
+				<span>{list[1]!.name}</span>
+				<img src={list[1]!.image_path} alt="" />
 			</h3>
 			<ul>
-				<h2>{listName[0].title}</h2>
-				{listName.map(
+				<h2>{list[0]!.title}</h2>
+				{list.map(
 					(item, index) =>
 						index > 1 &&
 						index < 8 && (
@@ -37,7 +43,7 @@ const ListContainer = ({ listName }) => {
 				)}
 				<Link
 					className="see-more"
-					href={`/categories/${listName[0].address}`}
+					href={`/categories/${list[0]!.address}`}
 					passHref
 				>
 					Ver todos
