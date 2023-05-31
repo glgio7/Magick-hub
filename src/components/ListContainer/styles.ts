@@ -54,7 +54,7 @@ const StyledListContainer = styled.div<{ emptyList: boolean }>`
 
 			border-radius: 0 0 10px 10px;
 
-			background-color: #0070ff;
+			background-color: #4000cc;
 			color: #fff;
 
 			display: flex;
@@ -102,15 +102,16 @@ const StyledListContainer = styled.div<{ emptyList: boolean }>`
 		align-items: center;
 		justify-content: center;
 
-		background-color: #252525;
+		background-color: #ddd;
+		color: #000;
 
 		order: 1;
 
 		transition: all 300ms;
 
 		&:hover {
-			background-color: #ddd;
-			color: #000;
+			background-color: #000;
+			color: #fff;
 		}
 	}
 
@@ -189,7 +190,7 @@ const StyledListContainer = styled.div<{ emptyList: boolean }>`
 
 			height: 20%;
 
-			border-radius: 10px;
+			border-radius: 0 0 10px 10px;
 		}
 	}
 `;

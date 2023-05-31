@@ -10,12 +10,6 @@ const StyledHeader = styled.header`
 
 	z-index: 90;
 
-	background: linear-gradient(
-		180deg,
-		rgba(50, 0, 150, 1) 0%,
-		rgba(0, 0, 0, 1) 100%
-	);
-
 	img {
 		width: 100%;
 	}

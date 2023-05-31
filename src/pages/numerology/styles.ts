@@ -11,13 +11,6 @@ const Container = styled.main`
 
 	padding: 3rem 0;
 
-	background: rgb(255, 0, 0);
-	background: radial-gradient(
-		circle,
-		rgba(96, 0, 255, 0.25) 0%,
-		rgba(0, 0, 0, 0.25) 50%
-	);
-
 	section {
 		position: relative;
 

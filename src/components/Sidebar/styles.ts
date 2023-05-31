@@ -89,11 +89,11 @@ const Aside = styled.aside<{ displayed: boolean }>`
 		top: 0;
 		left: 15vw;
 
+		background-image: url("/data/background.jpg");
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
-		background-color: #000;
 
 		overflow-y: auto;
 		overflow-x: hidden;
@@ -108,6 +108,18 @@ const Aside = styled.aside<{ displayed: boolean }>`
 		opacity: 0;
 
 		transition: all 500ms;
+	}
+
+	.background {
+		position: absolute;
+		z-index: -1;
+
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		background-color: rgba(0, 0, 0, 0.5);
 	}
 
 	.container h2 {

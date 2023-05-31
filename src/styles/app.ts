@@ -5,18 +5,14 @@ const AppContainer = styled.main`
 	height: 100%;
 
 	padding: 3rem 0;
+	padding-top: 0.5rem;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 
-	background: rgb(255, 0, 0);
-	background: linear-gradient(
-		180deg,
-		rgba(0, 0, 0, 1) 0%,
-		rgba(50, 0, 150, 1) 75%
-	);
+	background-image: url("/data/background.jpg");
 `;
 
 export default AppContainer;

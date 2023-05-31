@@ -6,10 +6,9 @@ import Loading from "@/components/Loading";
 import { Myth } from "./api/types";
 
 export default function Home() {
-	const [loaded, setLoaded] = useState(false);
-
 	const [lists, setLists] = useState<Myth[][] | null>(null);
 
+	const [loaded, setLoaded] = useState(false);
 	setTimeout(() => {
 		setLoaded(true);
 	}, 1750);

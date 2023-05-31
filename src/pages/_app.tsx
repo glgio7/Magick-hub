@@ -10,13 +10,14 @@ import { AppProps } from "next/app";
 export default function App({ Component, pageProps }: AppProps) {
 	const [menu, setMenu] = useState(false);
 	const toggleMenu = () => setMenu(!menu);
+
 	return (
 		<>
 			<GlobalCSS />
 			<GoogleFonts href="https://fonts.googleapis.com/css2?family=Quicksand&family=Oleo+Script:wght@400;700&display=swap" />
 			<Sidebar displayed={menu} toggleMenu={toggleMenu} />
-			<Header toggleMenu={toggleMenu} />
 			<AppContainer>
+				<Header toggleMenu={toggleMenu} />
 				<Component {...pageProps} />
 			</AppContainer>
 			<Footer />

@@ -124,6 +124,7 @@ const Sidebar = ({ displayed, toggleMenu }: SidebarProps) => {
 				{/* // Container for displaying content */}
 
 				<div className={content || share ? "container active" : "container"}>
+					<div className="background"></div>
 					{content ? (
 						infoParagraphs.map((value, index) =>
 							value.startsWith("|") ? (
