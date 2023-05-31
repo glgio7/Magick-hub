@@ -7,7 +7,7 @@ import Loading from "@/components/Loading";
 export default function Home() {
 	const [loaded, setLoaded] = useState(false);
 
-	const [lists, setLists] = useState();
+	const [lists, setLists] = useState<unknown[] | null>(null);
 
 	setTimeout(() => {
 		setLoaded(true);
