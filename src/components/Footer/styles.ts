@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledFooter = styled.footer`
+export const Footer = styled.footer`
 	text-align: center;
 	width: 100%;
 	min-height: 128px;
@@ -54,5 +54,3 @@ const StyledFooter = styled.footer`
 		}
 	}
 `;
-
-export default StyledFooter;

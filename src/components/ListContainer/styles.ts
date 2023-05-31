@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledListContainer = styled.div`
+const StyledListContainer = styled.div<{ emptyList: boolean }>`
 	z-index: 5;
 	position: relative;
 

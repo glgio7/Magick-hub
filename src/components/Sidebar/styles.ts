@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Aside = styled.aside`
+const Aside = styled.aside<{ displayed: boolean }>`
 	position: absolute;
 	top: 0;
 
