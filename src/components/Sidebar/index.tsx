@@ -8,11 +8,7 @@ import {
 	HiShare,
 } from "react-icons/hi";
 import Aside from "./styles";
-
-type SidebarProps = {
-	displayed: boolean;
-	toggleMenu(): void;
-};
+import { SidebarProps } from "./types";
 
 const Sidebar = ({ displayed, toggleMenu }: SidebarProps) => {
 	const closeMenu = toggleMenu;

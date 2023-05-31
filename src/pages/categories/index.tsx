@@ -4,29 +4,36 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Loading from "@/components/Loading";
+import { Myth } from "../api/types";
 
-function Categories() {
+type CategoriesProps = {
+	route: string | string[] | undefined;
+};
+
+function Categories({ route }: CategoriesProps) {
 	const router = useRouter();
 	const { address } = router.query;
 
-	const [list, setList] = useState();
-	const [card, setCard] = useState();
+	const [list, setList] = useState<Myth[]>();
+	const [card, setCard] = useState<Myth>();
 
 	useEffect(() => {
 		fetch("/api")
 			.then((response) => response.json())
 			.then((data) => {
-				setList(data[address]);
+				setList(data[address as keyof typeof list]);
 			})
 			.catch((err) => console.log(err));
 	}, [address]);
 
-	const carousel = useRef();
+	const carousel = useRef<HTMLUListElement>(null);
 
-	const handleList = (direction) => {
-		direction === "left"
-			? (carousel.current.scrollLeft -= carousel.current.scrollWidth / 3)
-			: (carousel.current.scrollLeft += carousel.current.scrollWidth / 3);
+	const handleList = (direction: string) => {
+		if (carousel) {
+			direction === "left"
+				? (carousel.current!.scrollLeft -= carousel.current!.scrollWidth / 3)
+				: (carousel.current!.scrollLeft += carousel.current!.scrollWidth / 3);
+		}
 	};
 	if (!list) {
 		return (
@@ -39,7 +46,7 @@ function Categories() {
 	return (
 		<>
 			<Head>
-				<title>{`Magick Hub | ${list[0].title}`}</title>
+				<title>{list && `Magick Hub | ${list[0]!.title}`}</title>
 			</Head>
 			<StyledCategory>
 				<Wrapper onLoad={() => window.scrollTo(0, 0)}>
@@ -49,7 +56,7 @@ function Categories() {
 							handleList("left");
 						}}
 					/>
-					<h2>{list[0].title}</h2>
+					<h2>{list[0]!.title}</h2>
 					<ul ref={carousel}>
 						{list.map(
 							(item, index) =>
@@ -80,7 +87,7 @@ function Categories() {
 					) : (
 						<>
 							<h2>Um pouco de história</h2>
-							{list[0].overview.map((value, index) => (
+							{list[0]!.overview.map((value, index) => (
 								<p key={`id_${index}`}>{value}</p>
 							))}
 						</>

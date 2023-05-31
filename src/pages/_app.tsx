@@ -5,8 +5,9 @@ import AppContainer from "@/styles/app";
 import GlobalCSS from "@/styles/globalcss";
 import { GoogleFonts } from "next-google-fonts";
 import { useState } from "react";
+import { AppProps } from "next/app";
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
 	const [menu, setMenu] = useState(false);
 	const toggleMenu = () => setMenu(!menu);
 	return (

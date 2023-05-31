@@ -1,13 +1,8 @@
 import Link from "next/link";
 import StyledListContainer from "./styles";
-import { Myth } from "@/pages/api/types";
+import { ListContainerProps } from "./types";
 
-type ListContainerProps = {
-	list: Myth[];
-	key: number;
-};
-
-const ListContainer = ({ list, key }: ListContainerProps) => {
+const ListContainer = ({ list }: ListContainerProps) => {
 	const isEmptyList = () => {
 		if (list[0]!.overview.length < 1) {
 			return true;

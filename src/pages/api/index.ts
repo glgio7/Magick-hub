@@ -1,5 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
+import { NextApiRequest, NextApiResponse } from "next";
+
 export const dataList = {
 	egypt: [
 		{
@@ -1174,9 +1176,9 @@ export const dataList = {
 	],
 };
 
-export default function mythApi(req, res) {
+export default function mythApi(req: NextApiRequest, res: NextApiResponse) {
+	res.setHeader("Access-Control-Allow-Origin", "*");
 	res.setHeader(
-		"Access-Control-Allow-Origin",
 		"Access-Control-Allow-Headers",
 		"Origin, X-Requested-With, Content-Type, Accept"
 	);
