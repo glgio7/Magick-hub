@@ -1,97 +1,73 @@
 import { useState } from "react";
 import Container from "./styles";
+import Head from "next/head";
 
 function Numerology() {
-	const [userName, setUserName] = useState("");
-	const [userNumber, setUserNumber] = useState("");
+	const [userName, setUserName] = useState<string>("");
+	const [userNumber, setUserNumber] = useState<number>();
 
-	const valueLetters = [
-		"A = 1",
-		"B = 2",
-		"C = 3",
-		"D = 4",
-		"E = 5",
-		"F = 6",
-		"G = 7",
-		"H = 8",
-		"I = 9",
-		"J = 9",
-		"K = 10",
-		"L = 20",
-		"M = 30",
-		"N = 40",
-		"O = 50",
-		"P = 60",
-		"Q = 70",
-		"R = 80",
-		"S = 90",
-		"T = 100",
-		"U = 200",
-		"V = 200",
-		"W = 200",
-		"X = 300",
-		"Y = 9",
-		"Z = 400",
-	];
+	enum ValueLetters {
+		A = 1,
+		B = 2,
+		C = 3,
+		D = 4,
+		E = 5,
+		F = 6,
+		G = 7,
+		H = 8,
+		I = 9,
+		J = 9,
+		K = 10,
+		L = 20,
+		M = 30,
+		N = 40,
+		O = 50,
+		P = 60,
+		Q = 70,
+		R = 80,
+		S = 90,
+		T = 100,
+		U = 200,
+		V = 200,
+		W = 200,
+		X = 300,
+		Y = 9,
+		Z = 400,
+	}
 
 	const getSum = () => {
-		if (userName.length > 0) {
-			const number = userName
-				.toUpperCase()
-				.replaceAll("A", "1,")
-				.replaceAll("Â", "1,")
-				.replaceAll("Ã", "1,")
-				.replaceAll("Á", "1,")
-				.replaceAll("B", "2,")
-				.replaceAll("C", "3,")
-				.replaceAll("Ç", "3,")
-				.replaceAll("D", "4,")
-				.replaceAll("E", "5,")
-				.replaceAll("Ê", "5,")
-				.replaceAll("É", "5,")
-				.replaceAll("F", "6,")
-				.replaceAll("G", "7,")
-				.replaceAll("H", "8,")
-				.replaceAll("I", "9,")
-				.replaceAll("Í", "9,")
-				.replaceAll("J", "9,")
-				.replaceAll("K", "10,")
-				.replaceAll("L", "20,")
-				.replaceAll("M", "30,")
-				.replaceAll("N", "40,")
-				.replaceAll("O", "50,")
-				.replaceAll("Ó", "50,")
-				.replaceAll("Ô", "50,")
-				.replaceAll("Ô", "50,")
-				.replaceAll("P", "60,")
-				.replaceAll("Q", "70,")
-				.replaceAll("R", "80,")
-				.replaceAll("S", "90,")
-				.replaceAll("T", "100,")
-				.replaceAll("U", "200,")
-				.replaceAll("Ú", "200,")
-				.replaceAll("Ü", "200,")
-				.replaceAll("V", "200,")
-				.replaceAll("W", "200,")
-				.replaceAll("X", "300,")
-				.replaceAll("Y", "9,")
-				.replaceAll("Z", "400,")
-				.split(",")
-				.filter((value) => value !== "");
+		const number = userName
+			.toUpperCase()
+			.replaceAll(/[ÂÃÁ]/g, "A")
+			.replaceAll(/[ÊÉ]/g, "E")
+			.replaceAll(/[Í]/g, "I")
+			.replaceAll(/[ÓÔ]/g, "O")
+			.replaceAll(/[ÚÜ]/g, "U")
+			.split("")
+			.map((letter) => {
+				if (letter.match(/^[0-9]$/)) {
+					return letter;
+				} else {
+					return ValueLetters[letter as keyof typeof ValueLetters];
+				}
+			});
 
-			for (let i = 0; i < number.length; i++) {
-				number[i] = Number(number[i]);
-			}
-			let result = number
-				.reduce((total, value) => total + value)
+		const sum = number.reduce((acc, value) => acc + (Number(value) || 0), 0);
+
+		setUserNumber(sum);
+	};
+
+	const getResult = () => {
+		if (
+			(userNumber && userNumber !== 11) ||
+			(userNumber && userNumber !== 22)
+		) {
+			const result = userNumber
 				.toString()
-				.split("");
+				.split("")
+				.reduce((acc, value) => acc + (Number(value) || 0), 0);
 
-			for (let i = 0; i < result.length; i++) {
-				result[i] = Number(result[i]);
-			}
-			setUserNumber(result.reduce((total, value) => total + value));
-			setUserName("");
+			setUserNumber(result);
 		}
 	};
 
@@ -111,20 +87,13 @@ function Numerology() {
 
 	return (
 		<>
+			<Head>
+				<title>Magick Hub | Numerologia</title>
+			</Head>
 			<Container onLoad={() => window.scrollTo(0, 0)}>
 				<section>
 					<h2>Numerologia Cabalística</h2>
 					<div className="intro-container">
-						<p>
-							Os resultados da Numerologia Cabalística são baseados na soma dos
-							números correspondentes à cada letra do nome da pessoa. Os valores
-							são:
-						</p>
-						<div className="intro-container__letters">
-							{valueLetters.map((item, index) => (
-								<span key={index}>{item}</span>
-							))}
-						</div>
 						<p>
 							Para facilitar a soma dos valores, abaixo você pode consultar seu
 							número com facilidade.
@@ -132,13 +101,10 @@ function Numerology() {
 						<p>
 							Algumas vezes, é possível que a pessoa não se identifique com seu
 							nome recebido no momento do nascimento, nesse caso, é possível
-							fazer a consulta através de sua data de nascimento ( sem hífen ou
-							/ ), para que a descrição do número seja mais afim de suas
-							características. <br />
-							Os números vão de 1 a 9 ou 11 e 22. .
+							fazer a consulta através de sua data de nascimento, para que a
+							descrição do número seja mais alinhada às suas características.{" "}
 							<br />
-							Atenção: os números 11 e 22 não devem ser somados pois são números
-							mestres.
+							Os números vão de 1 a 9 ou 11 e 22. .
 						</p>
 					</div>
 					<div className="search-bar">
@@ -146,25 +112,48 @@ function Numerology() {
 							type="text"
 							value={userName}
 							placeholder="Insira seu nome completo"
-							onChange={(e) => setUserName(e.target.value)}
+							onChange={(e) => {
+								setUserName(e.target.value);
+							}}
 						/>
-						<button onClick={getSum}>Consultar</button>
-						<p>
-							Caso seu nome resulte em um número de dois dígitos (Exemplo: 16)
-							digite o número no campo de texto e clique em consultar para ver a
-							descrição.
-						</p>
+						<button
+							onClick={() => {
+								getSum();
+							}}
+						>
+							Consultar
+						</button>
 					</div>
 					{userNumber && (
 						<>
 							<h3>O número associado ao seu nome é:</h3>
-							<h2>{userNumber}</h2>
+							<h4>{userNumber}</h4>
+							<button
+								onClick={() => {
+									getResult();
+								}}
+							>
+								Reduzir
+							</button>
+							<p>
+								Atenção: os números 11 e 22 não devem ser somados pois são
+								números mestres.
+							</p>
 						</>
 					)}
 					<article>
-						{userNumber && (
+						{((userNumber && userNumber < 10) ||
+							userNumber === 11 ||
+							userNumber === 22) && (
 							<>
-								<p>{numberDescription[userNumber.toString()]}</p>
+								<h2>Descrição</h2>
+								<p>
+									{
+										numberDescription[
+											userNumber as keyof typeof numberDescription
+										]
+									}
+								</p>
 							</>
 						)}
 					</article>

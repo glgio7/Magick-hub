@@ -14,7 +14,7 @@ const Container = styled.main`
 	section {
 		position: relative;
 
-		width: 100vw;
+		width: 100%;
 
 		padding: 1rem 2vw;
 
@@ -28,6 +28,18 @@ const Container = styled.main`
 
 		text-shadow: 0 1px 9px #8000ff;
 		text-align: center;
+	}
+
+	h4 {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		width: 3rem;
+		height: 3rem;
+		background-color: #000;
+		color: #ffa900;
+		border-radius: 50%;
 	}
 
 	.intro-container {
