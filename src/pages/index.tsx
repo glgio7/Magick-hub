@@ -1,30 +1,47 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import { Myth } from "./api/types";
 import ListContainer from "../components/ListContainer";
 import StyledHome from "@/styles";
 import Loading from "@/components/Loading";
-import { Myth } from "./api/types";
+import axios from "axios";
 
 export default function Home() {
-	const [lists, setLists] = useState<Myth[][] | null>(null);
-
 	const [loaded, setLoaded] = useState(false);
-	setTimeout(() => {
-		setLoaded(true);
-	}, 1750);
+	const [lists, setLists] = useState<Myth[][]>([]);
+
+	const endpoints = [
+		"egypt",
+		"greek",
+		"celtic",
+		"afro",
+		"hindu",
+		"japanese",
+		"jung",
+		"nordic",
+		"roman",
+	];
+
+	const getLists = async () => {
+		try {
+			const response = await Promise.all(
+				endpoints.map((endpoint) => axios.get(`/api/${endpoint}`))
+			);
+
+			const dataList = response.map((item) => item.data);
+			setLists(dataList);
+		} catch (error) {
+			console.log(error);
+		}
+	};
 
 	useEffect(() => {
-		fetch("/api", {
-			method: "GET",
-			headers: {
-				"Content-Type": "application/json",
-			},
-		})
-			.then((response) => response.json())
-			.then((data: Myth[][]) => {
-				setLists(Object.values(data).map((item) => item));
-			})
-			.catch((err) => console.log(err));
+		getLists()
+			.then(() => setLoaded(true))
+			.catch((error) => {
+				console.log(error);
+				alert("Um erro aconteceu, atualize a página!");
+			});
 	}, []);
 
 	return (

@@ -1,27 +1,23 @@
 import StyledCategory, { Wrapper } from "./styles";
 import { HiChevronRight, HiChevronLeft } from "react-icons/hi";
 import { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/router";
 import Head from "next/head";
 import Loading from "@/components/Loading";
 import { Myth } from "../api/types";
 
 type CategoriesProps = {
-	route: string | string[] | undefined;
+	address: string | string[] | undefined;
 };
 
-function Categories({ route }: CategoriesProps) {
-	const router = useRouter();
-	const { address } = router.query;
-
+function Categories({ address }: CategoriesProps) {
 	const [list, setList] = useState<Myth[]>();
 	const [card, setCard] = useState<Myth>();
 
 	useEffect(() => {
-		fetch("/api")
+		fetch(`/api/${address}`)
 			.then((response) => response.json())
 			.then((data) => {
-				setList(data[address as keyof typeof list]);
+				setList(data);
 			})
 			.catch((err) => console.log(err));
 	}, [address]);

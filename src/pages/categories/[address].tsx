@@ -1,9 +1,9 @@
-import Categories from ".";
+import Categories from "./index";
 import { useRouter } from "next/router";
 
 export default function CategoryPage() {
 	const router = useRouter();
 	const { address } = router.query;
 
-	return <Categories route={address} />;
+	return <Categories address={address} />;
 }
