@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-const Container = styled.main`
+export const Container = styled.main`
 	width: 100%;
-	min-height: calc(100vh - 108px);
 	height: 100%;
+	min-height: calc(100vh - 108px);
 
 	display: flex;
 	flex-direction: column;
@@ -34,11 +34,15 @@ const Container = styled.main`
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
+
 		font-size: 1.5rem;
+
 		width: 3rem;
 		height: 3rem;
+
 		background-color: #000;
 		color: #ffa900;
+
 		border-radius: 50%;
 	}
 
@@ -48,16 +52,6 @@ const Container = styled.main`
 		width: 90%;
 
 		text-align: center;
-	}
-
-	.intro-container__letters {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-
-	.intro-container p {
-		margin-block: 1rem;
 	}
 
 	p {
@@ -70,31 +64,7 @@ const Container = styled.main`
 		text-align: center;
 
 		margin: 0 auto;
-	}
-
-	span {
-		position: relative;
-	}
-
-	span:after {
-		content: ",";
-		position: absolute;
-		bottom: 0;
-		right: -0.25rem;
-	}
-
-	span:first-letter {
-		margin-left: 1rem;
-		color: #ffa900;
-	}
-
-	span:last-child {
-		&::after {
-			content: ".";
-			position: absolute;
-			bottom: 0;
-			right: -0.25rem;
-		}
+		margin-block: 1rem;
 	}
 
 	.search-bar {
@@ -183,20 +153,6 @@ const Container = styled.main`
 			padding: 0;
 		}
 
-		.intro-container__letters {
-			justify-content: flex-start;
-		}
-
-		.intro-container__letters span {
-			margin: 0.25rem 0;
-			width: 30%;
-			text-align: justify;
-
-			&::after {
-				display: none;
-			}
-		}
-
 		.search-bar {
 			flex-direction: column;
 		}
@@ -211,5 +167,3 @@ const Container = styled.main`
 		}
 	}
 `;
-
-export default Container;

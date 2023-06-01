@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledLoading = styled.div`
+export const Loading = styled.div`
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -34,5 +34,3 @@ const StyledLoading = styled.div`
 		}
 	}
 `;
-
-export default StyledLoading;

@@ -7,7 +7,7 @@ import {
 	HiOutlineSparkles,
 	HiShare,
 } from "react-icons/hi";
-import Aside from "./styles";
+import * as S from "./styles";
 import { SidebarProps } from "./types";
 
 const Sidebar = ({ displayed, toggleMenu }: SidebarProps) => {
@@ -59,7 +59,7 @@ const Sidebar = ({ displayed, toggleMenu }: SidebarProps) => {
 
 	return (
 		<>
-			<Aside displayed={displayed}>
+			<S.Sidebar displayed={displayed}>
 				{/* // Navigation container and nav buttons */}
 
 				<nav className={displayed ? "active" : ""}>
@@ -97,28 +97,24 @@ const Sidebar = ({ displayed, toggleMenu }: SidebarProps) => {
 							<span>Números</span>
 						</button>
 					</Link>
-					<Link href={""}>
-						<button
-							onClick={() => {
-								setContent(!content);
-								setShare(false);
-							}}
-						>
-							<HiOutlineExclamationCircle className="button__icon" />
-							<span>Infos</span>
-						</button>
-					</Link>
-					<Link href={""}>
-						<button
-							onClick={() => {
-								setContent(false);
-								setShare(!share);
-							}}
-						>
-							<HiShare className="button__icon" />
-							<span>Share</span>
-						</button>
-					</Link>
+					<button
+						onClick={() => {
+							setContent(!content);
+							setShare(false);
+						}}
+					>
+						<HiOutlineExclamationCircle className="button__icon" />
+						<span>Infos</span>
+					</button>
+					<button
+						onClick={() => {
+							setContent(false);
+							setShare(!share);
+						}}
+					>
+						<HiShare className="button__icon" />
+						<span>Share</span>
+					</button>
 				</nav>
 
 				{/* // Container for displaying content */}
@@ -161,7 +157,7 @@ const Sidebar = ({ displayed, toggleMenu }: SidebarProps) => {
 						""
 					)}
 				</div>
-			</Aside>
+			</S.Sidebar>
 		</>
 	);
 };

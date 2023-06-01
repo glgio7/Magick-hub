@@ -1,5 +1,5 @@
-import { useState } from "react";
-import Container from "./styles";
+import { useEffect, useState } from "react";
+import * as S from "./styles";
 import Head from "next/head";
 
 function Numerology() {
@@ -71,6 +71,10 @@ function Numerology() {
 		}
 	};
 
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	const numberDescription = {
 		1: "Quem nasce sob a influência do número 1 é um líder nato, e não um mero seguidor. São pessoas determinadas, ambiciosas, pioneiras. Muito criativos, são pouco convencionais e muito originais, gostam de ter o próprio negócio ou de gerenciar pessoas, não gosta muito de receber críticas e ordens alheias. São pessoas muito honestas e que gostam de levar a vida de forma ativa, detestam a rotina e o marasmo. Precisam tomar cuidado com o egoísmo, egocentrismo e preguiça.",
 		2: "São pessoas gentis, sociáveis que adora estar cercado dos amigos e dos familiares. São considerados “bonzinhos”, que ajudam a todos ao seu redor e por isso é preciso tomar cuidado para não virar “capacho”, não deixar que as pessoas se aproveitem da sua atitude de querer sempre ajudar. São pessoas muito requintadas e de bom gosto. São mais calmos e quietos, sua personalidade é tímida, mas essa é uma maneira de se proteger. Preferem ficar em casa na companhia do seu companheiro, dos amigos ou da família do que uma noite badalada. É preciso tomar cuidado com o excesso de timidez, de serventia e da depreciação de si mesmo e das suas capacidades profissionais, mais confiança é essencial.",
@@ -90,7 +94,7 @@ function Numerology() {
 			<Head>
 				<title>Magick Hub | Numerologia</title>
 			</Head>
-			<Container onLoad={() => window.scrollTo(0, 0)}>
+			<S.Container>
 				<section>
 					<h2>Numerologia Cabalística</h2>
 					<div className="intro-container">
@@ -158,7 +162,7 @@ function Numerology() {
 						)}
 					</article>
 				</section>
-			</Container>
+			</S.Container>
 		</>
 	);
 }

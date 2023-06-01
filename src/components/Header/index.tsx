@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { HiMenu } from "react-icons/hi";
-import StyledHeader from "./styles";
+import * as S from "./styles";
 import { HeaderProps } from "./types";
 
 const Header = ({ toggleMenu }: HeaderProps) => {
 	return (
-		<StyledHeader>
+		<S.Header>
 			<HiMenu className="menu" onClick={toggleMenu} />
 			<Link href={"/"} className="container">
 				<img
@@ -19,7 +19,7 @@ const Header = ({ toggleMenu }: HeaderProps) => {
 				"Todos os mitos possuem o mesmo significado quando se trata da essência
 				de suas imagens." - Carl Jung.
 			</h3>
-		</StyledHeader>
+		</S.Header>
 	);
 };
 

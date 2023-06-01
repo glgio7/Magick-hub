@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledCategory = styled.section`
+export const Category = styled.section`
 	width: 100%;
 	height: 100%;
 
@@ -234,5 +234,3 @@ export const Wrapper = styled.div`
 		}
 	}
 `;
-
-export default StyledCategory;

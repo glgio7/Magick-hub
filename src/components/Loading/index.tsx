@@ -1,10 +1,10 @@
-import StyledLoading from "./styles";
+import * as S from "./styles";
 
 const Loading = () => {
 	return (
-		<StyledLoading>
+		<S.Loading>
 			<img src="/assets/loading.jpg" alt="Loading..." />
-		</StyledLoading>
+		</S.Loading>
 	);
 };
 

@@ -1,4 +1,4 @@
-import StyledCategory, { Wrapper } from "./styles";
+import * as S from "./styles";
 import { HiChevronRight, HiChevronLeft } from "react-icons/hi";
 import { useEffect, useRef, useState } from "react";
 import Head from "next/head";
@@ -33,9 +33,9 @@ function Categories({ address }: CategoriesProps) {
 	};
 	if (!list) {
 		return (
-			<StyledCategory>
+			<S.Category>
 				<Loading />
-			</StyledCategory>
+			</S.Category>
 		);
 	}
 
@@ -44,8 +44,8 @@ function Categories({ address }: CategoriesProps) {
 			<Head>
 				<title>{list && `Magick Hub | ${list[0]!.title}`}</title>
 			</Head>
-			<StyledCategory>
-				<Wrapper onLoad={() => window.scrollTo(0, 0)}>
+			<S.Category>
+				<S.Wrapper onLoad={() => window.scrollTo(0, 0)}>
 					<HiChevronLeft
 						className="arrow left"
 						onClick={() => {
@@ -70,7 +70,7 @@ function Categories({ address }: CategoriesProps) {
 							handleList("right");
 						}}
 					/>
-				</Wrapper>
+				</S.Wrapper>
 				<article>
 					{card ? (
 						<>
@@ -89,7 +89,7 @@ function Categories({ address }: CategoriesProps) {
 						</>
 					)}
 				</article>
-			</StyledCategory>
+			</S.Category>
 		</>
 	);
 }

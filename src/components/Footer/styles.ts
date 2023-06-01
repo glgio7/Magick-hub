@@ -15,7 +15,7 @@ export const Footer = styled.footer`
 	h4 {
 		color: #fff;
 		font-size: 1.2rem;
-		font-family: "Oleo Script", cursive;
+		font-family: "Quicksand", cursive;
 	}
 
 	.useful-links {
@@ -26,10 +26,10 @@ export const Footer = styled.footer`
 	}
 
 	a {
-		background-color: #fff;
-		color: #222;
+		background-color: #6000cc;
+		color: #fff;
 
-		border-radius: 10px;
+		border-radius: 4px;
 
 		padding: 0.25rem 1rem;
 

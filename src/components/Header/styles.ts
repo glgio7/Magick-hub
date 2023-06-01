@@ -1,18 +1,12 @@
 import styled from "styled-components";
 
-const StyledHeader = styled.header`
+export const Header = styled.header`
 	width: 100%;
 
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-
-	z-index: 90;
-
-	img {
-		width: 100%;
-	}
 
 	.container {
 		padding: 0.5rem 0;
@@ -22,17 +16,17 @@ const StyledHeader = styled.header`
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		position: relative;
 	}
 
 	.container__image {
-		width: 54px;
+		width: 30px;
 	}
 
 	h1 {
-		font-family: "Oleo Script", "Ubuntu";
+		font-family: "Aladin", "Ubuntu";
 		font-size: 3rem;
-
-		z-index: 5;
 
 		background: rgb(255, 130, 0);
 		background: linear-gradient(
@@ -86,5 +80,3 @@ const StyledHeader = styled.header`
 		}
 	}
 `;
-
-export default StyledHeader;

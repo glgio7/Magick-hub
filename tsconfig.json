@@ -29,7 +29,7 @@
 		"**/*.ts",
 		"**/*.tsx",
 		"src/components/Footer/styles.ts",
-		"src/pages/numerology/index.js",
+		"src/pages/numerology/index.tsx",
 		"next.config.js"
 	]
 }

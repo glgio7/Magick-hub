@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Aside = styled.aside<{ displayed: boolean }>`
+export const Sidebar = styled.aside<{ displayed: boolean }>`
 	position: absolute;
 	top: 0;
 
@@ -84,7 +84,7 @@ const Aside = styled.aside<{ displayed: boolean }>`
 	// Container for displaying content
 
 	.container {
-		z-index: 99;
+		z-index: 6;
 		position: fixed;
 		top: 0;
 		left: 15vw;
@@ -111,13 +111,15 @@ const Aside = styled.aside<{ displayed: boolean }>`
 	}
 
 	.background {
-		position: absolute;
+		position: fixed;
 		z-index: -1;
 
 		top: 0;
 		bottom: 0;
 		left: 0;
 		right: 0;
+
+		height: 100%;
 
 		background-color: rgba(0, 0, 0, 0.5);
 	}
@@ -239,5 +241,3 @@ const Aside = styled.aside<{ displayed: boolean }>`
 		}
 	}
 `;
-
-export default Aside;

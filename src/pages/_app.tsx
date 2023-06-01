@@ -14,9 +14,10 @@ export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<GlobalCSS />
-			<GoogleFonts href="https://fonts.googleapis.com/css2?family=Quicksand&family=Oleo+Script:wght@400;700&display=swap" />
+			<GoogleFonts href="https://fonts.googleapis.com/css2?family=Quicksand&family=Aladin&family=Oleo+Script:wght@400;700&display=swap" />
 			<Sidebar displayed={menu} toggleMenu={toggleMenu} />
 			<AppContainer>
+				<div className="background"></div>
 				<Header toggleMenu={toggleMenu} />
 				<Component {...pageProps} />
 			</AppContainer>
