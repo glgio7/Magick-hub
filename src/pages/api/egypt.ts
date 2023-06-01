@@ -223,7 +223,7 @@ const data = [
 	},
 ];
 
-const egyptList = (req: NextApiRequest, res: NextApiResponse) => {
+const list = (req: NextApiRequest, res: NextApiResponse) => {
 	res.setHeader("Access-Control-Allow-Origin", "*");
 	res.setHeader(
 		"Access-Control-Allow-Headers",
@@ -232,4 +232,4 @@ const egyptList = (req: NextApiRequest, res: NextApiResponse) => {
 	res.status(200).json(data);
 };
 
-export default egyptList;
+export default list;
