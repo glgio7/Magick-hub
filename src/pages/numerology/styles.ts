@@ -167,3 +167,5 @@ export const Container = styled.main`
 		}
 	}
 `;
+
+export default Container;

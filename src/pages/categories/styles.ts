@@ -234,3 +234,5 @@ export const Wrapper = styled.div`
 		}
 	}
 `;
+
+export default Category;
