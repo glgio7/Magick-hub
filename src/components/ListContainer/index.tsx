@@ -15,7 +15,7 @@ const ListContainer = ({ list }: ListContainerProps) => {
 						<img src={list[1]!.image_path} alt="" />
 					</h3>
 					<ul>
-						<h2>{list[0]!.title}</h2>
+						<h2>{list[0]!.name}</h2>
 						{list.map(
 							(item, index) =>
 								index > 1 &&
