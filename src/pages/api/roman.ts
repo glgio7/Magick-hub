@@ -2,58 +2,58 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 const data = [
 	{
-		title: "Mitologia Romana",
+		name: "Mitologia Romana",
 		overview: [],
 		address: "roman",
 	},
 	{
 		name: "jupiter",
-		image_path: "/assets/roman/jupiter.jpg",
+		image_path: "/assets/roman/jupiter.webp",
 		overview: [],
 	},
 	{
 		name: "apolo",
-		image_path: "/assets/roman/apolo.jpg",
+		image_path: "/assets/roman/apolo.webp",
 		overview: [],
 	},
 	{
 		name: "ceres",
-		image_path: "/assets/roman/ceres.jpg",
+		image_path: "/assets/roman/ceres.webp",
 		overview: [],
 	},
 	{
 		name: "diana",
-		image_path: "/assets/roman/diana.jpg",
+		image_path: "/assets/roman/diana.webp",
 		overview: [],
 	},
 	{
 		name: "marte",
-		image_path: "/assets/roman/marte.jpg",
+		image_path: "/assets/roman/marte.webp",
 		overview: [],
 	},
 	{
 		name: "juno",
-		image_path: "/assets/roman/juno.jpg",
+		image_path: "/assets/roman/juno.webp",
 		overview: [],
 	},
 	{
 		name: "mercurio",
-		image_path: "/assets/roman/mercurio.jpg",
+		image_path: "/assets/roman/mercurio.webp",
 		overview: [],
 	},
 	{
 		name: "netuno",
-		image_path: "/assets/roman/netuno.jpg",
+		image_path: "/assets/roman/netuno.webp",
 		overview: [],
 	},
 	{
 		name: "venus",
-		image_path: "/assets/roman/venus.jpg",
+		image_path: "/assets/roman/venus.webp",
 		overview: [],
 	},
 	{
 		name: "plutao",
-		image_path: "/assets/roman/plutao.jpg",
+		image_path: "/assets/roman/plutao.webp",
 		overview: [],
 	},
 ];

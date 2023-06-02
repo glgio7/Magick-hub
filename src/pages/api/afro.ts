@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 const data = [
 	{
-		title: "Mitologia Africana",
+		name: "Mitologia Africana",
 		overview: [
 			"A mitologia africana é uma coleção rica e diversa de histórias e crenças que têm sido passadas oralmente de geração em geração. Essas histórias são originárias de diferentes regiões da África e têm muitas variações e interpretações.",
 			"A mitologia africana geralmente enfatiza a conexão entre os seres humanos e a natureza, com muitas histórias girando em torno da relação entre os seres humanos, os deuses e o mundo natural. A mitologia também aborda temas universais, como a origem do mundo, a criação da humanidade, a vida após a morte e o bem e o mal.",
@@ -14,7 +14,7 @@ const data = [
 	},
 	{
 		name: "Exu",
-		image_path: "/assets/african/orixa-exu.jpg",
+		image_path: "/assets/african/orixa-exu.webp",
 		overview: [
 			"Exu é um Orixá muito importante na religião yorubá e é conhecido como o mensageiro dos deuses. Ele é visto como um ser astuto e brincalhão, que tem a capacidade de ajudar ou prejudicar as pessoas, dependendo de como é tratado. Sua figura é frequentemente associada a travessuras e enganos, mas também é considerado um grande protetor.",
 			"Na mitologia yorubá, Exu é retratado como um ser ambíguo e multifacetado, que pode assumir muitas formas diferentes. Ele é frequentemente representado como um homem jovem, ágil e astuto, que está sempre pronto para pregar uma peça em alguém. No entanto, também é descrito como um idoso sábio, que possui grande conhecimento e sabedoria.",
@@ -25,7 +25,7 @@ const data = [
 	},
 	{
 		name: "Oxum",
-		image_path: "/assets/african/orixa-oxum.jpg",
+		image_path: "/assets/african/orixa-oxum.webp",
 		overview: [
 			"Oxum é vista como a deusa da beleza, do amor, da fertilidade e da água doce. Sua figura é frequentemente associada a rios, cachoeiras e fontes de água, e é considerada uma protetora dos seres humanos que dependem da água para sobreviver.",
 			"Na mitologia yorubá, Oxum é descrita como uma mulher linda e sedutora, que é capaz de enfeitiçar qualquer um com sua beleza e graça. Ela é frequentemente representada usando um espelho, simbolizando sua vaidade e amor pela beleza. Além disso, ela é vista como uma mãe amorosa e carinhosa, que cuida dos filhos com cuidado e dedicação.",
@@ -36,7 +36,7 @@ const data = [
 	},
 	{
 		name: "Xangô",
-		image_path: "/assets/african/orixa-xango.jpg",
+		image_path: "/assets/african/orixa-xango.webp",
 		overview: [
 			"Xangô é um dos Orixás mais populares na religião yorubá. Ele é visto como o deus do trovão, do fogo e da justiça, e é frequentemente representado como um guerreiro forte e corajoso. Sua figura é associada a raios, tempestades e o poder da natureza.",
 			"Na mitologia yorubá, Xangô é descrito como um homem sábio e justo, que é capaz de controlar o fogo e o trovão com suas mãos. Ele é frequentemente representado com um machado duplo, que simboliza sua habilidade em cortar a injustiça e a desonestidade. Além disso, ele é visto como um patrono das artes e da cultura, e é frequentemente invocado em cerimônias de música e dança.",
@@ -47,7 +47,7 @@ const data = [
 	},
 	{
 		name: "Olorum",
-		image_path: "/assets/african/orixa-olorum.jpg",
+		image_path: "/assets/african/orixa-olorum.webp",
 		overview: [
 			"Olorum é considerado o Deus Supremo no panteão da religião yorubá. Ele é descrito como um ser supremo, infinito e eterno que governa o universo inteiro. Sua presença é sentida em todas as coisas e seres vivos, e é responsável por criar e manter o equilíbrio e a harmonia em toda a criação.",
 			"Na mitologia yorubá, Olorum é considerado o criador de todos os Orixás e também dos seres humanos. Ele é muitas vezes retratado como um ser distante e inacessível, e por isso é raramente cultuado diretamente pelos fiéis. Em vez disso, as pessoas geralmente se voltam para os Orixás menores, que são mais próximos dos seres humanos e podem interceder em seu nome com Olorum.",
@@ -57,7 +57,7 @@ const data = [
 	},
 	{
 		name: "Ogum",
-		image_path: "/assets/african/orixa-ogum.jpg",
+		image_path: "/assets/african/orixa-ogum.webp",
 		overview: [
 			"Ogum é uma divindade poderosa, frequentemente retratada como um guerreiro com força e coragem, empunhando tanto a espada como o escudo em batalha. Ogum representa a justiça, a protecção e a prosperidade; ele mantém a guarda sobre os seus seguidores para garantir que eles estão a salvo de danos.",
 			"Em muitas histórias tradicionais sobre Ogum, diz-se que ele desceu do céu usando ferramentas de ferro que lhe foram dadas pelos deuses acima. A sua missão era proteger aqueles na Terra que tinham sido injustiçados ou oprimidos devido à sua raça ou estatuto de classe. Com o tempo, isto evoluiu para uma associação com facções beligerantes onde Ogum traria paz através da sua intervenção divina - um papel que lhe valeu um imenso respeito entre os seus adoradores ao longo da história de África até à era moderna de hoje.",
@@ -66,7 +66,7 @@ const data = [
 	},
 	{
 		name: "Iansã",
-		image_path: "/assets/african/orixa-iansa.jpg",
+		image_path: "/assets/african/orixa-iansa.webp",
 		overview: [
 			"Iansã é uma deusa africana que se acredita existir desde os tempos mais remotos. Ela simboliza a vida, a morte e a fertilidade e tem uma forte ligação com o mundo natural. Iansa é amplamente adorada em grande parte da África, pois ela incorpora muitos aspectos da vida, desde a criação até a destruição.",
 			"A forma física de Iansã varia dependendo de quem conta sua história; às vezes descrita como uma velha ou jovem, enquanto outras a descrevem como um pássaro ou até mesmo uma figura semelhante a uma cobra. Independentemente de como ela aparece visualmente, o poder de Iansa permanece forte entre aqueles que honram sua presença em suas vidas e comunidades.",
@@ -75,7 +75,7 @@ const data = [
 	},
 	{
 		name: "Iemanjá",
-		image_path: "/assets/african/orixa-iemanja.jpg",
+		image_path: "/assets/african/orixa-iemanja.webp",
 		overview: [
 			"Iemanjá é uma deusa africana que tem sido adorada por séculos por muitas culturas e religiões diferentes. Ela é frequentemente chamada de “Mãe das Águas”, representando fertilidade, abundância, proteção e prosperidade. Iemanjá foi mencionada pela primeira vez na antiga mitologia iorubá, onde se dizia ser uma poderosa divindade feminina com controle sobre as marés do oceano e toda a vida dentro delas. Seu poder se estendia além de apenas controlar a água; ela também tinha domínio sobre o amor, a sorte, a saúde e a riqueza.",
 			"O símbolo de Iemanjá é geralmente representado por uma figura semelhante a uma sereia vestindo vestes azuis ou roupas adornadas com pérolas ou conchas brancas; isso representa sua conexão com o mar, bem como sua beleza divina. Além disso, pode ser visto em estátuas de mulheres segurando redes de pesca cheias de oferendas para Iemanjá, como frutas ou flores, que significam abundância da generosidade da natureza concedida por sua graça. As oferendas são feitas durante as festas realizadas na véspera de Ano Novo, quando as pessoas agradecem por suas bênçãos ao longo do ano, esperando receber mais boa sorte em troca da generosidade de Iemanjá.",

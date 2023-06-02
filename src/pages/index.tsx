@@ -53,8 +53,8 @@ export default function Home() {
 				{!loaded && <Loading />}
 				<article>
 					{lists &&
-						lists.map((item: Myth[], index: number) => (
-							<ListContainer list={item} key={index} />
+						lists.map((item: Myth[]) => (
+							<ListContainer list={item} key={item[0]!.address} />
 						))}
 				</article>
 			</StyledHome>

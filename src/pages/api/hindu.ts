@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 const data = [
 	{
-		title: "Mitologia Hinduísta",
+		name: "Mitologia Hinduísta",
 		overview: [
 			"A mitologia hindu é uma das mais antigas e ricas do mundo. O hinduísmo é uma das principais religiões do subcontinente indiano e é a terceira maior religião do mundo em termos de número de seguidores. Ela é baseada em uma ampla variedade de textos sagrados, incluindo o Vedas, os Puranas e o Mahabharata. Esses textos descrevem uma ampla variedade de deuses, deusas e personagens míticos que são reverenciados pelos hindus.",
 			"Alguns dos principais deuses da mitologia hindu incluem Brahma, Vishnu e Shiva, que são conhecidos como a Trindade Hindu. Cada um desses deuses tem uma função específica na criação, preservação e destruição do universo. Outros deuses e deusas importantes incluem Lakshmi, a deusa da riqueza e da prosperidade, Saraswati, a deusa da sabedoria e da música, e Ganesha, o removedor de obstáculos.",
@@ -14,7 +14,7 @@ const data = [
 	},
 	{
 		name: "Brahma",
-		image_path: "/assets/hindu/brahma.jpg",
+		image_path: "/assets/hindu/brahma.webp",
 		overview: [
 			"Brahma é um dos deuses mais importantes do panteão hindu, responsável pela criação do universo.",
 			"Ele é frequentemente retratado com quatro cabeças e quatro braços, simbolizando a sua onipotência.",
@@ -25,7 +25,7 @@ const data = [
 	},
 	{
 		name: "Vishnu",
-		image_path: "/assets/hindu/vishnu.jpg",
+		image_path: "/assets/hindu/vishnu.webp",
 		overview: [
 			"Vishnu é um dos principais deuses do panteão hindu, responsável pela preservação do universo.",
 			"Ele é frequentemente retratado segurando uma concha, uma roda, uma maça e um lótus, simbolizando suas diversas qualidades e poderes.",
@@ -36,7 +36,7 @@ const data = [
 	},
 	{
 		name: "Shiva",
-		image_path: "/assets/hindu/shiva.jpg",
+		image_path: "/assets/hindu/shiva.webp",
 		overview: [
 			"Shiva é um dos principais deuses do panteão hindu, responsável pela destruição e transformação do universo.",
 			"Ele é frequentemente representado em meditação profunda com o cabelo emaranhado, uma cobra enrolada em seu pescoço e a lua crescente na testa.",
@@ -47,7 +47,7 @@ const data = [
 	},
 	{
 		name: "Ganesha",
-		image_path: "/assets/hindu/ganesha.jpg",
+		image_path: "/assets/hindu/ganesha.webp",
 		overview: [
 			"Ganesha é um dos deuses mais populares e amplamente adorados do panteão hindu, conhecido como o removedor de obstáculos e o senhor da sabedoria.",
 			"Ele é frequentemente retratado com a cabeça de elefante, um corpo humano e várias mãos, cada uma segurando um objeto simbólico.",
@@ -58,7 +58,7 @@ const data = [
 	},
 	{
 		name: "Saraswati",
-		image_path: "/assets/hindu/saraswati.jpg",
+		image_path: "/assets/hindu/saraswati.webp",
 		overview: [
 			"Saraswati é a deusa hindu da sabedoria, do conhecimento, da música e da arte.",
 			"Ela é frequentemente retratada sentada em um lótus branco com um livro nas mãos, um instrumento musical e um cisne a seus pés.",
@@ -69,7 +69,7 @@ const data = [
 	},
 	{
 		name: "Krishna",
-		image_path: "/assets/hindu/krishna.jpg",
+		image_path: "/assets/hindu/krishna.webp",
 		overview: [
 			"Krishna é um dos deuses mais populares e amados do panteão hindu, frequentemente retratado como um jovem pastor com pele azul escura.",
 			"Ele é considerado uma das encarnações de Vishnu, e é frequentemente adorado como uma divindade da beleza, amor e alegria.",
@@ -80,7 +80,7 @@ const data = [
 	},
 	{
 		name: "Lakshmi",
-		image_path: "/assets/hindu/lakshmi.jpg",
+		image_path: "/assets/hindu/lakshmi.webp",
 		overview: [
 			"Lakshmi é a deusa da riqueza, prosperidade e fortuna. Ela é frequentemente retratada sentada ou de pé em uma flor de lótus dourada.",
 			"Além de ser associada à riqueza material, Lakshmi também representa a beleza, a felicidade e a boa sorte.",

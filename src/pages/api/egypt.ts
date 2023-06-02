@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 const data = [
 	{
-		title: "Mitologia Egípcia",
+		name: "Mitologia Egípcia",
 		overview: [
 			"A mitologia egípcia é uma das mais fascinantes e complexas da história da humanidade, com uma riqueza de deuses, mitos e lendas que influenciaram não apenas a cultura egípcia, mas também a de muitas outras civilizações ao longo dos séculos. Os egípcios acreditavam em uma grande variedade de deuses, cada um com sua própria personalidade, história e função, desde os deuses solares até os deuses da morte e do submundo.",
 			"A mitologia egípcia está intimamente ligada à religião egípcia, que era central na vida cotidiana do povo egípcio. Os egípcios acreditavam na existência de uma vida após a morte, e muitas das práticas religiosas eram focadas em garantir uma passagem segura para o outro lado. O faraó, como líder espiritual e temporal do Egito, desempenhava um papel importante na religião e na mitologia egípcias.",
@@ -10,12 +10,11 @@ const data = [
 			"A mitologia egípcia é uma fonte inesgotável de inspiração para a literatura, a arte e a cultura popular, com muitas histórias e personagens sendo reinterpretados e adaptados ao longo dos séculos. Mesmo hoje, a rica tradição mitológica do Egito continua a fascinar e intrigar, fornecendo um vislumbre fascinante de uma das civilizações mais antigas e influentes da história.",
 		],
 		address: "egypt",
-		name: "",
 		image_path: "",
 	},
 	{
 		name: "Rá",
-		image_path: "/assets/egypt/deus-ra.jpg",
+		image_path: "/assets/egypt/deus-ra.webp",
 		overview: [
 			"Rá (do português Ré) é o Deus Egípcio do Sol sendo a principal divindade da religião egípcia. O culto ao Deus Sol foi muito próspero no Egito, sendo a principal forma de adoração e um culto oficial por cerca de vinte séculos.",
 			"As divindades geralmente estão ligados a fenômenos da natureza, e, em função da luz no cultivo dos alimentos, os antigos egípcios atribuíram a Rá grande importância.",
@@ -34,7 +33,7 @@ const data = [
 	},
 	{
 		name: "Anúbis",
-		image_path: "/assets/egypt/deus-anubis.jpg",
+		image_path: "/assets/egypt/deus-anubis.webp",
 		overview: [
 			"Anúbis, também chamado de Anupo, é o deus egípcio protetor, guardião e guia dos mortos. Na mitologia egípcia, ele auxilia os mortos no encontro com Osíris.",
 			"Para isso, é associado ao olho de Hórus e também apontado como o deus dos ritos funerários, como o processo de mumificação dos faraós.",
@@ -55,7 +54,7 @@ const data = [
 	},
 	{
 		name: "Hórus",
-		image_path: "/assets/egypt/deus-horus.jpg",
+		image_path: "/assets/egypt/deus-horus.webp",
 		overview: [
 			"O deus Hórus é o deus solar dos céus e um dos mais importantes da mitologia egípcia. A imagem de Hórus está associada ao firmamento, e portanto, ele representa a luz, o poder e a realeza.",
 			"A partir de 2200 a.C., Hórus é elevado a símbolo do Egito unificado quando vence seu tio numa das batalhas, e o faraó, o rei egípcio, passa a ser tratado como sua encarnação.",
@@ -79,7 +78,7 @@ const data = [
 	},
 	{
 		name: "Osíris",
-		image_path: "/assets/egypt/deus-osiris.jpg",
+		image_path: "/assets/egypt/deus-osiris.webp",
 		overview: [
 			"Osíris é o deus do julgamento, do além e da vegetação, sendo considerado um dos mais importantes e populares da mitologia egípcia.",
 			"Os cultos a Osíris eram muito comuns e são registrados a partir de 2400 a.C. Por esse motivo, diversos templos foram erguidos em sua homenagem.",
@@ -105,7 +104,7 @@ const data = [
 	},
 	{
 		name: "Thoth",
-		image_path: "/assets/egypt/deus-thoth.jpg",
+		image_path: "/assets/egypt/deus-thoth.webp",
 		overview: [
 			"Deus Toth: a deificação da sabedoria e da escrita",
 			"Representado com as formas da ave íbis ou de um babuíno, deus Toth era relacionado pelos antigos egípcios à escrita e à sabedoria. Para eles, Toth teria sido o responsável pela criação da escrita hieroglífica, da matemática, arquitetura, medicina, e todas as demais ciências das quais os egípcios faziam uso. Segundo a crença dessa civilização, essa divindade compreendia todos os mistérios da mente humana.",
@@ -118,7 +117,7 @@ const data = [
 	},
 	{
 		name: "Bastet",
-		image_path: "/assets/egypt/deusa-bastet.jpg",
+		image_path: "/assets/egypt/deusa-bastet.webp",
 		overview: [
 			"Para os antigos egípcios a religião era o modo de explicar a realidade, e os deuses agiam para favorecer a vida no Egito. Todos os dias ao amanhecer ocorria nos templos uma cerimônia dedicada as divindades que deveriam manter a Ordem criada no momento da concepção do mundo. Entre os diversos deuses do panteão egípcio está Bastet representada como uma gata ou com o corpo humano e a cabeça do animal. Era filha de Rá, e aparece entre as divindades egípcias desde o Reino Antigo.",
 			"No início do período dinástico, Bastet tinha uma representação diferente da que mencionamos acima, pois era associada à leoa e, por isso, representada como tal. Era evocada para proteger o rei na batalha. Foi somente a partir do primeiro milênio antes de Cristo, período também em que o gato já havia sido domesticado pelos egípcios, que a sua representação como este animal felino tornou-se mais comum, passando também a ter atributos mais pacíficos.",
@@ -131,7 +130,7 @@ const data = [
 	},
 	{
 		name: "Seth",
-		image_path: "/assets/egypt/deus-seth.jpg",
+		image_path: "/assets/egypt/deus-seth.webp",
 		overview: [
 			"Filho de Geb (a terra) e de Nut (o céu), irmão de Ísis, Osíris e Néftis, esta divindade passou a estar associada ao caos e à maldade, a partir da Época Baixa, com a popularização do culto de Osíris. A figura de Seth foi, a partir deste período, alvo de perseguições, enquanto assassino e desmembrador de Osíris, que culminaram na destruição sistemática de muitas das representações deste deus. Seth foi venerado desde tempos pré-históricos, por todo o Egito, facto comprovado por se encontrar representado em muitos objetos deste período.",
 			"Seth queria assumir o trono no lugar de Osíris e por isso, o matou. Osíris por sua vez renasceu, se tornando o rei do submundo e responsável por pesar o coração de cada pessoa que falecia, para ver seus pecados.",
@@ -144,7 +143,7 @@ const data = [
 	},
 	{
 		name: "Ísis",
-		image_path: "/assets/egypt/deusa-isis.jpg",
+		image_path: "/assets/egypt/deusa-isis.webp",
 		overview: [
 			"A Grande Senhora da Magia",
 			"Conhecida como deusa da magia, exemplo de mãe e esposa ideal, protetora do lar e das crianças, a deusa Ísis foi adorada em diversos períodos da história egípcia antiga. Com templos em locais como Quft, Behbeitel-Hagar e Ilha de Philae, sendo o último o mais conhecido, Ísis é uma das deusas mais populares da cultura egípcia. Referências a ela podem ser encontradas em diversos mitos, sendo os mais conhecidos o mito da “Criação do Mundo”, da cidade de Heliópolis, e o mito de “Isis e Rá”.",
@@ -157,7 +156,7 @@ const data = [
 	},
 	{
 		name: "Néftis",
-		image_path: "/assets/egypt/deusa-neftis.jpg",
+		image_path: "/assets/egypt/deusa-neftis.webp",
 		overview: [
 			"Embora pouco lembrada, Néftis é uma deusa da enéade da cidade de Heliópolis, e uma das principais divindades presentes no panteão dos egípcios antigos, tendo sua aparência idêntica à de sua irmã Isis. Porém, muitos de seus aspectos são misteriosos até os dias de hoje.",
 			"Na mitologia desenvolvida na cidade de Heliópolis, Néftis era esposa do deus Seth, que era estéril, e para poder conceber um filho se disfarçou de Isis, que era casada com Osíris, e passou uma noite com o marido de sua irmã. Desse ato nasceu Anúbis, deus da mumificação.",
@@ -167,7 +166,7 @@ const data = [
 	},
 	{
 		name: "Hathor",
-		image_path: "/assets/egypt/deusa-hathor.jpg",
+		image_path: "/assets/egypt/deusa-hathor.webp",
 		overview: [
 			"Háthor em egípcio antigo ḥwt-ḥr, que significa recinto ou casa de Hórus, era uma das deusas mais cultuadas pelos antigos egípcios. Dentre suas várias representações ela aparece como sendo uma mulher com um disco solar acima de sua cabeça entre seus chifres bovinos ou com corpo de mulher e orelhas de vaca, quase sempre segurando um was, cetro com cabeça de um cervo, ou ainda o wadj, um cetro com a planta de papiro, já que para os egípcios a morada dessa deusa era nas plantações desse vegetal que localizavam-se na parte Delta do rio Nilo, onde havia também muitos rebanhos de bovinos.",
 			"Entre as suas múltiplas denominações as principais aparecem como: “A Grande Vaca Selvagem”, “A Distante” ou “A Senhora do Ocidente” pois era a senhora do deserto e das terras estrangeiras, “A Senhora Turquesa” e “A Dourada” uma vez que era também a deusa dos metais e dos minérios, e “A Senhora do Submundo”, sendo ela protetora dos mortos. Seu culto no Egito faraônico remonta ao Reino Antigo (2686-2181 a.C) considerando os registros de cabeça bovina esculpidos na paleta de Narmer (3100 a.C) e os achados arqueológicos junto a fonte textual no Templo do Rei Khafra (2520-2494 a.C). Contudo, houve claramente uma veneração de deusas-vacas no Egito pré-dinástico (5500- 3100 a.C) como a deusa Bat que foi associada a Háthor posteriormente.",
@@ -179,7 +178,7 @@ const data = [
 	},
 	{
 		name: "Sekhmeth",
-		image_path: "/assets/egypt/deusa-sekhmeth.jpg",
+		image_path: "/assets/egypt/deusa-sekhmeth.webp",
 		overview: [
 			"Sekhmet é uma das deusas mais antigas e importantes da mitologia egípcia, representando a força e a ferocidade feminina. Ela é frequentemente retratada com a cabeça de leão, simbolizando seu poder e capacidade de proteger seus seguidores. Sekhmet também é associada à cura e à proteção contra doenças, embora também possa trazer a morte e a destruição quando provocada.",
 			"De acordo com a lenda, Sekhmet foi criada pela deusa Ra para punir os mortais que se rebelavam contra ele. No entanto, ela logo se tornou tão violenta que ameaçou destruir toda a humanidade. Para impedir isso, Ra a embriagou com vinho tingido de vermelho para que ela pensasse que estava bebendo sangue. Isso a acalmou e a transformou em uma deusa benéfica.",
@@ -190,7 +189,7 @@ const data = [
 	},
 	{
 		name: "Mut",
-		image_path: "/assets/egypt/deusa-mut.jpg",
+		image_path: "/assets/egypt/deusa-mut.webp",
 		overview: [
 			'Mut é uma deusa da mitologia egípcia que representa a maternidade, a fertilidade e a realeza. Ela é frequentemente retratada com uma coroa de dois chifres e uma serpente em volta, simbolizando seu papel como mãe e protetora. Mut também era associada à lua e ao céu, e seu nome significa "mãe" em egípcio antigo.',
 			"De acordo com a lenda, Mut era a esposa do deus Amon e a mãe do deus Khonsu. Ela era adorada em todo o Egito Antigo, mas seu principal centro de culto era em Tebas, onde ela tinha um templo grandioso chamado de Ipet Sut. O templo era famoso por suas procissões anuais, que incluíam a parada da barca sagrada de Mut.",
@@ -201,7 +200,7 @@ const data = [
 	},
 	{
 		name: "Wadjet",
-		image_path: "/assets/egypt/deusa-wadjet.jpg",
+		image_path: "/assets/egypt/deusa-wadjet.webp",
 		overview: [
 			"Wadjet é uma deusa da mitologia egípcia associada à proteção, à realeza e à cura. Ela é frequentemente retratada como uma cobra ou como uma mulher com uma cobra na cabeça. Wadjet também é conhecida como a protetora do faraó e era uma das divindades mais antigas do Egito.",
 			"Wadjet era adorada em todo o Egito Antigo, mas seu principal centro de culto era na cidade de Buto, no Delta do Nilo. Lá, ela era adorada como a deusa local e como uma protetora dos reis e rainhas do Egito. Wadjet era frequentemente retratada nas coroas dos faraós como um símbolo de sua proteção divina.",
@@ -212,7 +211,7 @@ const data = [
 	},
 	{
 		name: "Maat",
-		image_path: "/assets/egypt/deusa-maat.jpg",
+		image_path: "/assets/egypt/deusa-maat.webp",
 		overview: [
 			"Maat é a deusa egípcia da justiça, da verdade e da harmonia. Ela é frequentemente retratada como uma mulher com uma pena de avestruz em sua cabeça, simbolizando a balança da justiça. Maat era uma das divindades mais importantes do panteão egípcio e sua importância se estendeu por toda a história do Egito Antigo.",
 			"Maat era responsável por manter a ordem e a harmonia no universo e, como tal, era considerada uma força poderosa e divina. Ela estava presente em todos os aspectos da vida egípcia, desde a política até a religião. Seu papel era tão importante que muitos faraós se consideravam seus representantes na Terra.",

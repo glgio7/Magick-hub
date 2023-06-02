@@ -2,43 +2,43 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 const data = [
 	{
-		title: "Mitologia Japonesa",
+		name: "Mitologia Japonesa",
 		overview: [],
 		address: "japanese",
 	},
 	{
 		name: "Amaterasu",
-		image_path: "/assets/japanese/amaterasu.jpg",
+		image_path: "/assets/japanese/amaterasu.webp",
 		overview: [],
 	},
 	{
 		name: "Fujin",
-		image_path: "/assets/japanese/fujin.jpg",
+		image_path: "/assets/japanese/fujin.webp",
 		overview: [],
 	},
 	{
 		name: "Inari",
-		image_path: "/assets/japanese/inari.jpg",
+		image_path: "/assets/japanese/inari.webp",
 		overview: [],
 	},
 	{
 		name: "Kaijin",
-		image_path: "/assets/japanese/kaijin.jpg",
+		image_path: "/assets/japanese/kaijin.webp",
 		overview: [],
 	},
 	{
 		name: "Shinigami",
-		image_path: "/assets/japanese/shinigami.jpg",
+		image_path: "/assets/japanese/shinigami.webp",
 		overview: [],
 	},
 	{
 		name: "Susanowo",
-		image_path: "/assets/japanese/susanowo.jpg",
+		image_path: "/assets/japanese/susanowo.webp",
 		overview: [],
 	},
 	{
 		name: "Tsuki-Yomi",
-		image_path: "/assets/japanese/tsukiyomi.jpg",
+		image_path: "/assets/japanese/tsukiyomi.webp",
 		overview: [],
 	},
 ];

@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 const data = [
 	{
-		title: "Mitologia Grega",
+		name: "Mitologia Grega",
 		overview: [
 			"A mitologia grega é uma das mais famosas e influentes do mundo, repleta de deuses, heróis e monstros que cativaram a imaginação das pessoas por milhares de anos. A mitologia grega apresenta uma rica variedade de histórias e personagens, que descrevem a origem do mundo e da humanidade, bem como as aventuras e desventuras dos deuses e heróis gregos.",
 			"Caracterizada pela complexidade e ambiguidade dos personagens, que muitas vezes são retratados como heróis imperfeitos e falíveis, com qualidades e defeitos humanos. Os deuses gregos são retratados como seres poderosos, capazes de interferir na vida dos mortais, mas também sujeitos a conflitos e disputas entre si.",
@@ -13,7 +13,7 @@ const data = [
 	},
 	{
 		name: "Zeus",
-		image_path: "/assets/greek/deus-zeus.jpg",
+		image_path: "/assets/greek/deus-zeus.webp",
 		overview: [
 			"Zeus é o rei dos deuses do Olimpo e é conhecido como o senhor do céu e do trovão.",
 			"Ele é considerado um dos deuses mais poderosos da mitologia grega e é o deus da lei, da ordem e da justiça.",
@@ -22,7 +22,7 @@ const data = [
 	},
 	{
 		name: "Poseidon",
-		image_path: "/assets/greek/deus-poseidon.jpg",
+		image_path: "/assets/greek/deus-poseidon.webp",
 		overview: [
 			"Poseidon é o deus do mar e dos terremotos e irmão de Zeus e Hades.",
 			"Ele é frequentemente retratado segurando um tridente, que lhe dá controle sobre as águas, e é conhecido por sua ira e seu temperamento.",
@@ -31,7 +31,7 @@ const data = [
 	},
 	{
 		name: "Atena",
-		image_path: "/assets/greek/deusa-atena.jpg",
+		image_path: "/assets/greek/deusa-atena.webp",
 		overview: [
 			"Atena é a deusa da sabedoria, da estratégia e da guerra e é filha de Zeus.",
 			"Ela é frequentemente retratada segurando uma lança e um escudo, e é conhecida por sua astúcia e inteligência.",
@@ -40,7 +40,7 @@ const data = [
 	},
 	{
 		name: "Ártemis",
-		image_path: "/assets/greek/deusa-artemis.jpg",
+		image_path: "/assets/greek/deusa-artemis.webp",
 		overview: [
 			"Artemis é a deusa da caça, da natureza selvagem e da lua.",
 			"Ela é conhecida por sua habilidade em caçar animais selvagens e proteger a natureza.",
@@ -49,7 +49,7 @@ const data = [
 	},
 	{
 		name: "Apolo",
-		image_path: "/assets/greek/deus-apolo.jpg",
+		image_path: "/assets/greek/deus-apolo.webp",
 		overview: [
 			"Apolo é o deus da música, da poesia e do sol.",
 			"Ele é conhecido por sua habilidade em inspirar os artistas e poetas.",
@@ -63,7 +63,7 @@ const data = [
 			"Ela é conhecida por sua habilidade em garantir a fertilidade da terra e proteger as plantações.",
 			"Além de ser a deusa da agricultura, Deméter é a mãe de Perséfone, a rainha do submundo.",
 		],
-		image_path: "/assets/greek/deusa-demeter.jpg",
+		image_path: "/assets/greek/deusa-demeter.webp",
 	},
 	{
 		name: "Ares",
@@ -72,7 +72,7 @@ const data = [
 			"Ele é conhecido por sua habilidade em liderar os exércitos e causar destruição.",
 			"Além de ser o deus da guerra, Ares também é o protetor dos guerreiros e dos soldados.",
 		],
-		image_path: "/assets/greek/deus-ares.jpg",
+		image_path: "/assets/greek/deus-ares.webp",
 	},
 	{
 		name: "Hera",
@@ -81,7 +81,7 @@ const data = [
 			"Ela é conhecida por sua habilidade em proteger o casamento e a união familiar.",
 			"Além de ser a deusa do casamento, Hera também é a rainha dos deuses e a protetora das mulheres casadas.",
 		],
-		image_path: "/assets/greek/deusa-hera.jpg",
+		image_path: "/assets/greek/deusa-hera.webp",
 	},
 	{
 		name: "Afrodite",
@@ -90,7 +90,7 @@ const data = [
 			"Ela é frequentemente representada como uma jovem e bela mulher, adornada com jóias e vestida com roupas elegantes.",
 			"Afrodite é conhecida por seu charme e sedução, e é capaz de influenciar os corações e mentes das pessoas.",
 		],
-		image_path: "/assets/greek/deusa-afrodite.jpg",
+		image_path: "/assets/greek/deusa-afrodite.webp",
 	},
 	{
 		name: "Hefesto",
@@ -99,7 +99,7 @@ const data = [
 			"Ele é frequentemente retratado como um homem idoso e feio, com um pé coxo e um rosto deformado.",
 			"No entanto, ele é extremamente habilidoso em sua arte e é capaz de criar as mais belas obras de metalurgia.",
 		],
-		image_path: "/assets/greek/deus-hefesto.jpg",
+		image_path: "/assets/greek/deus-hefesto.webp",
 	},
 	{
 		name: "Dionísio",
@@ -108,11 +108,11 @@ const data = [
 			"Ele é conhecido por sua habilidade em trazer alegria e êxtase aos mortais.",
 			"Dionísio também é o deus da fertilidade, e é responsável por garantir o crescimento das plantas e a prosperidade das colheitas.",
 		],
-		image_path: "/assets/greek/deus-dionisio.jpg",
+		image_path: "/assets/greek/deus-dionisio.webp",
 	},
 	{
 		name: "Hermes",
-		image_path: "/assets/greek/deus-hermes.jpg",
+		image_path: "/assets/greek/deus-hermes.webp",
 		overview: [
 			"Hermes é o deus da comunicação, do comércio e dos viajantes.",
 			"Ele é conhecido por sua habilidade em proteger os viajantes e facilitar a comunicação entre os mortais e os deuses.",

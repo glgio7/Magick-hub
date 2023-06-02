@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 const data = [
 	{
-		title: "Mitologia Celta",
+		name: "Mitologia Celta",
 		overview: [
 			"A mitologia celta é uma das mais antigas e menos conhecidas do mundo, repleta de deuses, deusas e criaturas místicas que habitavam a natureza e influenciavam a vida cotidiana das tribos celtas. A mitologia celta é caracterizada pela forte conexão com a natureza e pela valorização da sabedoria e da poesia.",
 			"Os celtas acreditavam em um panteão de deuses e deusas que governavam o universo e influenciavam a vida cotidiana das pessoas. Muitos desses deuses eram associados a elementos naturais, como a terra, o ar, a água e o fogo, e tinham poderes específicos, como a cura, a fertilidade e a guerra. Além dos deuses, a mitologia celta também apresenta uma grande variedade de criaturas místicas, como os banshees, os leprechauns e os dragões.",
@@ -13,7 +13,7 @@ const data = [
 	},
 	{
 		name: "Dagda",
-		image_path: "/assets/celtic/deus-dagda.jpg",
+		image_path: "/assets/celtic/deus-dagda.webp",
 		overview: [
 			"Dagda é um deus associado à fertilidade, agricultura, cura e morte. Ele é frequentemente retratado como um homem idoso e poderoso, com um grande caldeirão mágico, um porrete e uma harpa mágica.",
 			"Dagda é visto como um deus gentil e generoso, que tem o poder de curar os doentes e de ressuscitar os mortos. Ele também é um deus da vida e da morte, e é responsável por levar as almas dos mortos para o outro mundo.",
@@ -24,7 +24,7 @@ const data = [
 	},
 	{
 		name: "Cuchulainn",
-		image_path: "/assets/celtic/deus-cu-chulainn.jpg",
+		image_path: "/assets/celtic/deus-cu-chulainn.webp",
 		overview: [
 			"Cuchulain é um dos heróis mais famosos da mitologia celta. Ele é conhecido por sua força sobrenatural e sua habilidade na batalha, além de sua personalidade impetuosa e apaixonada.",
 			"Cuchulain nasceu com o nome de Setanta, mas recebeu seu nome atual após matar o cão de guarda do líder da Irlanda, que foi substituído pelo próprio Cuchulain como guardião. Esse incidente o tornou um herói, e ele foi treinado na arte da guerra por seu tio Conchobar.",
@@ -35,7 +35,7 @@ const data = [
 	},
 	{
 		name: "Danu",
-		image_path: "/assets/celtic/deusa-danu.jpg",
+		image_path: "/assets/celtic/deusa-danu.webp",
 		overview: [
 			"Danu é uma deusa da mitologia celta, frequentemente associada com a natureza, a fertilidade e a sabedoria. Ela é vista como a mãe de todos os deuses e deusas celtas, e é frequentemente retratada como uma mulher sábia e poderosa.",
 			"Danu era adorada em toda a região que hoje conhecemos como Irlanda e Escócia, e muitas lendas celtas falam de sua importância na criação do mundo e dos seres humanos. Ela também era vista como uma protetora dos rios, das árvores e das plantas.",
@@ -46,7 +46,7 @@ const data = [
 	},
 	{
 		name: "Cernunnos",
-		image_path: "/assets/celtic/deus-cernunnos.jpg",
+		image_path: "/assets/celtic/deus-cernunnos.webp",
 		overview: [
 			"Cernunnos é um deus associado à natureza, fertilidade, animais e renovação. Ele é frequentemente retratado como um homem com chifres de cervo, sentado em posição de lótus e com animais ao seu redor.",
 			"Cernunnos é considerado um deus da vida selvagem, e sua imagem é frequentemente encontrada em inscrições e artefatos da Idade do Ferro na Europa. Ele é visto como um protetor dos animais e das florestas, e muitas vezes é associado à caça e à agricultura.",
@@ -57,7 +57,7 @@ const data = [
 	},
 	{
 		name: "Lugh",
-		image_path: "/assets/celtic/deus-lugh.jpg",
+		image_path: "/assets/celtic/deus-lugh.webp",
 		overview: [
 			"Lugh é um dos deuses mais importantes da mitologia celta, sendo associado à luz, à cura, à habilidade e à vitória. Ele é frequentemente descrito como um guerreiro e um artesão habilidoso, além de ser um poeta e músico talentoso.",
 			'Lugh é considerado um deus solar, e é associado ao sol nascente, à primavera e ao equinócio de verão. Ele é também conhecido como Samildánach, ou "aquele que é habilidoso em muitas artes", sendo um mestre em várias atividades, como artesanato, poesia, música e estratégia militar.',
@@ -68,7 +68,7 @@ const data = [
 	},
 	{
 		name: "Brigit",
-		image_path: "/assets/celtic/deusa-brigit.jpg",
+		image_path: "/assets/celtic/deusa-brigit.webp",
 		overview: [
 			"Brigit é uma deusa que representa a fertilidade, a cura e o fogo sagrado. Ela é considerada uma deusa tripla, representando três aspectos diferentes: a donzela, a mãe e a anciã. Como donzela, ela simboliza a juventude, a beleza e a inspiração. Como mãe, ela representa a maternidade, a proteção e a cura. E como anciã, ela personifica a sabedoria, a transformação e a renovação.",
 			"Além de suas características divinas, Brigit também é lembrada por sua influência na vida cotidiana das pessoas. Ela é associada ao fogo sagrado, que era mantido aceso em sua honra nas casas e templos. Esse fogo era considerado uma fonte de proteção, iluminação e inspiração. Brigit também é reconhecida por sua habilidade em curar doenças e ferimentos, e muitas vezes é invocada em rituais de cura.",
@@ -80,7 +80,7 @@ const data = [
 
 	{
 		name: "Morrigan",
-		image_path: "/assets/celtic/deusa-morrigan.jpg",
+		image_path: "/assets/celtic/deusa-morrigan.webp",
 		overview: [
 			"Morrigan é uma das principais figuras da mitologia celta. Ela é conhecida por sua aparência sinistra, com cabelos negros e roupas escuras, e por sua habilidade em se transformar em diferentes animais.",
 			"Morrigan é associada à guerra e à morte, e muitas vezes é vista como uma deusa da batalha. Ela é frequentemente retratada como uma guerreira que lidera as tropas para a vitória.",
@@ -91,7 +91,7 @@ const data = [
 	},
 	{
 		name: "Belenus",
-		image_path: "/assets/celtic/deus-belenus.jpg",
+		image_path: "/assets/celtic/deus-belenus.webp",
 		overview: [
 			"Belennus é uma divindade que representa o sol e a luz. Sua origem é incerta, mas é provável que tenha sido adorado pelos celtas da região da Gália. Ele é frequentemente retratado como um jovem guerreiro, vestindo uma armadura e um capacete com chifres.",
 			"Acredita-se que Belennus seja uma das divindades mais importantes do panteão celta, associado a cura, purificação e proteção. Ele é frequentemente associado a águas curativas, locais sagrados e fontes termais. Seu culto se espalhou pela Europa e muitos templos foram erguidos em sua homenagem.",
@@ -102,7 +102,7 @@ const data = [
 	},
 	{
 		name: "Taranis",
-		image_path: "/assets/celtic/deus-taranis.jpg",
+		image_path: "/assets/celtic/deus-taranis.webp",
 		overview: [
 			"Taranis era o deus celta do trovão e do relâmpago. Ele era frequentemente retratado como um homem de barba e cabelos longos segurando um raio em uma das mãos e um martelo na outra.",
 			"Taranis era uma das divindades mais importantes da mitologia celta, frequentemente associado com a realeza, a guerra e a justiça. Ele era adorado em toda a região que hoje conhecemos como França, Bélgica, Luxemburgo e partes da Alemanha e Suíça.",
@@ -113,7 +113,7 @@ const data = [
 	},
 	{
 		name: "Arawn",
-		image_path: "/assets/celtic/deus-arawn.jpg",
+		image_path: "/assets/celtic/deus-arawn.webp",
 		overview: [
 			"Arawn é um deus da mitologia celta, associado com a vida após a morte e o submundo. Ele é frequentemente retratado como um homem com uma aparência sombria e assustadora, vestido com peles de animais e segurando um cajado.",
 			"Arawn era uma das divindades mais importantes para os celtas da região que hoje conhecemos como País de Gales. Ele era visto como um governante benevolente do reino subterrâneo conhecido como Annwn, que era o destino final para as almas dos mortos.",
@@ -124,7 +124,7 @@ const data = [
 	},
 	{
 		name: "Epona",
-		image_path: "/assets/celtic/deusa-epona.jpg",
+		image_path: "/assets/celtic/deusa-epona.webp",
 		overview: [
 			"Epona é uma deusa da mitologia celta, frequentemente associada com os cavalos, a fertilidade e a proteção. Ela é vista como a protetora dos cavalos, dos cavaleiros e dos animais em geral, e é frequentemente retratada como uma mulher montada em um cavalo.",
 			"Era adorada em toda a região que hoje conhecemos como França, Bélgica, Alemanha e partes da Itália e Suíça. Ela era vista como uma protetora dos viajantes e dos comerciantes, e muitos acreditavam que ela poderia trazer riqueza e boa sorte.",

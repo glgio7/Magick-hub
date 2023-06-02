@@ -42,7 +42,7 @@ function Categories({ address }: CategoriesProps) {
 	return (
 		<>
 			<Head>
-				<title>{list && `Magick Hub | ${list[0]!.title}`}</title>
+				<title>{list && `Magick Hub | ${list[0]!.name}`}</title>
 			</Head>
 			<S.Category>
 				<S.Wrapper onLoad={() => window.scrollTo(0, 0)}>
@@ -52,7 +52,7 @@ function Categories({ address }: CategoriesProps) {
 							handleList("left");
 						}}
 					/>
-					<h2>{list[0]!.title}</h2>
+					<h2>{list[0]!.name}</h2>
 					<ul ref={carousel}>
 						{list.map(
 							(item, index) =>

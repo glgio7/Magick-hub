@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 const data = [
 	{
-		title: "Mitologia na visão de Jung",
+		name: "Mitologia na visão de Jung",
 		overview: [
 			'Os arquétipos de Carl Jung são um conjunto de imagens, ideias e padrões de comportamento universais que existem no inconsciente coletivo da humanidade. Jung acreditava que esses arquétipos são uma espécie de "programa" inato que orienta a maneira como as pessoas percebem o mundo e se comportam.',
 			"Existem muitos arquétipos diferentes, cada um com seu próprio conjunto de características e simbolismo. Alguns exemplos comuns incluem o herói, o sábio, o mago, a mãe, o pai e o trickster. Cada arquétipo representa uma força primordial que influencia a maneira como as pessoas pensam e agem.",
@@ -14,7 +14,7 @@ const data = [
 	},
 	{
 		name: "O herói",
-		image_path: "/assets/archetypes/heroi.jpg",
+		image_path: "/assets/archetypes/heroi.webp",
 		overview: [
 			"O herói é um dos arquétipos de Jung mais conhecidos. Ele representa os indivíduos corajosos e bondosos, que lutam pelos seus ideais e que ajudam a quem estiver ao seu redor, sendo símbolos da justiça e da determinação. O seu objetivo é provar o seu valor por meio da coragem, fazendo o bem ao mundo. O seu grande medo é passar pela vida como alguém “acomodado” ou covarde.",
 			"1. CORAGEM E DETERMINAÇÃO",
@@ -43,7 +43,7 @@ const data = [
 	},
 	{
 		name: "O Comum",
-		image_path: "/assets/archetypes/homem-comum.jpg",
+		image_path: "/assets/archetypes/homem-comum.webp",
 		overview: [
 			"O “comum” é o arquétipo que representa as pessoas cujo perfil seja voltado às atividades cotidianas e à sua vontade de pertencer a um grupo social. O seu desejo é o de conectar-se com outras pessoas. Você, com certeza, conhece pessoas assim e até mesmo pode se identificar com esse arquétipo.",
 			"1. NECESSIDADE DE PERTENCIMENTO",
@@ -72,7 +72,7 @@ const data = [
 	},
 	{
 		name: "O Criador",
-		image_path: "/assets/archetypes/criador.jpg",
+		image_path: "/assets/archetypes/criador.webp",
 		overview: [
 			"O criador é um dos 12 arquétipos identificados por Jung. Ele representa todos os indivíduos que têm a criatividade como a sua característica principal, isto é, que gostam de criar coisas de valor duradouro. São pessoas que desenvolvem uma visão diferenciada para resolver problemas e que gostam de inovar.",
 			"1. INOVAÇÃO",
@@ -102,7 +102,7 @@ const data = [
 	},
 	{
 		name: "O Sábio",
-		image_path: "/assets/archetypes/sabio.jpg",
+		image_path: "/assets/archetypes/sabio.webp",
 		overview: [
 			"Albert Einstein, Mark Zuckerberg e até mesmo o Mestre Yoda (do universo de Star Wars) são exemplos clássicos de pessoas ou personagens que traduzem a essência do arquétipo do sábio. O objetivo de quem tem esse arquétipo forte dentro de si é encontrar a verdade e utilizar a inteligência para compreender o mundo. São curiosos, inteligentes e ativos na compreensão dos fatos. Gostam de refletir e de estudar. Contudo, a sua fraqueza pode ser justamente um apego à teoria, deixando de colocar os seus saberes em prática.",
 			"1. BUSCA PELA VERDADE",
@@ -131,7 +131,7 @@ const data = [
 	},
 	{
 		name: "O Mago",
-		image_path: "/assets/archetypes/mago.jpg",
+		image_path: "/assets/archetypes/mago.webp",
 		overview: [
 			"O mago é um dos 12 arquétipos de Jung. Ele é caracterizado por um conhecimento que não é somente racional, mas também místico e espiritual. O seu objetivo é transformar sonhos em realidade, tanto os seus quanto os de outras pessoas. Assim, esse arquétipo procura desenvolver uma visão específica de vida e viver de acordo com ela.",
 			"1. ENTENDER O UNIVERSO",
@@ -160,7 +160,7 @@ const data = [
 	},
 	{
 		name: "O Amante",
-		image_path: "/assets/archetypes/amante.jpg",
+		image_path: "/assets/archetypes/amante.webp",
 		overview: [
 			"O amante é um dos arquétipos junguianos que mais atraem o interesse das pessoas. Essencialmente emocional e intenso, esse arquétipo representa as pessoas que têm por objetivo relacionar-se de forma significativa com outras pessoas. Aqui, estamos falando não apenas do relacionamento amoroso, mas também da amizade, do apego à família, dos colegas de trabalho, e por aí vai.",
 			"1. VAIDADE E SENSUALIDADE",
@@ -189,7 +189,7 @@ const data = [
 	},
 	{
 		name: "O Altruísta",
-		image_path: "/assets/archetypes/altruista.jpg",
+		image_path: "/assets/archetypes/altruista.webp",
 		overview: [
 			"O altruísta, também conhecido como “o cuidador”, é um arquétipo junguiano que representa as pessoas compassivas e benevolentes. Ele tem um espírito paternal ou maternal, que se preocupa em cuidar do outro, protegendo-o e garantindo a sua segurança.",
 			"1. EMPATIA",
@@ -218,7 +218,7 @@ const data = [
 	},
 	{
 		name: "O Inocente",
-		image_path: "/assets/archetypes/inocente.jpg",
+		image_path: "/assets/archetypes/inocente.webp",
 		overview: [
 			"Um indivíduo simples e otimista, mas que pode beirar a ingenuidade se não for cauteloso.",
 			"1. OTIMISMO",
@@ -247,7 +247,7 @@ const data = [
 	},
 	{
 		name: "O Rebelde",
-		image_path: "/assets/archetypes/rebelde.jpg",
+		image_path: "/assets/archetypes/rebelde.webp",
 		overview: [
 			"O arquétipo daqueles que se rebelam contra um sistema vigente, questionando as regras que, na sua visão, limitam a sua liberdade de agir e de ser quem são. “Fora da lei” ou “vivendo no limite” são títulos fáceis de atribuir a esses indivíduos.",
 			"1. CONHECIMENTO DAS REGRAS",
@@ -276,7 +276,7 @@ const data = [
 	},
 	{
 		name: "O Bobo",
-		image_path: "/assets/archetypes/bobo.jpg",
+		image_path: "/assets/archetypes/bobo.webp",
 		overview: [
 			"O comediante também conhecido como “bobo da corte”, é um dos arquétipos junguianos mais fáceis de reconhecer: trata-se do “palhaço” da família, do círculo de amigos, da sala de aula, entre outros ambientes. Esse indivíduo tem elevado senso de humor, é engraçado, gosta da diversão e de entreter quem estiver ao seu redor.",
 			"1. DIVERSÃO E BUSCA PELO PRAZER",
@@ -305,7 +305,7 @@ const data = [
 	},
 	{
 		name: "O governante",
-		image_path: "/assets/archetypes/governante.jpg",
+		image_path: "/assets/archetypes/governante.webp",
 		overview: [
 			"Segundo Jung, esse arquétipo representa basicamente todos os indivíduos que apresentam o chamado “espírito de liderança”. Assim, são pessoas que lidam bem com o poder e com o controle em diferentes contextos, como a família, o grupo de amigos, a equipe de trabalho, a empresa, a comunidade etc.",
 			"1. VONTADE DE PODER",
@@ -334,7 +334,7 @@ const data = [
 	},
 	{
 		name: "O Explorador",
-		image_path: "/assets/archetypes/explorador.jpg",
+		image_path: "/assets/archetypes/explorador.webp",
 		overview: [
 			"Um dos 12 arquétipos de Jung é o explorador, também conhecido como aventureiro. Trata-se de um indivíduo ousado e destemido, que está sempre em busca de novidades e explorando novas formas de agir, que vão além do que comumente é escolhido pelas pessoas.",
 			"1. CORAGEM",
